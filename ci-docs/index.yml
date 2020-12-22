@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Справочный центр для Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Найдите соответствующие статьи, чтобы начать со справочной информации.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406772"
+title: Документация по Dynamics 365 Customer Insights
+summary: Найдите полезные ресурсы, чтобы начать работу и узнать о функциях и возможностях Customer Insights.
+landingContent:
+- title: Представляем Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор Customer Insights
+      url: overview.md
+    - text: Планы выпуска
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Доступ к своей среде
+      url: https://home.ci.ai.dynamics.com/
+- title: Начните работу с аналитикой аудитории
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Зарегистрироваться для получения пробной версии
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: Новые возможности
+      url: audience-insights/whats-new-audience-insights.md
+    - text: Документация по аналитике аудитории
+      url: audience-insights/index.yml
+- title: Контакты
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Присоединяйтесь к сообществу Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Поделитесь своими идеями
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Сообщить о проблеме
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Учебники по аналитике аудитории
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Создать среду
+      url: audience-insights/home.md
+    - text: Создание объединенного профиля клиента
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Работа с приложением
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: Экспорт данных аналитики аудитории
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка пунктов назначения экспорта
+      url: audience-insights/export-destinations.md
+    - text: Карточки клиентов в приложениях Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: Соединитель Power BI
+      url: audience-insights/export-power-bi.md
+- title: Администрирование аналитики аудитории
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка системы
+      url: audience-insights/system.md
+    - text: Определение разрешений пользователя
+      url: audience-insights/permissions.md
+    - text: Управление несколькими средами
+      url: audience-insights/manage-environments.md
+- title: Об аналитике взаимодействий (предварительная версия)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор возможностей
+      url: engagement-insights/overview.md
+    - text: Термины и понятия
+      url: engagement-insights/glossary.md
+    - text: Начать
+      url: engagement-insights/get-started.md
+- title: Отчеты для аналитики взаимодействия (предварительная версия)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Просмотр отчетов
+      url: engagement-insights/view-reports.md
+    - text: Создайте настраиваемые отчеты
+      url: engagement-insights/custom-reports.md
+    - text: Просмотреть отчет по унифицированным профилям
+      url: engagement-insights/profile-reports.md
+- title: События для аналитики взаимодействия (предварительная версия)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создавайте усовершенствованные мероприятия
+      url: engagement-insights/refined-events.md
+    - text: Экспорт событий
+      url: engagement-insights/export-events.md
+    - text: Удалить и экспортировать личные данные
+      url: engagement-insights/delete-export-personal-data.md

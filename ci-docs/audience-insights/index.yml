@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Возможности аналитики аудитории в Dynamics 365 Customer Insights
+summary: Принимайте, объединяйте и систематизируйте данные клиентов из разных источников. Создавайте и управляйте профилями клиентов и сегментированием в реальном времени. Интегрируйте данные клиентов с другими системами, чтобы сделать их еще более эффективными.
+metadata:
+  title: Документация по аналитике аудитории
+  description: Справочный центр с ключевыми ссылками для аналитики аудитории.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4406755"
+landingContent:
+- title: Об аналитике аудитории
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Обзор продукта
+      url: overview.md
+    - text: Новые и обновленные компоненты
+      url: whats-new-audience-insights.md
+    - text: Сайт сообщества
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Принятие источников данных
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Добавление источников данных
+      url: data-sources.md
+    - text: Инкрементное обновление
+      url: incremental-refresh-data-sources.md
+    - text: Общие сведения о сущностях
+      url: entities.md
+- title: Объединение данных
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Сопоставление
+      url: map-entities.md
+    - text: Совпадение найдено
+      url: match-entities.md
+    - text: Объединение
+      url: merge-entities.md
+- title: Уточнение профилей клиентов
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка отношений
+      url: relationships.md
+    - text: Список пользовательских действий
+      url: activities.md
+    - text: Создание собственных моделей машинного обучения
+      url: custom-models.md
+- title: Экспорт данных клиентов
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка пунктов назначения экспорта
+      url: export-destinations.md
+    - text: Карточки клиентов в приложениях Dynamics 365
+      url: customer-card-add-in.md
+    - text: Соединитель Power BI
+      url: export-power-bi.md
+- title: Администрирование приложения
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка системы
+      url: system.md
+    - text: Определение разрешений пользователя
+      url: permissions.md
+    - text: Управление несколькими средами
+      url: manage-environments.md
