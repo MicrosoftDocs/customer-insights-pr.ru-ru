@@ -4,17 +4,17 @@ description: Импортируйте данные из управляемого
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643414"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267830"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>Подключение к данным в озере данных, управляемом Common Data Service
 
@@ -34,7 +34,10 @@ ms.locfileid: "4643414"
 
 3. Выберите **Подключиться к Common Data Service** и выберите **Далее**.
 
-4. Введите **Имя** для источника данных, затем выберите **Далее**.
+4. Введите **Имя** для источника данных, затем выберите **Далее**. Рекомендации по названию: 
+   - Начните с буквы.
+   - Используйте только буквы и цифры. Использовать специальные символы и пробелы не разрешается.
+   - Используйте от 3 до 64 символов.
 
 5. Укажите **Адрес сервера** для вашей организации Common Data Service и выберите **Войти**.
 
@@ -65,3 +68,6 @@ ms.locfileid: "4643414"
 3. Выберите вариант **Изменить** из списка.
 
 4. Выберите дополнительные сущности из доступного списка сущностей и выберите **Сохранить**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

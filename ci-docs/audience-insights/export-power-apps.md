@@ -1,20 +1,20 @@
 ---
 title: Соединитель Power Apps
 description: Соедините с Power Apps и Power Automate.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406721"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268932"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Соединитель Microsoft Power Apps (предварительная версия)
 
@@ -31,7 +31,7 @@ Customer Insights является одним из многих [доступн�
 После добавления Customer Insights в качестве подключения к данным вы можете выбрать следующие сущности в Power Apps:
 
 - Клиент: чтобы использовать данные из [единого профиля клиента](customer-profiles.md).
-- Единое действие клиента: чтобы отображать [временную шкалу действий](activities.md) в приложении.
+- UnifiedActivity: чтобы отображать [временную шкалу действия](activities.md) в приложении.
 
 ## <a name="limitations"></a>Ограничения
 
@@ -72,3 +72,6 @@ Customer Insights является одним из многих [доступн�
 1. Чтобы отобразить унифицированную временную шкалу для клиента, добавьте элемент галереи и добавьте свойство элементов: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
     Пример: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

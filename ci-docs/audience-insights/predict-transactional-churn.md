@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644419"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268334"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Прогноз оттока транзакций (предварительная версия)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644419"
 1. При желании выберите **Добавить данные** для **Действия клиента**. Выберите организацию, которая предоставляет информацию о действии клиента, как описано в предварительных требованиях.
 
 1. Сопоставьте семантические поля с атрибутами в сущности действия клиента и выберите **Далее**. Описания полей см. в [необходимые условия](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Сопоставьте поля клиента для транзакционных данных.":::
 
 1. Выберите тип активности, который соответствует типу активности клиента, который вы настраиваете. Выберите **Создайте новый** и выберите доступный вид деятельности или создайте новый тип.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644419"
 1. Выберите вертикальное многоточие рядом с прогнозом, который вы хотите удалить.
 
 1. Выберите **Удалить**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

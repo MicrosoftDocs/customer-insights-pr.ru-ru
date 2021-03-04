@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406724"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477104"
 ---
 # <a name="connector-for-power-bi-preview"></a>Соединитель для Power BI (предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4406724"
 
 1. Выберите **Показать больше** и найдите **Dynamics 365 Customer Insights**.
 
-1. Выберите результат и выберите **Подключить**.
+1. Нажмите **Подключиться**.
 
 1. **Войдите** с той же учетной записью организации, которую вы используете для Customer Insights, и выберите **Подключить**.
    > [!NOTE]
@@ -52,3 +52,22 @@ ms.locfileid: "4406724"
 ### <a name="work-with-a-subset-of-data"></a>Работа с подмножеством данных
 
 Рассмотрите возможность работы с подмножеством ваших данных. Например, вы можете создать [сегменты](segments.md) вместо экспорта всех записей о клиентах в Power BI.
+
+## <a name="troubleshooting"></a>Устранение неполадок
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Среда Customer Insights не отображается в Power BI
+
+Среды, в которых есть более одного [отношения](relationships.md), определенного между двумя идентичными сущностями в аналитике аудитории, не будут доступны в соединителе Power BI.
+
+Вы можете определить и удалить дублирующиеся отношения.
+
+1. В аналитике аудитории перейдите **Данные** > **Отношения** в среде, которой вам не хватает в Power BI.
+2. Определите повторяющиеся отношения:
+   - Проверьте, не определено ли более одного отношения между одними и теми же двумя сущностями.
+   - Проверьте, существует ли отношение между двумя сущностями, которые обе участвуют в процессе объединения. Между всеми сущностями, включенными в процесс объединения, существует явное отношение.
+3. Удалите все обнаруженные повторяющиеся отношения.
+
+После удаления дублированного отношения попробуйте настроить соединитель Power BI снова. Среда должна стать доступной.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643699"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269990"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Соединитель для Facebook Ads Manager (предварительная версия)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643699"
 
 Вы можете [экспортировать данных по требованию](export-destinations.md). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>Известные ограничения
+
+- До 10 млн профилей клиентов на экспорт в Facebook Ads Manager 
+- Экспорт в Facebook Ads Manager ограничен сегментами
+- Экспорт сегментов с общим количеством профилей 10 миллион может занять до 90 минут.
+
 ## <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
 
 Когда вы включаете Dynamics 365 Customer Insights для передачи данных в Facebook Ads Manager, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft передаст такие данные по вашему указанию, но вы несете ответственность за соблюдение компанией Facebook Ads любых обязательств в отношении конфиденциальности или безопасности, которые могут у вас возникнуть. Дополнительные сведения см. в разделе [Заявление о конфиденциальности корпорации Майкрософт](https://go.microsoft.com/fwlink/?linkid=396732).
 Ваш администратор Dynamics 365 Customer Insights может в любое время удалить этот пункт назначения, чтобы прекратить использование этой функции.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

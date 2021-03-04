@@ -6,16 +6,16 @@ metadata:
   description: Справочный центр с ключевыми ссылками для аналитики аудитории.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4406755"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745737"
 landingContent:
 - title: Об аналитике аудитории
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Сайт сообщества
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: Принятие источников данных
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Добавление источников данных
-      url: data-sources.md
-    - text: Инкрементное обновление
-      url: incremental-refresh-data-sources.md
-    - text: Общие сведения о сущностях
-      url: entities.md
 - title: Объединение данных
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Сопоставление
-      url: map-entities.md
-    - text: Совпадение найдено
-      url: match-entities.md
-    - text: Объединение
-      url: merge-entities.md
-- title: Уточнение профилей клиентов
+    - text: Обзор источников данных
+      url: data-sources.md
+    - text: Обзор объединения
+      url: data-unification.md
+    - text: Общие сведения о сущностях
+      url: entities.md
+- title: Обогащайте и уточняйте данные
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Обогащение профилей клиентов
+      url: enrichment-hub.md
     - text: Настройка отношений
       url: relationships.md
     - text: Список пользовательских действий
       url: activities.md
-    - text: Создание собственных моделей машинного обучения
-      url: custom-models.md
+- title: Получайте аналитику
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создать сегменты
+      url: segments.md
+    - text: Создать меры
+      url: measures.md
+    - text: Полные данные с прогнозами
+      url: predictions.md
 - title: Экспорт данных клиентов
   linkLists:
   - linkListType: how-to-guide

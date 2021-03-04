@@ -14,10 +14,10 @@
       href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: Новые и обновленные компоненты
       href: audience-insights/whats-new-audience-insights.md
-    - name: Начать
+    - name: Создать среду
+      href: audience-insights/home.md
+    - name: Изучение модулей
       items:
-        - name: Создать среду
-          href: audience-insights/home.md
         - name: Прием данных
           href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
         - name: Создание объединенного профиля клиента
@@ -44,7 +44,7 @@
           href: audience-insights/entities.md
     - name: Объединение данных
       items:
-        - name: Обзор объединения
+        - name: Обзор унификации данных
           href: audience-insights/data-unification.md
         - name: Сопоставление сущностей и атрибутов
           href: audience-insights/map-entities.md
@@ -80,6 +80,8 @@
           href: audience-insights/segments.md
         - name: Получение аналитики по сегментам
           href: audience-insights/segment-insights.md
+        - name: Просмотр предлагаемых сегментов
+          href: audience-insights/suggested-segments.md
         - name: Найти похожих клиентов
           href: audience-insights/find-similar-customer-segments.md
         - name: Определение мер и ключевых показателей эффективности
@@ -96,6 +98,12 @@
           href: audience-insights/predict-transactional-churn.md
         - name: Пример руководства по прогнозу оттока транзакций
           href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: Прогноз ценности клиента на протяжении жизненного цикла (CLV)
+          href: audience-insights/predict-customer-lifetime-value.md
+        - name: Прогноз рекомендации продуктов
+          href: audience-insights/predict-product-recommendation.md
+        - name: Руководство по прогнозу рекомендаций продуктов
+          href: audience-insights/sample-guide-predict-product-recommendation.md
         - name: Реализация пользовательских моделей машинного обучения
           href: audience-insights/custom-models.md
         - name: Эксперименты с машинным обучением Azure
@@ -104,10 +112,14 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: Параметры экспорта
       items:
-        - name: Обнаружение пунктов назначения экспорта
+        - name: Обзор пунктов назначения экспорта
           href: audience-insights/export-destinations.md
+        - name: Autopilot
+          href: audience-insights/export-autopilot.md
         - name: Хранилище BLOB-объектов Azure
           href: audience-insights/export-azure-blob-storage.md
+        - name: Azure Data Lake Storage 2-го поколения
+          href: audience-insights/export-azure-data-lake-storage-gen2.md
         - name: DotDigital
           href: audience-insights/export-dotdigital.md
         - name: Dynamics 365 Customer Service (Надстройка)
@@ -136,6 +148,8 @@
           href: audience-insights/export-power-apps.md
         - name: Power Automate
           href: audience-insights/export-power-automate.md
+        - name: SendGrid
+          href: audience-insights/export-sendgrid.md
         - name: SFTP
           href: audience-insights/export-sftp.md
     - name: Администрирование
@@ -152,6 +166,8 @@
           href: audience-insights/supported-languages.md
     - name: Расширяемость
       items:
+        - name: Интеграция веб-данных из аналитики взаимодействия
+          href: audience-insights/integrate-engagement-insights.md
         - name: Просмотр схем сущностей в Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Работа с API-интерфейсами
@@ -170,10 +186,6 @@
       href: engagement-insights/overview.md
     - name: Бесплатная пробная версия
       href: 'https://pi.dynamics.com/'
-    - name: Краткое руководство
-      items:
-        - name: Краткое руководство по общедоступной предварительной версии
-          href: engagement-insights/quickstart.md
     - name: Начать
       items:
         - name: Начать
@@ -223,4 +235,4 @@
     - name: Ограничения обслуживания
       href: engagement-insights/quotas.md
 - name: Связаться со службой поддержки
-  href: 'https://go.microsoft.com/fwlink/?linkid=2145734'
+  href: 'https://admin.powerplatform.microsoft.com/support'

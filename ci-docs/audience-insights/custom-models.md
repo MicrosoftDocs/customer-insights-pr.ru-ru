@@ -4,16 +4,16 @@ description: Работа с пользовательскими моделями
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668919"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267250"
 ---
 # <a name="custom-machine-learning-models"></a>Пользовательские модели машинного обучения
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668919"
 
 1. Выберите веб-службу студии машинного обучения (классической) или конвейер машинного обучения Azure в раскрывающемся списке **Веб-служба, содержащая вашу модель**. Затем выберите **Далее**.
    - Узнать больше о [публикации веб-службы в студии машинного обучения (классической)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Узнать больше о [публикации конвейера в машинном обучении Azure с помощью конструктора](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > Ваш конвейер должен быть опубликован в [конечной точке конвейера](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Узнать больше о [публикации конвейера в машинном обучении Azure с помощью конструктора](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) или [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваш конвейер должен быть опубликован в [конечной точке конвейера](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. Для каждого пункта **Входные данные веб-службы** выберите соответствующую **Сущность** из аналитики аудитории и выберите **Далее**.
+   > [!NOTE]
+   > Настраиваемый рабочий процесс модели будет применять эвристику для сопоставления полей ввода веб-службы с атрибутами сущности на основе имени и типа данных поля. Вы увидите ошибку, если поле веб-службы не может быть сопоставлено с сущностью.
 
    > [!div class="mx-imgBorder"]
    > ![Настройка рабочего процесса](media/intelligence-screen2-updated.png "Настройка рабочего процесса")
-
+   
 1. На этапе **Параметры выходных данных модели** задайте следующие свойства:
    - Студия машинного обучения (классическая версия)
       1. Введите выходные данные **Имя сущности**, куда должны направляться выходные результаты веб-службы.
@@ -112,3 +112,6 @@ ms.locfileid: "4668919"
 1. Выберите **Удалить** и подтвердите удаление.
 
 Ваш рабочий процесс будет удален. [Сущность](entities.md), созданная при создании рабочего процесса, сохраняется, и ее можно просмотреть на странице **Сущности**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

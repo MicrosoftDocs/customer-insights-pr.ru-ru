@@ -1,20 +1,20 @@
 ---
 title: Экспорт данных Customer Insights в Dynamics 365 Sales
 description: Узнайте, как настроить подключение к Dynamics 365 Sales.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643834"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269024"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>Соединитель для Dynamics 365 Sales (предварительная версия)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643834"
 
 ## <a name="prerequisite"></a>Необходимые условия
 
-Записи контактов, [полученные из Dynamics 365 Sales с помощью Common Data Service](connect-power-query.md).
+1. Записи контактов должны присутствовать в Dynamics 365 Sales, прежде чем вы сможете экспортировать сегмент из Customer Insights в Sales. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Sales с помощью Common Data Services](connect-power-query.md).
+
+   > [!NOTE]
+   > Экспорт сегментов из аналитики аудитории в Sales не приведет к созданию новых записей контактов в экземплярах Sales. Записи контактов из Sales должны быть загружены в аналитику аудитории и использованы как источник данных. Их также необходимо включить в объединенную сущность «Клиент», чтобы сопоставить идентификаторы клиентов с идентификаторами контактов, прежде чем сегменты можно будет экспортировать.
 
 ## <a name="configure-the-connector-for-sales"></a>Настройка соединителя для Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643834"
 ## <a name="export-the-data"></a>Экспорт данных
 
 Вы можете [экспортировать данных по требованию](export-destinations.md). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

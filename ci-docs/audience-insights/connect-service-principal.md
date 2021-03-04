@@ -1,20 +1,20 @@
 ---
 title: Подключение к учетной записи Azure Data Lake Storage Gen2 с помощью субъекта службы
 description: Используйте субъект-службу Azure для аналитики аудитории, чтобы подключиться к собственному озеру данных при его подключении к аналитике аудитории.
-ms.date: 11/24/2020
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644104"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267738"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Подключение учетной записи Azure Data Lake Storage Gen2 с помощью субъекта-службы Azure для аналитики аудитории
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644104"
 
 Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model как источника данных](connect-common-data-model.md) или [создания новой или обновления существующей среды](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Для создания субъекта-службы вам потребуются разрешения администратора для вашей подписки Azure.
+> [!IMPORTANT]
+> - Для учетной записи хранения Azure Data Lake Gen2, которая планирует использовать субъект-службу, должно быть [включено иерархическое пространство имен (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Для создания субъекта-службы вам потребуются разрешения администратора для вашей подписки Azure.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Создание субъекта-службы Azure для аналитики аудитории
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644104"
 
 Выполните следующие шаги, чтобы предоставить необходимую информацию о выбранном подходе.
 
-### <a name="resounce-based-storage-account-connection"></a>Подключение к учетной записи хранения на основе ресурса
+### <a name="resource-based-storage-account-connection"></a>Подключение к учетной записи хранения на основе ресурса
 
 1. Перейдите на [Портал администрирования Azure](https://portal.azure.com), войдите в свою подписку и откройте учетную запись хранения.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644104"
 1. Просмотрите **Подписка**, **Группа ресурсов** и **Имя** учетной записи хранения, чтобы убедиться, что вы выбрали правильные значения в аналитике аудитории.
 
 1. В аналитике аудитории выберите значения или для соответствующих полей при подключении учетной записи хранения.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Введите сведения идентификатора ресурса учетной записи хранения.":::
    
 1. Выполните оставшиеся шаги в аналитике аудитории, чтобы подключить учетную запись хранения.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

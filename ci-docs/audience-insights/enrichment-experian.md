@@ -1,20 +1,20 @@
 ---
 title: Обогащение за счет стороннего обогащения Experian
 description: Общие сведения о стороннем обогащении Experian.
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 60fc49734e54740e83b47a7028be216a0eb81e49
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668828"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269576"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогащение профилей клиентов демографическими данными из Experian (предварительная версия)
 
@@ -41,7 +41,9 @@ Experian является мировым лидером в области пот
 
 ## <a name="map-your-fields"></a>Сопоставление полей
 
-1. Выберите **Добавить данные** и выберите ключевые идентификаторы из **Имя и адрес**, **Эл. почта** или **Телефон**, чтобы отправить их в Experian для разрешения идентификатора.
+1.  Выберите **Добавить данные** и выберите **Набор данных клиента**, который вы хотите обогатить с помощью демографических данных из Experian. Вы можете выбрать сущность **Клиент**, чтобы обогатить все ваши профили клиентов, или выбрать сущность сегмента, чтобы обогатить только профили клиентов, содержащиеся в этом сегменте.
+
+1. Выберите ключевые идентификаторы из **Имя и адрес**, **Электронная почта** или **Телефон**, чтобы отправить в Experian для разрешения удостоверения.
 
    > [!TIP]
    > Чем больше атрибутов ключевого идентификатора, отправляемого в Experian, тем выше вероятность совпадения.
@@ -52,8 +54,8 @@ Experian является мировым лидером в области пот
 
 1.  Выберите **Сохранить**, чтобы завершить отображение полей.
 
-   > [!div class="mx-imgBorder"]
-   > ![Сопоставление полей Experian](media/experian-field-mapping.png "Сопоставление полей Experian")
+    > [!div class="mx-imgBorder"]
+    > ![Сопоставление полей Experian](media/experian-field-mapping.png "Сопоставление полей Experian")
 
 ## <a name="enrichment-results"></a>Результаты обогащения
 
@@ -71,3 +73,6 @@ Experian является мировым лидером в области пот
 
 Когда вы включаете Dynamics 365 Customer Insights для передачи данных в Experian, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft передаст такие данные по вашему указанию, но вы несете ответственность за соблюдение компанией Experian любых обязательств в отношении конфиденциальности или безопасности, которые могут у вас возникнуть. Дополнительные сведения см. в разделе [Заявление о конфиденциальности корпорации Майкрософт](https://go.microsoft.com/fwlink/?linkid=396732).
 Ваш администратор Dynamics 365 Customer Insights может удалить это обогащение в любое время, чтобы прекратить использование этой функции.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406765"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269897"
 ---
 # <a name="relationships-between-entities"></a>Отношения между сущностями
 
@@ -28,8 +28,8 @@ ms.locfileid: "4406765"
 > ![Создание отношения](media/relationships-entities-merge.png "Создание отношения")
 
 - **Отношение *CustomerToContact*** было создан между сущностью «Клиент» и сущностью «Контакт». Сущность клиента получает ключевое поле **Contact_contactId** для связи с ключевым полем сущности контакта **ContactId**.
-- **Отношение _CustomerToAccount_** было создан между сущностью «Клиент» и сущностью «Организация». Сущность клиента получает ключевое поле **Account_accountId** для связи с ключевым полем сущности организации **accountId**.
-- **Отношение _CustomerToWebAccount_** было создан между сущностью «Клиент» и сущностью «WebAccount». Сущность клиента получает ключевое поле **WebAccount_webaccountId** для связи с ключевым полем сущности WebAccount **webaccountId**.
+- **Отношение *CustomerToAccount*** было создан между сущностью «Клиент» и сущностью «Организация». Сущность клиента получает ключевое поле **Account_accountId** для связи с ключевым полем сущности организации **accountId**.
+- **Отношение *CustomerToWebAccount*** было создан между сущностью «Клиент» и сущностью «WebAccount». Сущность клиента получает ключевое поле **WebAccount_webaccountId** для связи с ключевым полем сущности WebAccount **webaccountId**.
 
 ## <a name="create-a-relationship"></a>Создание отношения
 
@@ -69,3 +69,6 @@ ms.locfileid: "4406765"
 ## <a name="next-step"></a>Следующий шаг
 
 Системные и пользовательские отношения используются для создания сегментов на основе нескольких источников данных, которые больше не обособлены. Дополнительные сведения см. в разделе [Сегменты](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

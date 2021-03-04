@@ -1,20 +1,20 @@
 ---
 title: Экспорт данных Customer Insights в Dynamics 365 Marketing
 description: Узнайте, как настроить подключение к Dynamics 365 Marketing.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643789"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269070"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Соединитель для Dynamics 365 Marketing (предварительная версия)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643789"
 
 ## <a name="prerequisite"></a>Необходимые условия
 
-Записи контактов, [полученные из Dynamics 365 Marketing Common Data Service](connect-power-query.md).
+- Записи контактов должны присутствовать в Dynamics 365 Marketing, прежде чем вы сможете экспортировать сегмент из Customer Insights в Marketing. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Marketing с помощью Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > Экспорт сегментов из аналитики аудитории в Marketing не приведет к созданию новых записей контактов в экземплярах Marketing. Записи контактов из Marketing должны быть загружены в аналитику аудитории и использованы как источник данных. Их также необходимо включить в объединенную сущность «Клиент», чтобы сопоставить идентификаторы клиентов с идентификаторами контактов, прежде чем сегменты можно будет экспортировать.
 
 ## <a name="configure-the-connector-for-marketing"></a>Настройка соединителя для Marketing
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643789"
 ## <a name="export-the-data"></a>Экспорт данных
 
 Вы можете [экспортировать данных по требованию](export-destinations.md). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
