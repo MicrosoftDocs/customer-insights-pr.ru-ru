@@ -2,19 +2,19 @@
 title: Прогноз оттока транзакций
 description: Спрогнозируйте, существует ли риск того, что клиент прекратит покупать продукты или услуги вашей компании.
 ms.date: 11/12/2020
-ms.reviewer: zacook
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: zacookmsft
+ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: f120e9e3cf8d40d913c7fa6a81fbf9facd045e3c
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268334"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597205"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Прогноз оттока транзакций (предварительная версия)
 

@@ -1,34 +1,34 @@
 ---
 title: Поддерживаемые языки для аналитики аудитории
 description: Понять и настроить языковую поддержку.
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268196"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595488"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>Возможность поддерживаемых языков для аналитики аудитории
 
-Возможность аналитики аудитории Dynamics 365 Customer Insights поддерживает ряд языков. В этой теме перечислены доступные языки и предоставляется поддержка для переключения между ними, а также обзор того, какое содержимое переводится.
+Аналитика аудитории для Dynamics 365 Customer Insights переведена на многие языки. Следующий список содержит доступные языки и информацию о том, что переведено. Вы также можете узнать о том, как изменить языковые настройки. 
 
 ## <a name="languages"></a>Языки
 
 | Название языка (английский)|  Название языка (родной язык) |
 | ------------- | ------------- |
 | Баскский | euskara |
-| Болгарский | Български |
+| Болгарский | български |
 | Каталанский | català |
 | Китайский, упрощенное письмо | 中文(简体) |
-| Китайский (традиционное письмо) | 中文(繁體) |
+| Китайский, традиционное письмо | 中文(繁體) |
 | Хорватский | hrvatski |
 | Чешский | čeština |
 | Датский | dansk |
@@ -41,21 +41,21 @@ ms.locfileid: "5268196"
 | Немецкий | Deutsch |
 | Греческий | Ελληνικά |
 | Хинди | हिंदी |
-| Венгерский | magyar |
-| Индонезийский | Bahasa Indonesia |
+| венгерский | magyar |
+| Индонезийский | Индонезия |
 | Итальянский | italiano |
 | Японский | 日本語 |
-| Казахский | Қазақ |
+| Казахский | қазақ тілі |
 | Корейский | 한국어 |
 | Латышский | latviešu |
 | Литовский | lietuvių |
-| Малайский | Bahasa Melayu |
-| Норвежский (букмол) | norsk (bokmål) |
-| Польский | Polski |
+| Малайский | Melayu |
+| Норвежский букмол | norsk bokmål |
+| Польский | polski |
 | португальский (Бразилия) | português |
-| португальский (Португалия) | português |
+| Португальский (Португалия) | português |
 | Румынский | română |
-| Русский | Русский |
+| русский | русский |
 | Сербский (кириллица) | српски |
 | Сербский (латиница) | srpski |
 | Словацкий | slovenčina |

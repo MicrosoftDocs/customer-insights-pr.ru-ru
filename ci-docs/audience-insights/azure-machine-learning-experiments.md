@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267922"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597435"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Использование моделей на основе машинного обучения Azure
 
@@ -29,9 +29,9 @@ ms.locfileid: "5267922"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>Настройка рабочей области машинного обучения Azure
 
-1. Разные варианты создания рабочей области см. в разделе [Создание рабочей области машинного обучения Azure](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace). Для обеспечения максимальной производительности создайте рабочую область в регионе Azure, который географически ближе всего к вашей среде Customer Insights.
+1. Разные варианты создания рабочей области см. в разделе [Создание рабочей области машинного обучения Azure](/azure/machine-learning/concept-workspace#-create-a-workspace). Для обеспечения максимальной производительности создайте рабочую область в регионе Azure, который географически ближе всего к вашей среде Customer Insights.
 
-1. Получите доступ к своей рабочей области через [студию машинного обучения Azure](https://ml.azure.com/). Есть несколько [способов взаимодействия](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) с вашей рабочей областью.
+1. Получите доступ к своей рабочей области через [студию машинного обучения Azure](https://ml.azure.com/). Есть несколько [способов взаимодействия](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) с вашей рабочей областью.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Работа с конструктором машинного обучения Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "5267922"
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Работа с пакетом SDK машинного обучения Azure
 
-Специалисты по обработке данных и разработчики ИИ используют [пакет SDK машинного обучения SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) для создания рабочих процессов машинного обучения. В настоящее время модели, обученные с помощью пакета SDK, нельзя напрямую интегрировать в Customer Insights. Конвейер пакетного вывода, который использует эту модель, необходим для интеграции с Customer Insights.
+Специалисты по обработке данных и разработчики ИИ используют [пакет SDK машинного обучения SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) для создания рабочих процессов машинного обучения. В настоящее время модели, обученные с помощью пакета SDK, нельзя напрямую интегрировать в Customer Insights. Конвейер пакетного вывода, который использует эту модель, необходим для интеграции с Customer Insights.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>Требования к конвейеру пакетной обработки для интеграции с Customer Insights
 
 ### <a name="dataset-configuration"></a>Конфигурация набора данных
 
-Вам необходимо создать наборы данных, чтобы использовать данные сущности из Customer Insights в конвейере пакетного вывода. Эти наборы данных необходимо зарегистрировать в рабочей области. В настоящее время мы поддерживаем только [табличные наборы данных](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) в формате CSV. Наборы данных, соответствующие данным сущности, необходимо параметризовать как параметр конвейера.
+Вам необходимо создать наборы данных, чтобы использовать данные сущности из Customer Insights в конвейере пакетного вывода. Эти наборы данных необходимо зарегистрировать в рабочей области. В настоящее время мы поддерживаем только [табличные наборы данных](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) в формате CSV. Наборы данных, соответствующие данным сущности, необходимо параметризовать как параметр конвейера.
    
 * Параметры набора данных в конструкторе
    
@@ -76,7 +76,7 @@ ms.locfileid: "5267922"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Импорт данных конвейера в Customer Insights
 
-* Конструктор содержит [Модуль экспорта данных](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data), который позволяет экспортировать выходные данные конвейера в хранилище Azure. В настоящее время модуль должен использовать тип хранилища данных **Хранилище BLOB-объектов Azure** и параметризовать **Хранилище данных** и относительный **Путь**. Customer Insights переопределяет оба этих параметра во время выполнения конвейера с помощью хранилища данных и пути, доступного для продукта.
+* Конструктор содержит [Модуль экспорта данных](/azure/machine-learning/algorithm-module-reference/export-data), который позволяет экспортировать выходные данные конвейера в хранилище Azure. В настоящее время модуль должен использовать тип хранилища данных **Хранилище BLOB-объектов Azure** и параметризовать **Хранилище данных** и относительный **Путь**. Customer Insights переопределяет оба этих параметра во время выполнения конвейера с помощью хранилища данных и пути, доступного для продукта.
    > [!div class="mx-imgBorder"]
    > ![Экспорт конфигурации модуля данных](media/intelligence-designer-importdata.png "Экспорт конфигурации модуля данных")
    

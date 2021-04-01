@@ -2,19 +2,19 @@
 title: Обогащение профилей клиентов с помощью Microsoft Graph
 description: Используйте конфиденциальные данные из Microsoft Graph, чтобы обогатить данные своих клиентов общностью с брендами и интересами.
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: aa46dac4f9c0d27881371877b14a92a6725710da
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269346"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596469"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогащение профилей клиентов общностью с брендами и интересами (предварительная версия)
 
@@ -33,7 +33,7 @@ ms.locfileid: "5269346"
 
 Мы используем данные онлайн-поиска из Microsoft Graph для поиска склонности к брендам и интересам в различных демографических сегментах (в зависимости от возраста, пола или местоположения). Объем онлайн-поиска по бренду или интересу определяет, насколько много общности демографический сегмент по сравнению с другими сегментами имеет к данному бренду или интересу.
 
-[Подробнее о Microsoft Graph](https://docs.microsoft.com/graph/overview).
+[Подробнее о Microsoft Graph](/graph/overview).
 
 ## <a name="affinity-level-and-score"></a>Уровень сходства и оценка
 

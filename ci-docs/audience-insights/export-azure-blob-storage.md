@@ -2,19 +2,19 @@
 title: Экспорт данных Customer Insights в хранилище BLOB-объектов Azure
 description: Узнайте, как настроить подключение к хранилищу BLOB-объектов Azure.
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269208"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596193"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>Соединитель для хранилища BLOB-объектов Azure (предварительная версия)
 
@@ -27,8 +27,8 @@ ms.locfileid: "5269208"
 1. В пункте **Хранилище BLOB-объектов Azure** выберите **Настроить**.
 
 1. Введите **Имя учетной записи**, **Ключ учетной записи** и **Контейнер** для вашей учетной записи хранилища BLOB-объектов Azure.
-    - Подробнее о том, как найти имя учетной записи хранилища BLOB-объектов Azure и ключ учетной записи, см. в разделе [Управление настройками учетной записи хранения на портале Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
-    - Чтобы узнать, как создать контейнер, см. раздел [Создание контейнера](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+    - Подробнее о том, как найти имя учетной записи хранилища BLOB-объектов Azure и ключ учетной записи, см. в разделе [Управление настройками учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
+    - Чтобы узнать, как создать контейнер, см. раздел [Создание контейнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Дайте вашему месту назначения узнаваемое имя в поле **Отображаемое имя**.
 
