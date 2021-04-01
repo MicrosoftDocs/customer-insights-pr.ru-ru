@@ -2,19 +2,19 @@
 title: Обзор аналитики аудитории для Dynamics 365 Customer Insights
 description: Обзор аналитики аудитории для Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477011"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598646"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Обзор аналитики аудитории для Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "5477011"
 - **Устранение обособленности данных и унификация данных клиентов**
 
   - Простое подключение и объединение данных — вводите транзакционные, наблюдательные и поведенческие данные из популярных [источников данных, используя готовые соединители](data-sources.md).
-  - Интеллектуальное преобразование данных клиентов — создавайте унифицированные профили клиентов в соответствии с [Common Data Model](https://docs.microsoft.com/common-data-model/). Определение личностей клиентом с помощью рекомендаций ИИ/ML.
+  - Интеллектуальное преобразование данных клиентов — создавайте унифицированные профили клиентов в соответствии с [Common Data Model](/common-data-model/). Определение личностей клиентом с помощью рекомендаций ИИ/ML.
 
 - **Обогащение с аналитическими данными аудитории, которые содержится в Microsoft Graph**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5477011"
 - **Аналитики/администраторы данных:**
 
   - Доступ к богатой коллекции соединителей для приема всех ваших данных клиентов.
-  - Возможность унифицировать данные клиентов и преобразовать их в формат [Common Data Model](https://docs.microsoft.com/common-data-model/).
+  - Возможность унифицировать данные клиентов и преобразовать их в формат [Common Data Model](/common-data-model/).
   - Обогащение информации о клиентах, используя сведения из аналитики аудитории, содержащиеся в Microsoft Graph, такие как сходство бренда и интересы.
   - Взаимодействие настройки и отладки "щелкай мышью, не пиши код" помогает легко настроить аналитику аудитории и выявить потенциальные проблемы.
   - Очистите и стандартизируйте данные клиентов из разных источников с помощью рекомендаций на основе ИИ.  

@@ -2,19 +2,19 @@
 title: Прием данных в реальном времени и ограничения
 description: Общая информация о возможностях работы в реальном времени в аналитике аудитории.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270296"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598585"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Прием данных в режиме реального времени (предварительная версия)
 
@@ -54,7 +54,7 @@ API реального времени позволяет публиковать 
 
 Есть два способа подключиться к API реального времени:
 
-- [косвенно](#connect-via-the-dynamics-365-customer-insights-connector), с использованием [соединителя Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [косвенно](#connect-via-the-dynamics-365-customer-insights-connector), с использованием [соединителя Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [непосредственно](#connect-directly-to-the-real-time-api), с помощью кода
 
 К обоим способам применяются следующие общие необходимые условия:
@@ -66,13 +66,13 @@ API реального времени позволяет публиковать 
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Подключение через соединитель Dynamics 365 Customer Insights
 
-API-интерфейс режима реальном времени может принимать данные от выделенного соединителя Power Platform, [соединителя Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), без необходимости писать и развертывать какой-либо код.    
-Соединитель может выполнять те же действия в реальном времени, что и API. Вам нужна действующая лицензия на премиум-соединители. Дополнительные сведения см. в разделе [Вопросы и ответы по лицензированию Power Apps и Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+API-интерфейс режима реальном времени может принимать данные от выделенного соединителя Power Platform, [соединителя Dynamics 365 Customer Insights](/connectors/customerinsights/), без необходимости писать и развертывать какой-либо код.    
+Соединитель может выполнять те же действия в реальном времени, что и API. Вам нужна действующая лицензия на премиум-соединители. Дополнительные сведения см. в разделе [Вопросы и ответы по лицензированию Power Apps и Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps и/или Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps и/или Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-Подробнее о создании потоков см. в разделе [Документация по Power Automate](https://docs.microsoft.com/power-automate/),
+Подробнее о создании потоков см. в разделе [Документация по Power Automate](/power-automate/),
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Подключение напрямую к API-интерфейсу режима реального времени
 

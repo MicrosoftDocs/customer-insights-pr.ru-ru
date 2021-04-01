@@ -1,20 +1,20 @@
 ---
 title: Работа с API-интерфейсами
 description: Использование API и понимание ограничений.
-ms.date: 12/04/2020
+ms.date: 03/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
+ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267540"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "5710476"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с API Customer Insights
 
@@ -36,7 +36,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Включение API Customer Insights":::
 
-1. Выберите **Просмотреть наши API**, чтобы попробовать API.
+1. Выберите **Посмотреть наши API** чтобы [попробовать API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. Выберите операцию API и выберите **Попробовать**.
 
@@ -47,6 +47,9 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 1. Прокрутите до нижней части боковой панели и выберите **Отправить**.
 
 Ответ HTTP скоро появится ниже.
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="Анимированный gif, показывающий, как выбрать тестовые API.":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Создание регистрации нового приложения на портале Azure
 
@@ -61,6 +64,8 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. При регистрации нового приложения перейдите к **Разрешения API**.
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="Анимированный GIF для установки разрешения API при регистрации приложения.":::
+
 1. Выберите **Добавить разрешение** и выберите **Customer Insights** на боковой панели.
 
 1. Для **Тип разрешения** выберите **Делегированные разрешения** и выберите разрешение **user_impersonation**.
@@ -71,9 +76,11 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 Вы можете использовать идентификатор приложения/клиента для регистрации этого приложения в библиотеке проверки подлинности Microsoft (MSAL), чтобы получить токен носителя для отправки с вашим запросом в API.
 
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="Анимированный GIF для предоставления согласия администратора.":::
+
 Для получения дополнительной информации о MSAL см. [Обзор библиотеки проверки подлинности Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-Дополнительные сведения о регистрации приложения в Azure см. в разделе [Новый способ регистрации приложения на портале Azure](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
+Дополнительные сведения о регистрации приложения в Azure см. в разделе [Новый способ регистрации приложения на портале Azure](/azure/active-directory/develop/app-registration-portal-training-guide).
 
 Для получения информации об использовании API наших клиентских библиотек см. [Клиентские библиотеки Customer Insights](#customer-insights-client-libraries).
 
@@ -101,6 +108,8 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. Выберите **Предоставить согласие администратора для…**, чтобы завершить регистрацию приложения.
 
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Анимированный GIF для предоставления согласия администратора.":::
+
 1. В заключение, мы должны добавить имя приложения для регистрации в качестве пользователя в Customer Insights.    
    Откройте Customer Insights, перейдите **Администрирование** > **Разрешения** и выберите **Добавить пользователя**.
 
@@ -108,7 +117,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 ## <a name="customer-insights-client-libraries"></a>Клиентские библиотеки Customer Insights
 
-Этот раздел поможет вам начать работу с клиентскими библиотеками, доступными для API Customer Insights.
+Этот раздел поможет вам начать работу с клиентскими библиотеками, доступными для API Customer Insights. Весь исходный код библиотеки и примеры приложений можно найти на [странице Customer Insights GitHub](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -116,7 +125,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Добавление клиентской библиотеки C# в проект C#
 
-1. В Visual Studio откройте **Диспетчер пакетов NuGet** для вашего проекта.
+1. В Visual Studio откройте **NuGet Package Manager (Диспетчер пакетов)** для вашего проекта.
 
 1. Найдите **Microsoft.Dynamics.CustomerInsights.Api**.
 
@@ -127,7 +136,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 #### <a name="use-the-c-client-library"></a>Использование клиентской библиотеки C#
 
-1. Используйте [библиотеку проверки подлинности Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview), чтобы получить `AccessToken`, используя вашу существующую [регистрацию приложения Azure](#create-a-new-app-registration-in-the-azure-portal).
+1. Используйте [библиотеку проверки подлинности Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), чтобы получить `AccessToken`, используя вашу существующую [регистрацию приложения Azure](#create-a-new-app-registration-in-the-azure-portal).
 
 1. После успешной аутентификации и получения токена создайте новый или используйте существующий `HttpClient` с дополнительным **DefaultRequestHeaders "Authorization"** как **Носитель <access token>**, **Ocp-Apim-Subscription-Key** как [**ключ подписки** из вашей среды Customer Insights](#get-started-trying-the-customer-insights-apis).    
    Сбросьте заголовок **Авторизация**, когда это необходимо. Например, когда срок действия токена истек.
@@ -141,5 +150,12 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 1. Ответ, скорее всего, будет `object`, потому что метод может возвращать несколько типов (например, `IList<InstanceInfo>` и `ApiErrorResult`). Чтобы проверить тип возвращаемого значения, вы можете безопасно преобразовать объекты в типы ответов, указанные на [странице сведений API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) для этой операции.    
    Если требуется дополнительная информация по запросу, используйте **методы сообщений http** для доступа к необработанному объекту ответа.
 
+### <a name="nodejs-package"></a>Пакет NodeJS
+
+Используйте клиентские библиотеки NodeJS, доступные через NPM: https://www.npmjs.com/package/@microsoft/customerinsights
+
+### <a name="python-package"></a>Пакет Python
+
+Используйте клиентские библиотеки Python, доступные через PyPi: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
