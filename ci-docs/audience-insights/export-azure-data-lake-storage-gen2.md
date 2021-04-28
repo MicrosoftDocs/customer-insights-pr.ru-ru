@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Azure Data Lake Storage Gen2
 description: Узнайте, как настроить подключение к Azure Data Lake Storage Gen2.
-ms.date: 02/04/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,35 +9,47 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 7c0eef575f745efa6312d7141a6dd96607f9797e
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f431b707e1d65ffe47f8b3aa1c52abaa964e871a
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596654"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760067"
 ---
-# <a name="connector-for-azure-data-lake-storage-gen2-preview"></a>Соединитель для Azure Data Lake Storage Gen2 (предварительная версия)
+# <a name="set-up-the-connection-to-azure-data-lake-storage-gen2-preview"></a>Настройка подключения к Azure Data Lake Storage 2-го поколения (предварительная версия)
 
-Сохраняйте данные Customer Insights в Azure Data Lake Storage Gen2 или переносите их в другие приложения.
+1. Перейти в раздел **Администрирование** > **Подключения**.
 
-## <a name="configure-the-connector-for-azure-data-lake-storage-gen2"></a>Настройка соединителя для Azure Data Lake Storage Gen2
+1. Выберите **Добавить подключение** и выберите **Azure Data Lake 2-го поколения** для настройки подключения.
 
-1. В аналитике аудитории перейдите **Администрирование** > **Экспорт пунктов назначения**.
+1. Дайте вашему подключению узнаваемое имя в поле **Отображаемое имя**. Имя и тип подключения описывают это подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель подключения.
 
-1. В **Azure Data Lake Storage Gen2** выберите **Настроить**.
-
-1. Дайте вашему месту назначения узнаваемое имя в поле **Отображаемое имя**.
+1. Укажите, кто может использовать это подключение. Если вы не предпримете никаких действий, по умолчанию это будут администраторы. Дополнительные сведения см. в разделе [Разрешение участникам использовать подключение для экспорта](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Введите **Имя учетной записи**, **Ключ учетной записи** и **Контейнер** для своего Azure Data Lake Storage Gen2.
     - Чтобы узнать, как создать учетную запись хранения для использования с Azure Data Lake Storage Gen2, см. [Создать учетную запись хранения](/azure/storage/blobs/create-data-lake-storage-account). 
-    - Чтобы узнать больше о том, как найти имя учетной записи хранения Azure Data Lake Gen2 и ключ учетной записи, см. [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
+    - Чтобы узнать больше о том, как найти имя учетной записи хранения Azure Data Lake 2-го поколения и ключ учетной записи, см. раздел [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
 
-1. Выберите **Далее**.
+1. Выберите **Сохранить**, чтобы завершить подключение. 
+
+## <a name="configure-an-export"></a>Настройка экспорта
+
+Вы можете настроить этот экспорт, если у вас есть доступ к подключению этого типа. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
+
+1. Перейдите в раздел **Данные** > **Экспорты**.
+
+1. Чтобы создать новый экспорт, выберите **Добавить экспорт**.
+
+1. В поле **Подключение для экспорта** выберите подключение из раздела **Azure Data Lake**. Если вы не видите название этого раздела, вам не доступны подключения этого типа.
 
 1. Установите флажок рядом с каждой сущностью, которую вы хотите экспортировать в этот пункт назначения.
 
 1. Нажмите кнопку **Сохранить**.
 
-## <a name="export-the-data"></a>Экспорт данных
+Сохранение экспорта не запускает экспорт сразу.
 
-Вы можете [экспортировать данных по требованию](export-destinations.md#export-data-on-demand). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md#schedule-tab).
+Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab). Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand). 
+
+Экспортированные данные хранятся в настроенном вами контейнере хранилища Azure Data Lake 2-го поколения. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

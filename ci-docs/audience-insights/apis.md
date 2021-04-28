@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
-ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
+ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
+ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "5710476"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873678"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с API Customer Insights
 
@@ -78,7 +78,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="Анимированный GIF для предоставления согласия администратора.":::
 
-Для получения дополнительной информации о MSAL см. [Обзор библиотеки проверки подлинности Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+Для получения дополнительной информации о MSAL см. [Обзор библиотеки проверки подлинности Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
 Дополнительные сведения о регистрации приложения в Azure см. в разделе [Новый способ регистрации приложения на портале Azure](/azure/active-directory/develop/app-registration-portal-training-guide).
 

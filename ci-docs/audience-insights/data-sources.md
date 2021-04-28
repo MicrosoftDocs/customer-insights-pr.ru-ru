@@ -1,7 +1,7 @@
 ---
 title: Использование источников данных для приема данных
 description: Узнайте, как импортировать данные из различных источников.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595963"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887910"
 ---
 # <a name="data-sources-overview"></a>Обзор источников данных
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595963"
 - [Из папки Common Data Model](connect-common-data-model.md)
 - [Из вашего собственного озера Common Data Service](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> Вы пока не можете добавлять данные из локальных источников данных.
+## <a name="add-data-from-on-premises-data-sources"></a>Добавление данных из локальных источников данных
+
+Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при настройке среды.
+
+Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюзов данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с использованием локальных шлюзов данных.
+
+Шлюзы данных из существующей среды Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights. На странице источников данных показаны ссылки для перехода в среду Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Снимок экрана страницы источников данных, на котором показаны ссылки, указывающие на среду Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Просмотр полученных данных
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595963"
 
 2. Выделите вертикальное многоточие рядом с источником данных, которое хотите обновить, и выберите **Обновить** из раскрывающегося списка.
 
-3. Источник данных теперь запускается для ручного обновления. Обновление источника данных обновит как схему сущностей, так и данные для всех сущностей, указанных в источнике данных.
+3. Источник данных теперь запускается для ручного обновления. Обновление источника данных обновит как схему сущности, так и данные для всех сущностей, указанных в источнике данных.
 
 4. Выберите **Прекратить обновлять**, если вы хотите отменить существующее обновление, и источник данных вернется к своему последнему состоянию обновления.
 
