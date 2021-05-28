@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887910"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085546"
 ---
 # <a name="data-sources-overview"></a>Обзор источников данных
 
@@ -36,11 +36,9 @@ ms.locfileid: "5887910"
 
 Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при настройке среды.
 
-Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюзов данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с использованием локальных шлюзов данных.
+Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с [использованием локальных шлюзов данных](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md).
 
 Шлюзы данных из существующей среды Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights. На странице источников данных показаны ссылки для перехода в среду Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Снимок экрана страницы источников данных, на котором показаны ссылки, указывающие на среду Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Просмотр полученных данных
 

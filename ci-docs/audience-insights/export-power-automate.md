@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597941"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976104"
 ---
 # <a name="power-automate-connector-preview"></a>Соединитель Power Automate (предварительная версия)
 
@@ -27,7 +27,7 @@ ms.locfileid: "5597941"
 - Триггер при сбое обновления источника данных. 
 - Триггер при успешном обновлении источника данных.
 - Триггер, когда порог пересекается на сегменте. Триггер ограничен пересечением выше порога.
-- Триггер, когда порог пересекается на бизнес-мере. Триггер ограничен пересечением выше порога.
+- Триггер, когда порог пересекается на бизнес-мере. Поддерживаются только бизнес-меры без измерения. Триггер ограничен пересечением выше порога.
 - Запускается по завершении полного обновления (источников данных, сегментов, мер...).
 - Запускается, когда обновление процесса объединения (сопоставление, поиск соответствия, объединение) завершено.
 

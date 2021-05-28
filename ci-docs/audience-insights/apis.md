@@ -1,7 +1,7 @@
 ---
 title: Работа с API-интерфейсами
 description: Использование API и понимание ограничений.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
-ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
+ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873678"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016636"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с API Customer Insights
 
@@ -90,19 +90,13 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. При регистрации приложения на портале Azure перейдите в **Разрешения API**.
 
-1. Выберите **Добавить разрешение** и выберите **Customer Insights** на боковой панели.
+1. Выберите **Добавить разрешение**. 
+
+1. Выберите вкладку **API-интерфейсы, которые использует моя организация** и выберите **Dynamics 365 AI для Customer Insights** из списка. 
 
 1. Для **Тип разрешения** выберите **Разрешения приложения** и выберите разрешение **CustomerInsights.Api.All**.
 
 1. Выберите **Добавить разрешения**.
-
-1. Чтобы дать согласие администратора на это разрешение приложения, вам необходимо добавить субъект-службу.
-
-   1. Установите модуль Azure Active Directory (AD) PowerShell: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Подключитесь к своей учетной записи AD: `Connect-AzureAD -TenantId <your tenant id>`. Вы можете найти свой идентификатор клиента в **Обзор** > **Azure Active Directory**.
-   1. Выполните следующую команду, чтобы добавить субъект-службу Azure AD: параметр AppId `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` относится к приложению API Customer Insights.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Пример субъекта-службы":::
 
 1. При регистрации нового приложения вернитесь в **Разрешения API**.
 
