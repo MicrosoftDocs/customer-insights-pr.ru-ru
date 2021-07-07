@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085592"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305670"
 ---
 # <a name="merge-entities"></a>Объединение сущностей
 
@@ -34,7 +34,7 @@ ms.locfileid: "6085592"
 
 Вы можете изменить способ обработки объединенных атрибутов в системе для создания единого профиля клиента. Выберите **Показать больше** и выберите то, что вы хотите изменить.
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="Параметры в раскрывающемся меню «Показать еще» для управления объединенными атрибутами.":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Параметры в раскрывающемся меню &quot;Показать подробности&quot; для управления объединенными атрибутами.":::
 
 Дополнительные сведения см. в следующих разделах.
 

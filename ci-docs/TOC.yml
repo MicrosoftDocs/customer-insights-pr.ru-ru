@@ -72,7 +72,7 @@
           href: audience-insights/enrichment-here.md
         - name: Обогатить с помощью Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Обогащение с помощью Experian
+        - name: Обогатить с помощью Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогащение за счет настраиваемого импорта SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -136,6 +136,8 @@
           items:
             - name: Обзор экспортов
               href: audience-insights/export-destinations.md
+            - name: Активная кампания
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -144,7 +146,7 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage 2-го поколения
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Аналитика Azure Synapse
+            - name: Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -238,17 +244,17 @@
       items:
         - name: Начать
           href: engagement-insights/get-started.md
-        - name: Создать рабочую область
+        - name: Создание рабочей области
           href: engagement-insights/create-workspace.md
-        - name: Настройте свой сайт
-          href: engagement-insights/instrument-website.md
+        - name: Захват событий из веб-сайтов и мобильных приложений
+          href: engagement-insights/developer-resources.md
         - name: Основные понятия и терминология
           href: engagement-insights/glossary.md
     - name: События
       items:
         - name: Создавать и изменять события
           href: engagement-insights/refined-events.md
-        - name: Экспорт событий
+        - name: Экспортировать события
           href: engagement-insights/export-events.md
     - name: Отчеты
       items:
@@ -272,10 +278,18 @@
       items:
         - name: Обзор ресурсов для разработчиков
           href: engagement-insights/developer-resources.md
-        - name: Учебник по веб-SDK
+        - name: Руководство по веб-пакету SDK
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Пример веб-SDK
           href: engagement-insights/websdk-sample.md
+        - name: Учебник Android SDK
+          href: engagement-insights/get-started-android.md
+        - name: Пример Android SDK
+          href: engagement-insights/androidsdk-sample.md
+        - name: Руководство по пакету SDK для iOS
+          href: engagement-insights/get-started-ios.md
+        - name: Пример iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: Администрирование
       items:
         - name: Роли и разрешения

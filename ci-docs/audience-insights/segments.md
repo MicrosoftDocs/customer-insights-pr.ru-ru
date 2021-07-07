@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
-ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
+ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111403"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306273"
 ---
 # <a name="segments-overview"></a>Обзор сегментов
 
@@ -68,7 +68,7 @@ ms.locfileid: "6111403"
 
 1. Выберите **Показать еще [...]** для сегмента, который вы хотите экспортировать.
 
-1. Выберите **Управляйте экспортом** из раскрывающегося списка действий.
+1. Выберите **Управлять экспортами** из раскрывающегося списка действий.
 
 1. Откроется страница **Экспорты (предварительная версия) для сегмента**. Вы можете увидеть все настроенные экспорты, сгруппированные по экспортам, которые содержат текущий сегмент или не содержат его.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b935be08199f20e83bceb3317985b0e1dc120016
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
+ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095744"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6315894"
 ---
 # <a name="manage-predictions"></a>Управляйте прогнозами
 
@@ -35,9 +35,6 @@ ms.locfileid: "6095744"
 Отчет об удобстве использования входных данных предоставляет консолидированное представление об ошибках и предупреждениях, которые могут генерироваться вашими готовыми прогнозами. Также даются рекомендации по повышению производительности модели.
 
 Отчет доступен после завершения процесса обучения модели. Он создается для каждой модели отдельно, независимо от того, успешно она завершилась или нет.
-
-> [!NOTE]
-> В настоящее время эта функция работает только для модели оттока транзакций.
 
 ### <a name="view-the-input-data-usability-report"></a>Просмотр отчета о полезности входных данных
 

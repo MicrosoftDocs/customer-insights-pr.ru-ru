@@ -9,27 +9,26 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 73f3257a3ae6e8423f45410546535df5e3b400ce
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976334"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305356"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Экспорт сегментов в Google Рекламу (предварительная версия)
 
-Экспортируйте сегменты унифицированных профилей клиентов в список аудитории Google Ads и используйте их для рекламы в поиске Google, Gmail, YouTube и Google Display Network. 
+Экспортируйте сегменты единых профилей клиентов в список аудитории Google Ads и используйте их для рекламы в поиске Google, Gmail, YouTube и контекстно-медийной сети Google. 
 
 ## <a name="prerequisites-for-connection"></a>Предварительные требования для подключения
 
 -   У вас есть [учетная запись Google Ads](https://ads.google.com/) и соответствующие учетные данные администратора.
--   У вас есть [одобренный токен разработчика Google Рекламы](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
--   Вы выполняете требования [правил в отношении списков электронных адресов](https://support.google.com/adspolicy/answer/6299717)
--   Вы выполняете требования к [размерам списков ремаркетинга](https://support.google.com/google-ads/answer/7558048) 
-
+-   У вас есть [одобренный токен разработчика Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
+-   Вы выполняете требования [правил в отношении списков электронных адресов](https://support.google.com/adspolicy/answer/6299717).
+-   Вы выполняете требования к [размерам списков ремаркетинга](https://support.google.com/google-ads/answer/7558048).
 -   В Google Ads уже есть аудитории и соответствующие идентификаторы. Для получения дополнительной информации см. [Аудитории Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
--   У вас есть [настроенные сегменты](segments.md)
--   Унифицированные профили клиентов в экспортированных сегментах содержат поля, представляющие адрес электронной почты, имя и фамилию
+-   У вас есть [настроенные сегменты](segments.md).
+-   Единые профили клиентов в экспортированных сегментах содержат поля, представляющие адрес электронной почты, имя и фамилию.
 
 ## <a name="known-limitations"></a>Известные ограничения
 
@@ -68,7 +67,7 @@ ms.locfileid: "5976334"
 
 1. Чтобы создать новый экспорт, выберите **Добавить пункт назначения**.
 
-1. В поле **Подключение для экспорта** выберите подключение из раздела Google Реклама. Если вы не видите название этого раздела, вам не доступны подключения этого типа.
+1. В поле **Подключение для экспорта** выберите подключение из раздела Google Реклама. Если вы не видите название этого раздела, значит, вам недоступны соединения этого типа.
 
 1. Введите ваш **[Идентификатор аудитории Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и выберите **Подключиться** для инициализации подключения к Google Ads.
 
@@ -78,7 +77,9 @@ ms.locfileid: "5976334"
 
 Сохранение экспорта не запускает экспорт сразу.
 
-Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab). Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand). 
+Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab). 
+
+Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
 

@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760117"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305540"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Используйте сегменты Customer Insights в Adobe Experience Platform (предварительная версия)
 
-Как пользователь аналитики аудитории для Dynamics 365 Customer Insights, возможно, вы создали сегменты, чтобы сделать свои маркетинговые кампании более эффективными за счет настройки таргетинга на нужные аудитории. Чтобы использовать сегмент из аналитики аудитории на платформе Adobe Experience и в таких приложениях, как Adobe Campaign Standard, вам необходимо выполнить несколько шагов, описанных в этой статье.
+Как пользователь аналитики аудитории в Dynamics 365 Customer Insights, возможно, вы создали сегменты, чтобы сделать свои маркетинговые кампании более эффективными за счет нацеливания на релевантную аудиторию. Чтобы использовать сегмент из аналитики аудитории на платформе Adobe Experience и в таких приложениях, как Adobe Campaign Standard, вам необходимо выполнить несколько шагов, описанных в этой статье.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема процесса изложена в этой статье.":::
 
@@ -55,9 +55,9 @@ ms.locfileid: "5760117"
 
 1. Перейти в раздел **Администрирование** > **Подключения**.
 
-1. Выберите **Добавить подключение** и выберите **Хранилище BLOB-объектов Azure** или выберите **Настройка** на плитке **Хранилище BLOB-объектов Azure**:
+1. Выберите **Добавить подключение** и выберите **Хранилище BLOB-объектов Azure** для настройки подключения или выберите **Настройка** на плитке **Хранилище BLOB-объектов Azure**.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Плитка конфигурации для хранилища BLOB-объектов Azure."::: чтобы настроить подключение.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Плитка конфигурации для хранилища BLOB-объектов Azure."::: 
 
 1. Дайте вашему подключению узнаваемое имя в поле **Отображаемое имя**. Имя и тип подключения описывают это подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель подключения.
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760117"
 
 1. Чтобы создать новый экспорт, выберите **Добавить экспорт**.
 
-1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Если вы не видите название этого раздела, вам не доступны подключения этого типа.
+1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Если вы не видите название этого раздела, значит, вам недоступны соединения этого типа.
 
 1. Выберите сегмент, которые вы хотите экспортировать. В этом примере это **ChurnProneCustomers**.
 
@@ -121,9 +121,10 @@ Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Создайте аудиторию в Adobe Campaign Standard
 
-Чтобы отправить сообщение электронной почты для этой кампании, мы будем использовать Adobe Campaign Standard. После импорта данных в Adobe Experience Platform нам необходимо [создать аудиторию](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard с использованием данных в Adobe Experience Platform.
+Чтобы отправить электронное письмо для этой кампании, мы будем использовать Adobe Campaign Standard. После импорта данных в Adobe Experience Platform нам необходимо [создать аудиторию](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard с использованием данных в Adobe Experience Platform.
 
-Узнайте, как [использовать конструктор сегментов](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) в Adobe Campaign Standard, чтобы определить аудиторию на основе данных в Adobe Experience Platform.
+
+Узнайте, как [использовать конструктор сегментов](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard, чтобы определить аудиторию на основе данных в Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Создайте и отправьте электронное письмо с помощью Adobe Campaign Standard
 

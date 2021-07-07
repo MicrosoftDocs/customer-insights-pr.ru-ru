@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129961"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306365"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>Пример руководства прогноза ценности клиента на протяжении жизненного цикла (CLV)
 
@@ -123,9 +123,9 @@ Contoso — компания, производящая качественный 
 
 1. Перейдите на вкладку **Совпадение** и выберите **Задать порядок**.
 
-1. В раскрывающемся списке **Первичный** выберите **eCommerceContacts : eCommerce** в качестве первичного источника и включите все записи.
+1. В раскрывающемся списке **Основной** выберите **eCommerceContacts : eCommerce** как основной источник и включите все записи.
 
-1. В раскрывающемся списке **Сущность 2** выберите **loyCustomers: LoyaltyScheme** и включите все записи.
+1. В раскрывающемся списке **Сущность 2** , выберите **loyCustomers : LoyaltyScheme** и включите все записи.
 
    ![Унифицировать совпадение eCommerce и лояльности.](media/unify-match-order.png)
 
