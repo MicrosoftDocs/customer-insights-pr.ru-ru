@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Salesforce Marketing Cloud
 description: Узнайте, как настроить подключение и экспорт в Salesforce Marketing Cloud.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314663"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660283"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Экспорт сегментов и других данных в Salesforce Marketing Cloud (предварительная версия)
 
@@ -23,11 +23,6 @@ ms.locfileid: "6314663"
 ## <a name="prerequisites-for-connection"></a>Предварительные требования для подключения
 
 - Наличие узла SFTP и соответствующих учетных данных администратора. [Как настроить местоположения SFTP для Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>Известные ограничения
-
-- Время выполнения экспорта зависит от производительности вашей системы. Мы рекомендуем двухъядерный ЦП и 1 Гб памяти в качестве минимальной конфигурации вашего сервера. 
-- При использовании рекомендованной минимальной конфигурации экспорт сущностей с профилями клиентов до 100 миллионов может занять 90 минут. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Настройте подключение к Salesforce Marketing Cloud
 

@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596515"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692129"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Подключение учетной записи Azure Data Lake Storage Gen2 с помощью субъекта-службы Azure для аналитики аудитории
 
 У автоматизированных инструментов, использующих службы Azure, всегда должны быть ограниченные разрешения. Вместо того, чтобы приложения входили в систему как полностью привилегированный пользователь, Azure предлагает субъекты-службы. Прочтите, чтобы узнать, как связать аналитику аудитории с учетной записи Azure Data Lake Storage Gen2 с использованием субъекта-службы Azure вместо ключей учетной записи хранения. 
 
-Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model как источника данных](connect-common-data-model.md) или [создания новой или обновления существующей среды](manage-environments.md#create-an-environment-in-an-existing-organization).
+Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model как источника данных](connect-common-data-model.md) или [создания новой или обновления существующей среды](get-started-paid.md).
 
 > [!IMPORTANT]
 > - Для учетной записи хранения Azure Data Lake Gen2, которая планирует использовать субъект-службу, должно быть [включено иерархическое пространство имен (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596515"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Введите идентификатор ресурса Azure или сведения о подписке Azure во вложении учетной записи хранения в аналитике аудитории.
 
-Прикрепите учетную запись хранения Azure Data Lake в аналитике аудитории как [хранить выходные данные](manage-environments.md) или [использовать как источник данных](connect-common-data-service-lake.md). Выбор варианта Azure Data Lake позволяет выбирать между подходом на основе ресурсов или на основе подписки.
+Прикрепите учетную запись хранения Azure Data Lake в аналитике аудитории как [хранить выходные данные](manage-environments.md) или [использовать как источник данных](connect-dataverse-managed-lake.md). Выбор варианта Azure Data Lake позволяет выбирать между подходом на основе ресурсов или на основе подписки.
 
 Выполните следующие шаги, чтобы предоставить необходимую информацию о выбранном подходе.
 

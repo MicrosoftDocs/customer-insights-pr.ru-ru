@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305172"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555507"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогащение профилей клиентов общностью с брендами и интересами (предварительная версия)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305172"
 Чтобы настроить обогащение общностей интересов, перейдите к вкладке **Обнаружить** и выберите **Обогатить мои данные** на плитке **Интересы**.
 
    > [!div class="mx-imgBorder"]
-   > ![Плитки торговых марок и интересов](media/BrandsInterest-tile-Hub.png "Плитки торговых марок и интересов")
+   > ![Плитки торговых марок и интересов.](media/BrandsInterest-tile-Hub.png "Плитки торговых марок и интересов")
 
 ## <a name="how-we-determine-affinities"></a>Как мы определяем общность
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305172"
 
 После запуска процесса обогащения перейдите к **Мои обогащения**, чтобы просмотреть общее количество обогащенных клиентов и разбивку брендов и интересов в обогащенных профилях клиентов.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Предварительный просмотр результатов после выполнения процесса обогащения":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Предварительный просмотр результатов после выполнения процесса обогащения.":::
 
 Просмотрите обогащенные данные, выбрав **Просмотр обогащенных данных** на диаграмме. Обогащенные данные для брендов направляются в сущность **BrandAffinityFromMicrosoft**. Данные для интересов находятся в сущности **InterestAffinityFromMicrosoft**. Вы также найдете эти сущности в списке в группе **Обогащение** в области **Данные** > **Сущности**.
 
@@ -131,9 +131,9 @@ ms.locfileid: "6305172"
 
 Сродство с брендом и интересом также можно посмотреть на отдельных карточках клиентов. Перейдите в раздел **Клиенты** и выберите профиль клиента. В карточке клиента вы найдете диаграммы для торговых марок или интересов, к которым имеют отношение люди из демографического профиля этого клиента.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Карточка клиента с обогащенными данными":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Карточка клиента с обогащенными данными.":::
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
 Основывайтесь на ваших обогащенных данных клиентов. Создайте [Сегменты](segments.md) и [Меры](measures.md), и даже [экспортируйте данные](export-destinations.md), чтобы предоставить вашим клиентам индивидуальный подход.
 

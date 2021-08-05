@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597435"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554451"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Использование моделей на основе машинного обучения Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597435"
      В конструкторе откройте **Выбрать столбцы в наборе данных** и выберите **Задать как параметр конвейера**, где вы указываете имя параметра.
 
      > [!div class="mx-imgBorder"]
-     > ![Параметризация набора данных в конструкторе](media/intelligence-designer-dataset-parameters.png "Параметризация набора данных в конструкторе")
+     > ![Параметризация набора данных в конструкторе.](media/intelligence-designer-dataset-parameters.png "Параметризация набора данных в конструкторе")
    
 * Параметр набора данных в SDK (Python)
    
@@ -78,7 +78,7 @@ ms.locfileid: "5597435"
 
 * Конструктор содержит [Модуль экспорта данных](/azure/machine-learning/algorithm-module-reference/export-data), который позволяет экспортировать выходные данные конвейера в хранилище Azure. В настоящее время модуль должен использовать тип хранилища данных **Хранилище BLOB-объектов Azure** и параметризовать **Хранилище данных** и относительный **Путь**. Customer Insights переопределяет оба этих параметра во время выполнения конвейера с помощью хранилища данных и пути, доступного для продукта.
    > [!div class="mx-imgBorder"]
-   > ![Экспорт конфигурации модуля данных](media/intelligence-designer-importdata.png "Экспорт конфигурации модуля данных")
+   > ![Экспорт конфигурации модуля данных.](media/intelligence-designer-importdata.png "Экспорт конфигурации модуля данных")
    
 * При создании выходных данных с использованием кода вы можете отправить выходные данные по пути в пределах *зарегистрированного хранилища данных* в рабочей области. Если путь и хранилище данных параметризованы в конвейере, Customer Insights сможет считывать и импортировать выходные данные вывода. В настоящее время поддерживается единый табличный вывод в формате CSV. Путь должен включать каталог и имя файла.
 

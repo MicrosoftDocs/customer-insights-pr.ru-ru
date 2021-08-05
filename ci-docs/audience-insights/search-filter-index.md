@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597159"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554037"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Профили клиентов: индекс поиска и фильтра
 
 Результатом объединения данных клиентов является сущность «Профиль клиента», которая обеспечивает единое представление общей клиентской базы. Чтобы быстро [найти информацию о конкретном клиенте или группе клиентов](customer-profiles.md), можно настроить возможности **Поиск** и **Фильтр** на странице **Клиенты**. Читайте дальше, чтобы узнать, как администраторы могут изменить атрибуты на странице **Индекс поиска и фильтра**, которые доступны пользователям для поиска и фильтрации.
 
 > [!div class="mx-imgBorder"]
-> ![Фильтр поиска](media/search-filter.png "Фильтр поиска")
+> ![Фильтр поиска.](media/search-filter.png "Фильтр поиска")
 
 ## <a name="add-fields-and-specify-attributes"></a>Добавление полей и указание атрибутов
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597527"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554361"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Запросы субъектов данных (DSR) в соответствии с GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "5597527"
    2. Проверьте состояние источника данных в разделе **Состояние**. Галочка означает, что обновление прошло успешно. Предупреждающий треугольник означает, что что-то пошло не так. Если отображается предупреждающий треугольник, свяжитесь с D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Обработка запросов GDPR на удаление данных клиента](media/gdpr-data-sources.png "Обработка запросов GDPR на удаление данных клиента")
+> ![Обработка запросов GDPR на удаление данных клиента.](media/gdpr-data-sources.png "Обработка запросов GDPR на удаление данных клиента")
 
 #### <a name="manage-delete-requests-for-user-data"></a>Управление запросами на удаление данных пользователей
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597527"
 4. Выберите **Удалить**.
 
 > [!div class="mx-imgBorder"]
-> ![Управление запросами на удаление GDPR для данных пользователей](media/gdpr-permissions.png "Управление запросами на удаление GDPR для данных пользователей")
+> ![Управление запросами на удаление GDPR для данных пользователей.](media/gdpr-permissions.png "Управление запросами на удаление GDPR для данных пользователей")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>Ответ на запросы GDPR экспорта данных от субъектов данных
 

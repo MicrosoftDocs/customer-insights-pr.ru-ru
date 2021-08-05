@@ -1,7 +1,7 @@
 ---
 title: Соединитель Power BI
 description: Узнайте, как пользоваться соединитель Dynamics 365 Customer Insights в Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596055"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661118"
 ---
 # <a name="connector-for-power-bi-preview"></a>Соединитель для Power BI (предварительная версия)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596055"
 
 1. В диалоговом окне **Навигатор**. Вы увидите список всех сред, к которым у вас есть доступ. Разверните среду и откройте любую из папок (сущности, меры, сегменты, обогащения). Например, откройте папку **Сущности**, чтобы увидеть все сущности, которые вы можете импортировать.
 
-   ![Навигатор соединителя Power BI](media/power-bi-navigator.png "Навигатор соединителя Power BI")
+   ![Навигатор соединителя Power BI.](media/power-bi-navigator.png "Навигатор соединителя Power BI")
 
 1. Установите флажки рядом с сущностями, которые требуется включить, и **Загрузить**. Можно выбрать несколько сущностей из нескольких сред.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596055"
 3. Удалите все обнаруженные повторяющиеся отношения.
 
 После удаления дублированного отношения попробуйте настроить соединитель Power BI снова. Среда должна стать доступной.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Ошибки в полях даты при загрузке сущностей в Power BI Desktop
+
+При загрузке сущностей, содержащих поля с форматом даты, например ММ/ДД/ГГГГ, вы можете столкнуться с ошибками из-за несоответствия форматов языкового стандарта. Это несоответствие случается, когда для вашего файла Power BI Desktop задан языковой стандарт, отличный от английского (США), поскольку поля даты в аналитике аудитории сохраняются в формате США.
+
+Файл Power BI Desktop имеет одну настройку языкового стандарта, которая применяется при извлечении данных. Чтобы эти поля даты интерпретировались правильно, установите языковой стандарт файла .BPI на английский (США). [Узнайте, как изменить языковой стандарт файла Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

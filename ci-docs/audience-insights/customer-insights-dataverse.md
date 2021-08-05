@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259207"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650058"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
@@ -24,11 +24,11 @@ Customer Insights предоставляет возможность сделат
 
 **Организации с существующими средами Dataverse**
 
-Организации, которые уже используют Dataverse, могут [использовать одну из существующих сред Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization), когда администратор настраивает аналитику аудитории. Предоставляя URL-адрес для среды Dataverse, он прикрепляется к новой среде аналитики аудитории. Для обеспечения максимальной производительности, Customer Insights и среды Dataverse должны размещаться в одном регионе.
+Организации, которые уже используют Dataverse, могут [использовать одну из существующих сред Dataverse](get-started-paid.md), когда администратор настраивает аналитику аудитории. Предоставляя URL-адрес для среды Dataverse, он прикрепляется к новой среде аналитики аудитории. Для обеспечения максимальной производительности, Customer Insights и среды Dataverse должны размещаться в одном регионе.
 
 Чтобы прикрепить среду Dataverse, разверните **Дополнительные параметры** при создании среды аналитики аудитории. Предоставьте **URL-адрес среды Microsoft Dataverse** и установите флажок, чтобы **Включить обмен данными**.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
 
 **Новая организация**
 

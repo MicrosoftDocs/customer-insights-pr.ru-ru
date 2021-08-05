@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в хранилище BLOB-объектов Azure
 description: Узнайте, как настроить подключение и экспорт в хранилище BLOB-объектов.
-ms.date: 03/03/2021
+ms.date: 06/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c19dc6d4956a33a5bd3cea706f8a154198d487f
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: e38fc06a948178fcbc62c08a4cf4816e1d030e79
+ms.sourcegitcommit: 656b1a6cdff37ba4f808311fd0327ab38e02ed13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976197"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6318315"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Экспорт списка сегментов и других данных в хранилище BLOB-объектов Azure (предварительная версия)
 
@@ -40,11 +40,14 @@ ms.locfileid: "5976197"
 
 Вы можете настроить этот экспорт, если у вас есть доступ к подключению этого типа. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
 
+> [!IMPORTANT]
+> Если вы включили параметр мягкого удаления для учетной записи хранилища BLOB-объектов Azure, экспорт завершится ошибкой. Отключите мягкое удаление, чтобы экспортировать данные в BLOB-объекты. Дополнительные сведения см. в разделе [Включение мягкого удаления BLOB-объектов](/azure/storage/blobs/soft-delete-blob-enable.md)
+
 1. Перейдите в раздел **Данные** > **Экспорты**.
 
 1. Чтобы создать новый экспорт, выберите **Добавить пункт назначения**.
 
-1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Если вы не видите название этого раздела, вам не доступны подключения этого типа.
+1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Если вы не видите название этого раздела, значит, вам недоступны соединения этого типа.
 
 1. Установите флажок рядом с каждой сущностью, которую вы хотите экспортировать в этот пункт назначения.
 
@@ -53,13 +56,16 @@ ms.locfileid: "5976197"
 Сохранение экспорта не запускает экспорт сразу.
 
 Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab).     
+
 Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand). 
 
 Экспортированные данные хранятся в настроенном вами контейнере хранилища BLOB-объектов. Следующие пути к папкам автоматически создаются в вашем контейнере:
 
-- Для исходных сущностей и сущностей, созданных системой: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
+- Для исходных сущностей и сущностей, созданных системой:   
+  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
-- Файл model.json для экспортируемых сущностей будет на уровне %ExportDestinationName%
+ 
+- Файл model.json для экспортируемых сущностей будет на уровне %ExportDestinationName%.  
   - Пример: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

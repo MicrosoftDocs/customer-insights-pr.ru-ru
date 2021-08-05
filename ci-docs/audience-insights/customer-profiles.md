@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304620"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554634"
 ---
 # <a name="customer-profiles"></a>Профили клиентов
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304620"
 Клиентами могут быть частные лица или организации (предварительная версия). Каждый профиль клиента или организации представлен плиткой. Выберите плитку, чтобы увидеть дополнительную информацию об этом конкретном клиенте или организации. Используйте элементы управления разбиением на страницы внизу страницы, чтобы увидеть дополнительные записи.
 
 > [!div class="mx-imgBorder"] 
-> ![Профили клиентов B2C](media/profiles-customers.png "Профили клиентов B2C")
+> ![Профили клиентов B2C.](media/profiles-customers.png "Профили клиентов B2C")
 
 Организации (предварительная версия)
 > [!div class="mx-imgBorder"] 
-> ![Профили клиентов B2B](media/profile-customers-b2b.png "Профили клиентов B2B")
+> ![Профили клиентов B2B.](media/profile-customers-b2b.png "Профили клиентов B2B")
 
 > [!NOTE]
 > Если вы не видите плитки при выборе **Клиенты** в навигации, ваш администратор должен [определить хотя бы один атрибут для поиска](search-filter-index.md) в пункте **Индекс поиска и фильтра**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304620"
 2. Установите флажки рядом с атрибутами, по которым требуется фильтровать клиентов.
 
    > [!div class="mx-imgBorder"] 
-   > ![Профили клиентов](media/profiles-customers3.png "Профили клиентов")
+   > ![Профили клиентов.](media/profiles-customers3.png "Профили клиентов")
 
 3. Удалите фильтры, выбрав **Очистить фильтры** на странице **Клиенты**.
 

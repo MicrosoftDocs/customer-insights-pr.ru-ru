@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309836"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555369"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатите профили клиентов демографическими данными из Experian (предварительная версия)
 
@@ -39,7 +39,7 @@ Experian является мировым лидером в области пот
 1. Выберите **Обогатить данные** на плитке Experian.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian плит](media/experian-tile.png "Experian tile")
+   > ![Плитка Experian.](media/experian-tile.png "Experian tile")
    > 
 
 1. Выберите [подключение](connections.md) из раскрывающегося списка. Свяжитесь с администратором, если подключение недоступно. Если вы администратор, вы можете создать соединение, выбрав **Добавить подключение** и выбрав Experian из раскрывающегося списка. 

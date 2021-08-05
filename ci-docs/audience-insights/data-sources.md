@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304712"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692451"
 ---
 # <a name="data-sources-overview"></a>Обзор источников данных
 
@@ -30,13 +31,13 @@ ms.locfileid: "6304712"
 
 - [Через десятки соединителей Power Query](connect-power-query.md)
 - [Из папки Common Data Model](connect-common-data-model.md)
-- [Из вашего собственного озера Microsoft Dataverse](connect-common-data-service-lake.md)
+- [Из вашего собственного озера Microsoft Dataverse](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Добавление данных из локальных источников данных
 
-Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при настройке среды.
+Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](get-started-paid.md) при настройке среды.
 
-Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с [использованием локальных шлюзов данных](/data-integration/gateway/service-gateway-app.md).
+Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с [использованием локальных шлюзов данных](/data-integration/gateway/service-gateway-app).
 
 Шлюзы данных из существующей среды Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights. На странице источников данных показаны ссылки для перехода к среде Microsoft Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
 
@@ -45,9 +46,9 @@ ms.locfileid: "6304712"
 Вы увидите имя каждого принятого источника данных, его статус и время последнего обновления данных для этого источника. Вы можете отсортировать список источников данных по каждому столбцу.
 
 > [!div class="mx-imgBorder"]
-> ![Добавлен источник данных](media/configure-data-datasource-added.png "Добавлен источник данных")
+> ![Добавлен источник данных.](media/configure-data-datasource-added.png "Добавлен источник данных")
 
-|Состояние  |Описание:  |
+|Состояние.  |Описание  |
 |---------|---------|
 |Успешно выполнено   |Источник данных был успешно загружен, если время указано в столбце **Обновлено**.
 |Не начато   |У источника данных еще нет загруженных данных или он все еще находится в режиме черновика.         |

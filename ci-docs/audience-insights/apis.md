@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304758"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554497"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с API Customer Insights
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
  
    Включение API создает первичный и вторичный ключ подписки для вашего экземпляра, который используется в запросах API. Вы можете восстановить ключи, выбрав **Повторно создать первичный** или **Повторно создать вторичный** в разделе **Администрирование** > **Разрешения** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Включение API Customer Insights":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Включение API Customer Insights.":::
 
 1. Выберите **Посмотреть наши API** чтобы [попробовать API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
  
    Также можно запустить эту команду в **консоли диспетчера пакетов NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавление пакета NuGet в проект Visual Studio":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Добавление пакета NuGet в проект Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>Использование клиентской библиотеки C#
 
@@ -141,7 +141,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. Передайте этот `HttpClient` в создание клиента `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Пример httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Пример httpclient.":::
 
 1. Совершайте вызовы с клиентом в "методы расширения", например, `GetAllInstancesAsync`. Если доступ к базовому `Microsoft.Rest.HttpOperationResponse` является предпочтительным, используйте "методы сообщений http", например `GetAllInstancesWithHttpMessagesAsync`.
 

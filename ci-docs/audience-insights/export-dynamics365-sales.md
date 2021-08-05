@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 328bb2f26ebcea234fb645e5225930ab12f82a8b
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 9f11ab189117da5bcc1aee843b73962ec6615e82
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976242"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692359"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Использование сегментов в Dynamics 365 Sales (предварительная версия)
 
@@ -24,7 +24,7 @@ ms.locfileid: "5976242"
 
 ## <a name="prerequisite-for-connection"></a>Предварительные требования для подключения
 
-1. Записи контактов должны присутствовать в Dynamics 365 Sales, прежде чем вы сможете экспортировать сегмент из Customer Insights в Sales. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Sales с помощью Common Data Services](connect-power-query.md).
+1. Записи контактов должны присутствовать в Dynamics 365 Sales, прежде чем вы сможете экспортировать сегмент из Customer Insights в Sales. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Sales с помощью Microsoft Dataverse](connect-power-query.md).
 
    > [!NOTE]
    > Экспорт сегментов из аналитики аудитории в Sales не приведет к созданию новых записей контактов в экземплярах Sales. Записи контактов из Sales должны быть загружены в аналитику аудитории и использованы как источник данных. Их также необходимо включить в объединенную сущность «Клиент», чтобы сопоставить идентификаторы клиентов с идентификаторами контактов, прежде чем сегменты можно будет экспортировать.
