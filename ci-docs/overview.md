@@ -3,21 +3,21 @@ title: Обзор продукта
 author: m-hartmann
 description: Изучите обзор Dynamics 365 Customer Insights и возможности.
 ms.author: mhart
-ms.date: 02/16/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 1bc75959229fd2ffef9a5fd5617889888eb72e55
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539405"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036527"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Обзор продукта Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights является частью платформы данных клиентов (CDP) Microsoft, которая помогает предоставлять персонализированное взаимодействие с клиентами. Возможности платформы позволяют понять, кто ваши клиенты и как они взаимодействуют с вашей платформой. Унифицируйте данные о клиентах по разным источникам, чтобы получить единое представление о клиентах.
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) является частью платформы данных клиентов (CDP) Microsoft, которая помогает предоставлять персонализированное взаимодействие с клиентами. Возможности платформы позволяют понять, кто ваши клиенты и как они взаимодействуют с вашей платформой. Унифицируйте данные о клиентах по разным источникам, чтобы получить единое представление о клиентах.
 
 
 - [Аналитика аудитории](audience-insights/overview.md) помогает превратить ваш бизнес в организацию, ориентированную на клиента. Специалисты по маркетингу, продажам и обслуживанию обладают знаниями, необходимыми для персонализации взаимодействия. Подключите данные из транзакционных, поведенческих и наблюдательных источников, чтобы создать полное представление о клиенте. Получайте результаты быстрее с CDP, разработанным для предоставления аналитических сведений, на основе которых можно будет действовать. 
