@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 19befa17524aba4543f0d8a5f5f7d6f5a88b2322f1264b88fa0b31641610592a
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6556277"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7029461"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Пример руководства по прогнозу оттока транзакций (предварительная версия)
 
@@ -46,8 +46,7 @@ Contoso компания, производящая кофе и кофемаши�
    - **DateOfBirth**: дата
    - **CreatedOn**: дата/время/часовой пояс
 
-   [!div class="mx-imgBorder"]
-   ![Преобразовать дату рождения в дату.](media/ecommerce-dob-date.PNG "преобразовать дату рождения в дату")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Преобразовать дату рождения в дату.":::
 
 1. В поле **Имя** на правой панели переименуйте свой источник данных с **Query** на **eCommerceContacts**
 
