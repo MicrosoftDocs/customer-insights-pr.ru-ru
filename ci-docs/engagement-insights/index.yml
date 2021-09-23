@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Возможности Аналитики вовлеченности (предварительная версия) в Dynamics 365 Customer Insights
+title: Возможность аналитики взаимодействий в Dynamics 365 Customer Insights (предварительная версия)
 summary: Собирайте данные для ваших веб-сайтов. Узнавайте о взаимодействии с клиентами и использовании ваших сайтов в интерактивном режиме. Используйте глубокую интеграцию между аналитикой вовлеченности и аналитикой аудитории, чтобы обогатить аналитику поведения в реальном времени с помощью отчетов о профилях клиентов. Обогащение профилей клиентов веб-действиями, чтобы получать данные о поведении в реальном времени наряду с соответствующими данными о клиентах. Преобразуйте свой бизнес, чтобы сразу извлекать выгоду из данных о клиентах.
 metadata:
   title: Документация по аналитике вовлеченности (предварительная версия)
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036254"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494200"
 landingContent:
 - title: О программе
   linkLists:
   - linkListType: overview
     links:
-    - text: Обзор возможностей
+    - text: Преимущества возможности
       url: overview.md
-    - text: Термины и понятия
+    - text: Словарь терминов
       url: glossary.md
-    - text: Знакомство с аналитикой взаимодействий
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: Новые и обновленные компоненты
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Ориентирование
   linkLists:
   - linkListType: how-to-guide
@@ -38,33 +38,35 @@ landingContent:
       url: create-workspace.md
     - text: Настройте свой сайт
       url: instrument-website.md
-- title: Отчеты
+- title: Просмотр и фильтрация отчетов
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Просмотр отчетов
+    - text: Смотреть отчеты
       url: view-reports.md
-    - text: Создание пользовательских отчетов
-      url: custom-reports.md
     - text: Просмотреть отчет по унифицированным профилям
       url: profile-reports.md
-    - text: Создавайте отчеты о воронках
-      url: funnel-reports.md
-- title: События
+    - text: Использование сегментов аудитории для фильтрации отчетов
+      url: integrate-audience-insights-segments.md
+- title: Анализировать
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Создавайте отчеты о воронках
+      url: funnel-reports.md
+    - text: Анализ поведенческих данных
+      url: curate-dimensions.md
+    - text: Создание пользовательских отчетов
+      url: custom-reports.md
     - text: Создать уточненные события
       url: refined-events.md
     - text: Экспортировать события
       url: export-events.md
-    - text: Удалить и экспортировать личные данные
-      url: delete-export-personal-data.md
-- title: Ресурсы для разработчиков
+- title: Ресурсы разработчиков
   linkLists:
   - linkListType: reference
     links:
-    - text: Ресурсы для разработчиков
+    - text: Ресурсы разработчиков
       url: developer-resources.md
     - text: Образец WebSDK
       url: websdk-sample.md
@@ -81,6 +83,10 @@ landingContent:
     - text: Управление средами и рабочими областями
       url: manage-environments-workspaces.md
     - text: Подключение к аналитике аудитории
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: Управление файлами cookie и согласием пользователя
       url: user-consent-storage.md
+    - text: Удалить и экспортировать личные данные
+      url: delete-export-personal-data.md
+    - text: Ограничения обслуживания
+      url: ../service-limits.md

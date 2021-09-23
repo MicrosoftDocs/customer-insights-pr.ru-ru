@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: Новые и обновленные компоненты
       href: audience-insights/whats-new-audience-insights.md
-    - name: Создание новой среды
-      href: audience-insights/get-started-paid.md
+    - name: Начать
+      items:
+        - name: Краткое руководство
+          href: audience-insights/get-started.md
+        - name: Создание новой среды
+          href: audience-insights/get-started-paid.md
+        - name: Изучение аналитики аудитории
+          href: audience-insights/home.md
     - name: Изучение модулей
       items:
         - name: Прием данных
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Расширенные адреса
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Обогащение с помощью Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: Обогащение с помощью HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Обогатить с помощью Leadspace
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: Ссылки API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: Ограничения обслуживания
-      href: audience-insights/service-limits.md
-    - name: Запросы DSR в соответствии с GDPR
-      href: audience-insights/gdpr.md
 - name: Аналитика взаимодействий (предварительная версия)
   items:
     - name: Справочный центр
       href: engagement-insights/index.yml
     - name: Обзор возможностей
       href: engagement-insights/overview.md
-    - name: Бесплатная пробная версия
-      href: 'https://pi.dynamics.com/'
     - name: Начать
       items:
-        - name: Начать
+        - name: Краткое руководство
           href: engagement-insights/get-started.md
         - name: Создание рабочей области
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: Управление средами и рабочими областями
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Настройка подключений
-          href: engagement-insights/configure-connections.md
         - name: Управление файлами cookie и согласием пользователя
           href: engagement-insights/user-consent-storage.md
-    - name: GDPR
-      items:
-        - name: Удалить и экспортировать личные данные
-          href: engagement-insights/delete-export-personal-data.md
     - name: Доступ по регионам
       href: engagement-insights/regional-availability.md
-    - name: Ограничения обслуживания
-      href: engagement-insights/quotas.md
 - name: Интеграция аналитики аудитории и взаимодействия
   items:
     - name: Связывание аналитики аудитории и аналитики взаимодействия
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: Использование демографических измерений для разделения поведенческих данных
       href: engagement-insights/curate-dimensions.md
+- name: Ограничения обслуживания
+  href: service-limits.md
+- name: Права и запросы DSR
+  href: dsr-rights-requests.md
 - name: Получение поддержки
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

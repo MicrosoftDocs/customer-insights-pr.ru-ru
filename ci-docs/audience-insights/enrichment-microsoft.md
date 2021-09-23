@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033877"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466640"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Обогащение профилей клиентов общностью с брендами и интересами (предварительная версия)
 
@@ -126,6 +126,8 @@ ms.locfileid: "7033877"
 :::image type="content" source="media/my-enrichments.png" alt-text="Предварительный просмотр результатов после выполнения процесса обогащения.":::
 
 Просмотрите обогащенные данные, выбрав **Просмотр обогащенных данных** на диаграмме. Обогащенные данные для брендов направляются в сущность **BrandAffinityFromMicrosoft**. Данные для интересов находятся в сущности **InterestAffinityFromMicrosoft**. Вы также найдете эти сущности в списке в группе **Обогащение** в области **Данные** > **Сущности**.
+
+Вы увидите диаграмму с количеством расширенных профилей клиентов с течением времени и предварительный просмотр обогащенного сегмента. Выберите **Показать еще** на плитке предварительного просмотра, чтобы открыть обогащенную сущность.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Просмотр данных обогащения на карточке клиента
 

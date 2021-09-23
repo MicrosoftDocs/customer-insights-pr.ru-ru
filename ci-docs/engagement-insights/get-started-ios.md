@@ -4,17 +4,17 @@ description: Узнайте, как персонализировать и зап
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036889"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494246"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>Начало работы с iOS SDK
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036889"
 
 - Если у вас нет существующей рабочей области, выберите **Создать рабочую область** и следуйте инструкциям по созданию [новой рабочей области](create-workspace.md).
 
+- После создания рабочей области перейдите в **Администрирование** > **Рабочая область**, а затем выберите **Руководство по установке**.
+
 ## <a name="configure-the-sdk"></a>Настройка SDK
 
-После загрузки SDK вы можете работать с ним в Xcode, чтобы включить и определить события.
+После загрузки SDK вы можете работать с ним в Xcode, чтобы включить и определить события. Сделать это можно двумя способами
 
-1. После создания рабочей области перейдите в **Администрирование** > **Рабочая область**, а затем выберите **Руководство по установке**.
+### <a name="option-1-using-cocoapods-recommended"></a>Вариант 1. Использование CocoaPods (рекомендуется)
+CocoaPods является менеджером зависимостей для проектов Swift и Objective-C Cocoa. Его использование упрощает интеграцию SDK анализа взаимодействия для iOS. CocoaPods также позволяет обновиться до последней версии SDK анализа взаимодействия. Вот как использовать CocoaPods для интеграции SDK анализа взаимодействия в ваш проект Xcode. 
+
+1. Установите CocoaPods. 
+
+1. Создайте новый файл с именем Podfile в корневом каталоге вашего проекта и добавьте в него следующие операторы. Замените YOUR_TARGET_PROJECT_NAME именем вашего проекта Xcode. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+Приведенная выше конфигурация модуля содержит как отладочную, так и выпускную версию пакета SDK. Выберите ту, которая лучше всего подходит для вашего проекта.
+
+1. Установите модуль, выполнив следующую команду:  `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>Вариант 2. Использование ссылки для скачивания
 
 1. Загрузите [SDK аналитики взаимодействия iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip) и поместите файл `EIObjC.xcframework` в папку `Frameworks`.
 

@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034376"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474073"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Обзор аналитики аудитории для Dynamics 365 Customer Insights
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034376"
 
   - Создавайте настраиваемые профили, определяйте меры и создавайте сегменты и получайте преимущества от прогнозной аналитики, чтобы получить полное представление о вашем клиенте с учетом особенностей вашей организации.  
   - Используйте готовые соединители для нескольких приложений или API-интерфейсов Microsoft и сторонних производителей для обработки аналитических данных.
-
-## <a name="pricing-and-licensing"></a>Ценообразование и лицензирование
-
-Customer Insights лицензируется на каждый клиент и включает несколько возможностей. Названные возможности включают набор профилей, ежедневные обновления системы, запросы Power Platform и две среды. Вы можете приобрести дополнительную емкость и лицензию, чтобы увеличить квоту по умолчанию. 
-- Подробная информация о емкости и объемах обслуживания: [Руководство по лицензированию Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
-- Обзор цен: [Цены на Dynamics 365](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

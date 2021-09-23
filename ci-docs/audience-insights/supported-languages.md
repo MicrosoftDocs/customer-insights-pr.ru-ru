@@ -1,24 +1,23 @@
 ---
-title: Поддерживаемые языки для аналитики аудитории
+title: Поддерживаемые языки для Dynamics 365 Customer Insights
 description: Понять и настроить языковую поддержку.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035155"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483358"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>Возможность поддерживаемых языков для аналитики аудитории
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Поддерживаемые языки для Dynamics 365 Customer Insights
 
-Аналитика аудитории для Dynamics 365 Customer Insights переведена на многие языки. Следующий список содержит доступные языки и информацию о том, что переведено. Вы также можете узнать о том, как изменить языковые настройки. 
+Dynamics 365 Customer Insights переведено на многие языки. Следующий список содержит доступные языки и информацию о том, что переведено. Вы также можете узнать о том, как изменить языковые настройки. 
 
 ## <a name="languages"></a>Языки
 
@@ -69,7 +68,7 @@ ms.locfileid: "7035155"
 
 ## <a name="whats-translated"></a>Что переведено
 
-Приложение будет использовать ваши предпочтения языка для отображения таких элементов, как меню, текст надписей и системные сообщения на предпочитаемом языке.
+Приложение Customer Insights использует ваши предпочтения языка для отображения таких элементов, как меню, текст надписей и сообщения на предпочитаемом языке.
 
 Поскольку большинство функций основано на ваших данных, некоторые пункты остаются на языке оригинала. Например:
 
