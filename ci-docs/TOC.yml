@@ -242,7 +242,7 @@
   items:
     - name: Справочный центр
       href: engagement-insights/index.yml
-    - name: Обзор возможностей
+    - name: Об аналитике взаимодействий
       href: engagement-insights/overview.md
     - name: Начать
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Доступ по регионам
       href: engagement-insights/regional-availability.md
-- name: Интеграция аналитики аудитории и взаимодействия
+- name: Обмен данными между возможностями
   items:
     - name: Связывание аналитики аудитории и аналитики взаимодействия
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: Права и запросы DSR
   href: dsr-rights-requests.md
-- name: Получение поддержки
-  href: 'https://dynamics.microsoft.com/support/'

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487123"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559034"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Создание связи между аналитикой аудитории и аналитикой взаимодействий
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487123"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>Включение атрибутов и сегментов объединенных профилей аналитики аудитории
 
 После связывания сред вы можете выбрать дополнительные функции для связанных сред. Эти функции позволяют использовать атрибуты и сегменты объединенного профиля из аналитики аудитории для интерактивного анализа данных о клиентах.
+
+> [!IMPORTANT]
+> Чтобы сегменты аналитики аудитории отображались в аналитике взаимодействия, сначала необходимо [запустить слияние и нисходящие процессы](../audience-insights/merge-entities.md). Нисходящие процессы важны, потому что они генерируют уникальную таблицу, которая подготавливает сегменты аналитики аудитории, которые будут использоваться совместно с аналитикой взаимодействия. (Если обновление системы запланировано, оно автоматически будет включать нисходящие процессы.)
 
 **Чтобы анализировать веб-данные для аналитики взаимодействия**
 
