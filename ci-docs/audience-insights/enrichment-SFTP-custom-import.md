@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032728"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618721"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Обогащение настраиваемого импорта пользовательскими данными (предварительная версия)
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032728"
 1.  Выберите **Далее** и введите **Путь** и **Имя файла** файла данных, который вы хотите импортировать.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Снимок экрана при вводе местоположения данных.":::
+
+1. Выберите **Далее** и выберите набор данных о клиенте. Это могут быть как все профили клиентов, так и сегмент.
 
 1. Выберите **Далее** и укажите имя для обогащения и имя для выходной сущности. 
 
@@ -121,8 +123,8 @@ ms.locfileid: "7032728"
 
 Вы можете получить доступ к детализированному представлению каждого обогащенного профиля, выбрав **Просмотр обогащенных данных**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Дальнейшие действия
 
-Основывайтесь на ваших обогащенных данных клиентов. Создайте [сегменты](segments.md) и [меры](measures.md), и [экспортируйте данные](export-destinations.md), чтобы предоставить вашим клиентам индивидуальный подход.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

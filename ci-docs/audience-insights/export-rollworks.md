@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в RollWorks
 description: Узнайте, как настроить подключение и экспорт в RollWorks.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d8ce4d867835dcb7cf56c6fffff4e25d1f5c109af0e401fc0eb8b3a7427c1de4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f8f6a79db9cb4bb109c03a464d9f8c7f3b862ad5
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034606"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617460"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>Экспорт сегментов в RollWorks (предварительная версия)
 
@@ -28,11 +28,11 @@ ms.locfileid: "7034606"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Вы можете экспортировать до 250 000 миллиона профилей за один экспорт в RollWorks.
-- Вы не можете экспортировать сегменты с менее чем 100 профилями в RollWorks. 
+- Всего в RollWorks можно экспортировать до 250 000 профилей клиентов на один экспорт.
+- Вы не можете экспортировать сегменты с менее чем 100 профилями клиентов в RollWorks. 
 - Экспорт в RollWorks ограничен сегментами.
-- Экспорт до 250 000 профилей в RollWorks может занять до 10 минут. 
-- Количество профилей, которые вы можете экспортировать в RollWorks, определяется и ограничивается вашим контрактом с RollWorks.
+- Экспорт до 250 000 профилей клиентов в RollWorks может занять до 10 минут. 
+- Количество профилей клиентов, которые вы можете экспортировать в RollWorks, зависит от вашего контракта с RollWorks и ограничен им.
 
 ## <a name="set-up-connection-to-rollworks"></a>Настройка подключения к RollWorks
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034606"
 
 1. Введите ваш **ИД рекламодателя RollWorks** [рекламодателя RollWorks](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в RollWorks.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в RollWorks.
 
 1. Выберите сегменты, которые нужно экспортировать. Выберите сегмент, в котором не менее 100 участников. Вы не можете экспортировать меньшие сегменты. Кроме того, максимальный размер экспортируемого сегмента составляет 250 000 участников для каждого экспорта. 
 

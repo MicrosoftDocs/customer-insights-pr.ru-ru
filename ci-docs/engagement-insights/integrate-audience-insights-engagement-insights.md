@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7559034"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645598"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Создание связи между аналитикой аудитории и аналитикой взаимодействий
 
@@ -26,7 +26,7 @@ ms.locfileid: "7559034"
 ## <a name="prerequisites"></a>Предварительные условия
 
 - Профили аналитики аудитории должны храниться в учетной записи Azure Data Lake Storage, которой вы владеете, или в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;управляемом озере данных. 
-- Ваша среда аналитики аудитории должна иметь связанную среду Dataverse. И если эта среда также использует Dataverse для хранения данных, убедитесь, что вы отметили параметр **Разрешить совместное использование данных** в аналитике аудитории. Дополнительные сведения см. в разделе [Создание и настройка платной среды в аналитике аудитории](../audience-insights/get-started-paid.md).
+- Ваша среда аналитики аудитории должна иметь связанную среду Dataverse. И если эта среда также использует Dataverse для хранения данных, убедитесь, что вы отметили параметр **Разрешить совместное использование данных** в аналитике аудитории. Для получения дополнительной информации см. [Создайте и настройте среду в аналитике аудитории](../audience-insights/create-environment.md).
 - Вам потребуются разрешения администратора как для среды аналитики взаимодействия, так и для среды аналитики аудитории.
 - Связанные среды должны находиться в одном географическом регионе.
 

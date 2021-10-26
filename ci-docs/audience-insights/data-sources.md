@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 75d597158233f75f0eb5f94389f9dba199d81719f2bbe4e5cc58d2a3afc7dcf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032866"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645371"
 ---
 # <a name="data-sources-overview"></a>Обзор источников данных
 
@@ -35,7 +35,7 @@ ms.locfileid: "7032866"
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Добавление данных из локальных источников данных
 
-Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](get-started-paid.md) при настройке среды.
+Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](create-environment.md) при настройке среды.
 
 Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с [использованием локальных шлюзов данных](/data-integration/gateway/service-gateway-app).
 

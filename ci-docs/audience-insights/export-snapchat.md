@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Snapchat
 description: Узнайте, как настроить подключение и экспорт в Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 421dcd5ba5421597cf9dea71a9f9f25c7972a4f26fb49d4b042f8667a317ab5d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033417"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618699"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Экспорт сегментов в Snapchat (предварительная версия)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7033417"
 ## <a name="known-limitations"></a>Известные ограничения
 
 - Экспорт в Snapchat ограничен сегментами.
-- Экспорт до 1 миллиона профилей в Snapchat может занять до 15 минут. 
+- Экспорт до 1 млн профилей клиентов в Snapchat может занять до 15 минут. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Настройка подключения к Snapchat
 
@@ -63,7 +63,7 @@ ms.locfileid: "7033417"
 
 1. Введите [**ИД аудитории Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в Snapchat.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в Snapchat.
 
 1. Выберите сегменты, которые нужно экспортировать. 
 

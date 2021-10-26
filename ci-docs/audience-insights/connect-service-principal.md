@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483541"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645188"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Подключение к учетной записи Azure Data Lake Storage с использованием субъекта-службы Azure
 
 У автоматизированных инструментов, использующих службы Azure, всегда должны быть ограниченные разрешения. Вместо того, чтобы приложения входили в систему как полностью привилегированный пользователь, Azure предлагает субъекты-службы. Далее вы узнаете, как подключить Dynamics 365 Customer Insights к учетной записи Azure Data Lake Storage с помощью субъекта-службы Azure вместо ключей учетной записи хранения. 
 
-Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model в качестве источника данных](connect-common-data-model.md) или [создания или обновления среды](get-started-paid.md).
+Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model в качестве источника данных](connect-common-data-model.md) или [создания или обновления среды](create-environment.md).
 
 > [!IMPORTANT]
 > - Учетная запись Data Lake Storage, которая будет использовать участника-службу, должна иметь [включенное иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).

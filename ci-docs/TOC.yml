@@ -2,8 +2,14 @@
   href: index.yml
 - name: Обзор продукта
   href: overview.md
-- name: Создать пробную версию
-  href: audience-insights/get-started-trial.md
+- name: Бесплатная пробная версия
+  items:
+    - name: Регистрация на бесплатную пробную версию
+      href: trial-signup.md
+    - name: 'Пробная версия: вопросы и ответы'
+      href: trial-FAQ.md
+- name: Начните с платной лицензии
+  href: paid-license.md
 - name: Доступ к своей среде
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Аналитика аудитории
@@ -18,10 +24,12 @@
       items:
         - name: Краткое руководство
           href: audience-insights/get-started.md
-        - name: Создание новой среды
-          href: audience-insights/get-started-paid.md
+        - name: Создать новую среду
+          href: audience-insights/create-environment.md
         - name: Изучение аналитики аудитории
           href: audience-insights/home.md
+    - name: Работа с организациями
+      href: audience-insights/work-with-business-accounts.md
     - name: Изучение модулей
       items:
         - name: Прием данных
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: Список пользовательских действий
           href: audience-insights/activities.md
+        - name: Определение семантических сопоставлений
+          href: audience-insights/semantic-mappings.md
     - name: Обогащение данных
       items:
         - name: Обогащение профилей клиентов
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Пример руководства по прогнозу оттока подписок
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Пример руководства по прогнозу оттока транзакций
+            - name: Учебник по прогнозу оттока транзакций
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Руководство по прогнозу рекомендаций продуктов
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: Управление несколькими средами
           href: audience-insights/manage-environments.md
-        - name: Подключение к учетной записи хранения ADLS с помощью субъекта-службы
-          href: audience-insights/connect-service-principal.md
         - name: Поддерживаемые языки
           href: audience-insights/supported-languages.md
+        - name: Безопасность
+          items:
+            - name: Использовать свое Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Подключение к учетной записи хранения ADLS с помощью субъекта-службы
+              href: audience-insights/connect-service-principal.md
     - name: Расширяемость
       items:
         - name: Интеграция веб-данных из аналитики взаимодействия
@@ -248,6 +262,8 @@
       items:
         - name: Краткое руководство
           href: engagement-insights/get-started.md
+        - name: Создание среды
+          href: engagement-insights/create-new-environment.md
         - name: Создание рабочей области
           href: engagement-insights/create-workspace.md
         - name: Захват событий из веб-сайтов и мобильных приложений

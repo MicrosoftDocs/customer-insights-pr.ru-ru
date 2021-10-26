@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558988"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617939"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Экспорт сегментов в Google Рекламу (предварительная версия)
 
@@ -35,9 +35,9 @@ ms.locfileid: "7558988"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- До 1 миллиона профилей на экспорт в Google Ads.
+- До 1 миллиона профилей клиентов за один экспорт в Google Ads.
 - Экспорт в Google Ads ограничен сегментами.
-- Экспорт сегментов с общим количеством профилей 1 миллион может занять до 5 минут из-за ограничений со стороны провайдера. 
+- Экспорт сегментов с общим количеством профилей клиентов 1 млн может занять до 5 минут из-за ограничений со стороны провайдера. 
 - Сопоставление в Google Ads может занять до 48 часов.
 
 ## <a name="set-up-connection-to-google-ads"></a>Настройка подключения к Google Реклама
@@ -74,7 +74,7 @@ ms.locfileid: "7558988"
 
 1. Введите ваш **[Идентификатор аудитории Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** и выберите **Подключиться** для инициализации подключения к Google Ads.
 
-1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента.
 
 1. Выберите сегменты, которые нужно экспортировать. Всего в Google Ads можно экспортировать до 1 миллиона профилей клиентов.
 

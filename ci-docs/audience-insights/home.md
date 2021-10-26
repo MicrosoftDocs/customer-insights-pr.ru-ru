@@ -1,7 +1,7 @@
 ---
 title: Домашняя страница в аналитике аудитории
 description: Начните изучение приложения на домашней странице.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470023"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617710"
 ---
 # <a name="explore-audience-insights"></a>Изучение аналитики аудитории
 
@@ -23,7 +23,7 @@ ms.locfileid: "7470023"
 
 :::image type="content" source="media/home-page.png" alt-text="Снимок экрана главного экрана, на котором показаны примеры аналитики.":::
 
-1 - Переключение между возможностями Customer Insights 2 - Используйте левую панель для перехода между различными областями 3 - Узнайте, в какой среде вы работаете, и управляйте средами как администратор 4 - Укажите личные настройки для Customer Insights
+1. Переключение между возможностями Customer Insights 2. Используйте левую панель для перехода между различными областями и выбора основной целевой аудитории 3. Узнайте, в какой среде вы работаете, и управляйте средами как администратор 4. Укажите личные настройки для Customer Insights
 
 В разделе **Недавние сегменты** вы видите группы клиентов на основе определенных вами демографических, поведенческих или транзакционных атрибутов. [Создание сегментов](segments.md) помогает вам сгруппировать базу клиентов и лучше ориентироваться в своей деловой деятельности.
 

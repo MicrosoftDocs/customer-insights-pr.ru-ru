@@ -1,7 +1,7 @@
 ---
 title: Обзор поддерживаемых сценариев прогноза
 description: Сценарии прогноза и варианты, охватываемые приложением Dynamics 365 Customer Insights.
-ms.date: 05/18/2021
+ms.date: 09/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 57c61895d636273fc90a0ac5a942fd0c9abf583c687ae20621949554e581cdf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036025"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618859"
 ---
 # <a name="predictions-overview"></a>Обзор прогнозов
 
@@ -24,10 +24,20 @@ Dynamics 365 Customer Insights поставляется с множеством 
 ## <a name="out-of-box-models"></a>Готовые модели
 
 Самый простой способ начать с прогнозирования данных — это предварительно определенные модели, часто называемые готовыми моделями. Им требуются только определенные данные и структура, чтобы быстро генерировать аналитику. В настоящее время доступны следующие модели: 
-- [Значение клиента на протяжении жизненного цикла](predict-customer-lifetime-value.md): прогнозирует потенциальный доход клиента на протяжении всего взаимодействия с бизнесом. 
+
+# <a name="individual-customers-b2c"></a>[Частные клиенты (B2C)](#tab/b2c)
+
+- [Значение клиента на протяжении жизненного цикла](predict-customer-lifetime-value.md): прогнозирует потенциальный доход клиента на протяжении всего взаимодействия с бизнесом.
 - [Рекомендация продукта](predict-product-recommendation.md): наборы прогностических рекомендаций по продуктам, основанные на покупательском поведении и покупателях с похожими моделями покупок.
 - [Отток подписок](predict-subscription-churn.md): прогнозирование риска того, что клиент перестанет пользоваться предоставляемыми по подписке продуктами или услугами вашей компании.
 - [Транзакционный отток](predict-transactional-churn.md): спрогнозируйте, не будет ли клиент больше покупать ваши продукты или услуги в определенном интервале времени.
+
+# <a name="business-accounts-b2b"></a>[Организации (B2B)](#tab/b2b)
+
+- [Транзакционный отток](predict-transactional-churn.md): спрогнозируйте, не будет ли клиент больше покупать ваши продукты или услуги в определенном интервале времени.
+
+---
+
 
 ## <a name="azure-machine-learning-integration"></a>Интеграция машинного обучения Azure
 

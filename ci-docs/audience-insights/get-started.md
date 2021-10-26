@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466593"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645280"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Начало работы с возможности аналитики аудитории Dynamics 365 Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "7466593"
 
 ## <a name="step-1-create-an-environment"></a>Шаг 1. Создание среды
 
-Для начала вам нужно создать среду для работы. Если ваша организация уже приобрела лицензию, см. раздел [Начало работы с платной подпиской](get-started-paid.md). Чтобы начать работу с пробной версией аналитики аудитории, см. раздел [Настройка пробной среды](get-started-trial.md). 
+Для начала вам нужно создать среду для работы. Если ваша организация уже приобрела лицензию, см. [Создайте среду](create-environment.md). Чтобы начать работу с пробной версией аналитики аудитории, см. раздел [Настройка пробной среды](../trial-signup.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>Шаг 2. Изучение аналитики аудитории
 

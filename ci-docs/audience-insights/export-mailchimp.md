@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Mailchimp
 description: Узнайте, как настроить подключение и экспорт в Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033555"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618630"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Экспорт сегментов в Mailchimp (предварительная версия)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033555"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- До 1 миллиона профилей на экспорт в Mailchimp.
+- До 1 миллиона профилей клиентов за один экспорт в Mailchimp.
 - Экспорт в Mailchimp ограничен сегментами.
-- Экспорт сегментов с 1 миллионом профилей может занять до трех часов. 
-- Количество профилей, которые вы можете экспортировать в Mailchimp, зависит и ограничивается вашим контрактом с Mailchimp.
+- Экспорт сегментов с 1 млн профилей клиентов может занять до трех часов. 
+- Количество профилей клиентов, которые вы можете экспортировать в Mailchimp, зависит от вашего контракта с Mailchimp и ограничен им.
 
 ## <a name="set-up-connection-to-mailchimp"></a>Настройка подключения к Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033555"
 
 1. Введите свой **[ИД аудитории Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. 
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. 
 
 1. При желании вы можете экспортировать поля **Имя** и **Фамилия** для создания более персонализированных сообщений электронной почты. Выберите **Добавить атрибут**, чтобы сопоставить эти поля.
 

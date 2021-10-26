@@ -1,7 +1,7 @@
 ---
 title: Обогащение унифицированных профилей клиентов
 description: Используйте возможности для обогащения данных о ваших клиентах.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470024"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617571"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогащение профилей клиентов (предварительная версия)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7470024"
 
 У вас должны быть разрешения участника или администратора для создания или редактирования обогащений. Дополнительные сведения см. [Разрешения](permissions.md).
 
-На вкладке **Обнаружить** вы найдете следующие обогащения:
+На вкладке **Обнаружить** вы найдете все поддерживаемые варианты обогащения.
 
-- [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+# <a name="individual-customers-b2c"></a>[Частные клиенты (B2C)](#tab/b2c)
+
 - [Бренды](enrichment-microsoft.md), предоставленные Microsoft
 - [Интересы](enrichment-microsoft.md), предоставленные Microsoft
-- [Расширенные адреса](enrichment-enhanced-addresses.md), предоставленные Microsoft
-- [Данные компании](enrichment-leadspace.md) предоставлены Leadspace
+- [Расширенные адреса](enrichment-enhanced-addresses.md), предоставленные Microsoft 
 - [Демографическая информация](enrichment-experian.md), предоставленная Experian
-- [Данные расположения](enrichment-here.md) предоставлены HERE Technologies
-- [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP
+- [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
+- [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+
+# <a name="business-accounts-b2b"></a>[Организации (B2B)](#tab/b2b)
+
+- [Данные компании](enrichment-leadspace.md) предоставлены Leadspace
+- [Расширенные адреса](enrichment-enhanced-addresses.md), предоставленные Microsoft 
+- [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
+- [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
+- [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+
+---
 
 На вкладке **Мои обогащения** можно увидеть обогащения, которые вы настроили, и отредактировать их свойства.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7470024"
 
 ## <a name="enrichments-and-connections"></a>Обогащения и подключения
 
-Сторонние обогащения настраиваются с помощью [подключений](connections.md), которые администратор настраивает с учетными данными и для которых дает согласие на передачу данных. Это подключение может быть использовано как администраторами, так и участниками для настройки обогащений.  
+Сторонние обогащения настраиваются с помощью [подключений](connections.md), которые администратор настраивает с учетными данными и для которых дает согласие на передачу данных. Соединения могут использоваться администраторами и участниками для настройки обогащений.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>Несколько обогащений одного типа
 

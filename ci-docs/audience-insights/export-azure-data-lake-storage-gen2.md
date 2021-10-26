@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Azure Data Lake Storage Gen2
 description: Узнайте, как настроить подключение к Azure Data Lake Storage Gen2.
-ms.date: 03/03/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,24 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c4408e52550b6648e2a001041dc0acdb5063d6a6ef1b8e4bba3321bf25fefcfc
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031995"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605919"
 ---
-# <a name="set-up-the-connection-to-azure-data-lake-storage-gen2-preview"></a>Настройка подключения к Azure Data Lake Storage 2-го поколения (предварительная версия)
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Экспорт списка сегментов и других данных в Azure Data Lake Storage Gen2 (предварительная версия)
+
+Сохраняйте данные Customer Insights в учетной записи Azure Data Lake Storage 2-го поколения или используйте эту службу для передачи данных в другие приложения.
+
+## <a name="known-limitations"></a>Известные ограничения
+
+1. Для Azure Data Lake Storage Gen2 вы можете выбирать между [уровнем производительности Стандарт и Премиум](/azure/storage/blobs/create-data-lake-storage-account) при создании учетной записи хранения для своего озера данных. Если вы выбрали уровень производительности Премиум, выберите блочный BLOB-объект Премиум как тип организации. 
+
+
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Настройте подключение к Azure Data Lake Storage Gen2 
+
 
 1. Перейти в раздел **Администрирование** > **Подключения**.
 

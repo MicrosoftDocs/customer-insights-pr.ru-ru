@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 34dc753aa9d2420ef8780d436e14c3c27377e4779eda0f83ca6b5424f2328f22
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031454"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619227"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Экспорт списка сегментов в Facebook Ads Manager (предварительная версия)
 
@@ -30,7 +30,7 @@ ms.locfileid: "7031454"
 - До 10 миллионов профилей клиентов на экспорт в Facebook Ads Manager.
 - Экспорт в Facebook Ads Manager ограничен сегментами.
 - Создайте или обновите индивидуализированные аудитории в Facebook типа только *список клиентов*.
-- Экспорт сегментов с общим количеством профилей 10 миллион может занять до 90 минут.
+- Экспорт сегментов с 10 млн профилей клиентов может занять до 90 минут.
 
 ## <a name="set-up-connection-to-facebook-ads-manager"></a>Настройка подключения к Facebook Ads Manager
 

@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в SendGrid
 description: Узнайте, как настроить подключение и экспорт в SendGrid.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036117"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617847"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Экспорт сегментов в SendGrid (предварительная версия)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036117"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Всего в SendGrid до 100 000 профилей.
+- Всего до 100 000 профилей клиентов в SendGrid.
 - Экспорт в SendGrid ограничен сегментами.
-- Экспорт до 100 000 профилей в SendGrid может занять до нескольких часов. 
-- Количество профилей, которые вы можете экспортировать в SendGrid, зависит и ограничивается вашим контрактом с SendGrid.
+- Экспорт до 100 000 профилей клиентов в SendGrid может занять до нескольких часов. 
+- Количество профилей клиентов, которые вы можете экспортировать в SendGrid, зависит от вашего контракта с SendGrid и ограничен им.
 
 ## <a name="set-up-connection-to-sendgrid"></a>Настройка подключения к SendGrid
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036117"
 
 1. Введите ваш **[Идентификатор списка SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**.
 
-1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. Повторите те же шаги для других необязательных полей, таких как **Имя**, **Фамилия**, **Страна/регион**, **Область, республика, край, округ**, **Город** и **Почтовый индекс**.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Повторите те же шаги для других необязательных полей, таких как **Имя**, **Фамилия**, **Страна/регион**, **Область, республика, край, округ**, **Город** и **Почтовый индекс**.
 
 1. Выберите сегменты, которые нужно экспортировать. Мы настоятельно **рекомендуем не экспортировать в общей сложности более 100 000 профилей клиентов** в SendGrid. 
 
