@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618859"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673978"
 ---
 # <a name="predictions-overview"></a>Обзор прогнозов
 
@@ -25,14 +25,14 @@ Dynamics 365 Customer Insights поставляется с множеством 
 
 Самый простой способ начать с прогнозирования данных — это предварительно определенные модели, часто называемые готовыми моделями. Им требуются только определенные данные и структура, чтобы быстро генерировать аналитику. В настоящее время доступны следующие модели: 
 
-# <a name="individual-customers-b2c"></a>[Частные клиенты (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Индивидуальные потребители (B2C)](#tab/b2c)
 
 - [Значение клиента на протяжении жизненного цикла](predict-customer-lifetime-value.md): прогнозирует потенциальный доход клиента на протяжении всего взаимодействия с бизнесом.
 - [Рекомендация продукта](predict-product-recommendation.md): наборы прогностических рекомендаций по продуктам, основанные на покупательском поведении и покупателях с похожими моделями покупок.
 - [Отток подписок](predict-subscription-churn.md): прогнозирование риска того, что клиент перестанет пользоваться предоставляемыми по подписке продуктами или услугами вашей компании.
 - [Транзакционный отток](predict-transactional-churn.md): спрогнозируйте, не будет ли клиент больше покупать ваши продукты или услуги в определенном интервале времени.
 
-# <a name="business-accounts-b2b"></a>[Организации (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Учетные записи компаний (B2B)](#tab/b2b)
 
 - [Транзакционный отток](predict-transactional-churn.md): спрогнозируйте, не будет ли клиент больше покупать ваши продукты или услуги в определенном интервале времени.
 

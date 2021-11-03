@@ -9,16 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bb74e35799410b92b64e48e065b45efda82490ca
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619227"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672969"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Экспорт списка сегментов в Facebook Ads Manager (предварительная версия)
 
 Экспортируйте сегменты унифицированных профилей клиентов в Facebook Ads Manager для создания кампаний в Facebook и Instagram.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO1aN]
 
 ## <a name="prerequisites-for-connection"></a>Предварительные требования для подключения
 
