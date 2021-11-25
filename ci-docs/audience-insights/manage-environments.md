@@ -1,7 +1,7 @@
 ---
 title: Создание сред и управление ими
 description: Узнайте, как зарегистрироваться для службы и как управлять средами.
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673760"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799652"
 ---
 # <a name="manage-environments"></a>Управление средами
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673760"
 3. В поле **Редактировать среду** вы можете обновить настройки среды.
 
 Дополнительные сведения о параметрах среды см. в разделе [Создание новой среды](create-environment.md).
+
+## <a name="connect-to-microsoft-dataverse"></a>Подключиться к Microsoft Dataverse
+   
+На шаге **Microsoft Dataverse** можно связать Customer Insights с вашей средой Dataverse.
+
+Чтобы использовать [готовые модели прогноза](predictions-overview.md#out-of-box-models), настройте обмен данными с Dataverse. Или вы можете включить прием данных из локальных источников данных, предоставив URL-адрес среды Microsoft Dataverse, которую администрирует ваша организация. Выберите **Включить обмен данными**, чтобы поделиться выходными данными Customer Insights с озером данных Data Lake, управляемым Dataverse.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Параметры конфигурации для включения обмена данными с Microsoft Dataverse.":::
+
+> [!NOTE]
+> Конфигурация Customer Insights не поддерживает следующие сценарии передачи данных:
+> - Если вы сохраните все данные в свою Azure Data Lake Storage, вы не сможете включить обмен данными с озером данных Data Lake, управляемым Dataverse.
+> - Если вы включите обмен данными с Dataverse, вы не сможете [создавать прогнозируемые или отсутствующие значения в сущности](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>Копирование конфигурации среды
 

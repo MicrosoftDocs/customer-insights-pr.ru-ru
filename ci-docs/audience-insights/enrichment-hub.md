@@ -1,7 +1,7 @@
 ---
 title: Обогащение унифицированных профилей клиентов
 description: Используйте возможности для обогащения данных о ваших клиентах.
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673015"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770140"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогащение профилей клиентов (предварительная версия)
 
@@ -42,6 +42,7 @@ ms.locfileid: "7673015"
 
 - [Данные компании](enrichment-leadspace.md) предоставлены Leadspace
 - [Расширенные адреса](enrichment-enhanced-addresses.md), предоставленные Microsoft 
+- [Расширенные данные компании](enrichment-enhanced-company-data.md), предоставленные Microsoft
 - [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
 - [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
 - [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft

@@ -84,6 +84,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Расширенные адреса
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Расширение данных компании
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогащение с помощью Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Обогащение с помощью HERE Technologies
@@ -250,6 +252,40 @@
           href: audience-insights/apis.md
         - name: Ссылки API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: Управление согласием (предварительная версия)
+  items:
+    - name: Справочный центр
+      href: consent-management/index.yml
+    - name: Обзор возможностей
+      href: consent-management/overview.md
+    - name: Начать
+      items:
+        - name: Начать
+          href: consent-management/get-started.md
+        - name: Основные понятия и терминология
+          href: consent-management/glossary.md
+    - name: Импорт данных согласия
+      items:
+        - name: Импорт данных согласия
+          href: consent-management/import-consent-data.md
+        - name: Установка данных согласия и применение предпочтений согласия
+          href: consent-management/set-consent-rules.md
+    - name: Управление данными согласия
+      items:
+        - name: Включение правил согласия в аналитике аудитории
+          href: audience-insights/activate-consent.md
+        - name: Управление правилами согласия в сегментах аналитики аудитории
+          href: audience-insights/change-default-consent-rules.md
+    - name: Управление параметрами и пользователями
+      items:
+        - name: Настройка параметров системы
+          href: consent-management/system-settings.md
+        - name: Управление пользователями или разрешениями
+          href: consent-management/manage-users.md
+    - name: Использование данных согласия
+      items:
+        - name: Создание прогнозов с данными согласия
+          href: consent-management/predictions-consent-data.md
 - name: Аналитика взаимодействий (предварительная версия)
   items:
     - name: Справочный центр

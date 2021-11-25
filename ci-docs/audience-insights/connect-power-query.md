@@ -1,7 +1,7 @@
 ---
 title: Прием данных через соединитель Power Query
 description: Соединители для источников данных на основе Power Query.
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643510"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732234"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Подключение к источникам данных Power Query
 
@@ -79,6 +79,8 @@ Power Query предлагает широкий набор соединител�
    > [!div class="mx-imgBorder"]
    > ![Параметр редактирования.](media/edit-option-data-sources.png "Параметр редактирования")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. Примените свои изменения и преобразования в диалоге **Power Query — изменение запросов**, как описано в разделе [Создание нового источника данных](#create-a-new-data-source).
 
 4. Выберите **Сохранить** в Power Query после завершения редактирования, чтобы сохранить изменения.

@@ -1,7 +1,7 @@
 ---
 title: Действия клиента
 description: Определяйте действия клиентов и просматривайте их на временной шкале в профилях клиентов.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673154"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732476"
 ---
 # <a name="customer-activities"></a>Действия клиента
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673154"
 
 1. На странице **Действия** выберите **Выполнить** для обработки действия. 
 
-> [!TIP]
-> Есть [шесть типов статусов](system.md#status-types) для задач/процессов. Кроме того, большинство процессов [зависит от других последующих процессов](system.md#refresh-policies). Вы можете выбрать статус процесса, чтобы увидеть детали выполнения всего задания. После выбора **См. сведения** для одной из задач задания вы найдете дополнительную информацию: время обработки, дату последней обработки, а также все ошибки и предупреждения, связанные с задачей.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Управление существующими действиями
 

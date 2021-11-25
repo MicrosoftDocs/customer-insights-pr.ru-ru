@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643464"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792043"
 ---
 # <a name="customer-card-add-in-preview"></a>Надстройка карточек клиентов (предварительная версия)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7643464"
   - **Контроль мер**: требует [настроенных мер](measures.md) атрибутов типа клиента.
   - **Интеллектуальный контроль**: требуются данные, созданные с использованием [прогнозов](predictions.md) или [пользовательских моделей](custom-models.md).
   - **Контроль информации о клиенте**: все поля из профиля доступны в едином профиле клиента.
-  - **Контроль обогащения**: требуется активное [обогащение](enrichment-hub.md), примененное к профилям клиентов.
+  - **Контроль обогащения**: требуется активное [обогащение](enrichment-hub.md), примененное к профилям клиентов. Надстройка карточки поддерживает следующие дополнения: [Торговые марки](enrichment-microsoft.md), предоставленные Microsoft, [Интересы](enrichment-microsoft.md), предоставленные Microsoft.
   - **Контроль контактов**: требуется определение семантической сущности контактов типа.
   - **Контроль временной шкалы**: требуются [настроенные действия](activities.md).
 

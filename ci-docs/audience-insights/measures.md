@@ -1,7 +1,7 @@
 ---
 title: Создание мер и управление ими
 description: Определите меры для анализа и отражения эффективности вашего бизнеса.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673490"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732742"
 ---
 # <a name="define-and-manage-measures"></a>Определение мер и управление ими
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673490"
 - **Удалить** меру.
 - **Активировать** или **Деактивировать**. Неактивные меры не обновляются во время [запланированное обновления](system.md#schedule-tab).
 
-> [!TIP]
-> Есть [шесть типов статусов](system.md#status-types) для задач/процессов. Кроме того, большинство процессов [зависит от других последующих процессов](system.md#refresh-policies). Вы можете выбрать статус процесса, чтобы увидеть детали выполнения всего задания. После выбора **Показать подробности** для одной из задач задания вы найдете дополнительную информацию: время обработки, дату последней обработки, а также все ошибки и предупреждения, связанные с задачей.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>Следующий шаг
 

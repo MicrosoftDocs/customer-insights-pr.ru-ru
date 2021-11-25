@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных из Customer Insights
 description: Управление экспортами для совместного использования данных.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673339"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732179"
 ---
 # <a name="exports-preview-overview"></a>Обзор экспортов (предварительная версия)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673339"
 
 Каждый настраиваемый экспорт имеет расписание обновления. Во время обновления система ищет новые или обновленные данные для включения в экспорт. По умолчанию экспорт выполняется как часть каждого [планового обновления системы](system.md#schedule-tab). Вы можете настроить расписание обновления или отключить его, чтобы запускать экспорт вручную.
 
-Расписания экспорта зависят от состояния вашей среды. Если есть активные обновления для [зависимостей](system.md#refresh-policies), когда должен начаться запланированный экспорт, система сначала завершит обновления, а затем запустит экспорт. Вы можете увидеть, когда последний раз экспорт был обновлен, в столбце **Обновлено**.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+Расписания экспорта зависят от состояния вашей среды. Если есть активные обновления для [зависимостей](system.md#refresh-processes), когда должен начаться запланированный экспорт, система сначала завершит обновления, а затем запустит экспорт. Вы можете увидеть, когда последний раз экспорт был обновлен, в столбце **Обновлено**.
 
 ### <a name="schedule-exports"></a>Расписание экспортов
 

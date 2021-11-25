@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1f8922703af506974c8b5b24086b61f05a83609d
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645326"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673509"
 ---
 # <a name="create-a-new-workspace-and-add-members"></a>Создание новой рабочей области и добавление участников
 
@@ -26,9 +26,9 @@ ms.locfileid: "7645326"
 
 ## <a name="create-a-new-workspace"></a>Создание рабочей области
 
-Процесс создания рабочей области включает настройку *среда* для организации вашей рабочей области. Среда — это пространство, которое может содержать одно или несколько рабочих областей. Вы можете использовать среду для управления своими рабочими областями и подключениями к функции аналитики аудитории Customer Insights.
+Процесс создания рабочей области включает настройку *среда* для организации вашей рабочей области. Среда — это пространство, которое может содержать одно или несколько рабочих областей. Вы можете использовать среду для управления своими рабочими пространствами и подключениями к возможности аналитики аудитории.
 
-1. Выберите **Создать** из переключателя рабочей области.
+1. Выберите **+Создать** из переключателя рабочей области.
 
    :::image type="content" source="media/new-workspace.png" alt-text="Страница Customer Insights с выноской на панели навигации и описанием.":::
 
