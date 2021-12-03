@@ -1,7 +1,7 @@
 ---
 title: Набор данных Customer Insights в Microsoft Dataverse
 description: Используйте сущности Customer Insights в виде таблиц в Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
+ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645234"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866950"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
@@ -45,6 +45,7 @@ Customer Insights предоставляет возможность сделат
 - [CustomerMeasure](#customermeasure)
 - [Обогащение](#enrichment)
 - [Прогноз](#prediction)
+- [Членство в сегменте](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -121,3 +122,16 @@ Customer Insights предоставляет возможность сделат
 | Значения               | Строка JSON | Список атрибутов, созданных моделью |
 | msdynci_predictionid | GUID        | Детерминированный GUID, созданный из msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>Членство в сегменте
+
+Эта таблица содержит информацию о членстве в сегментах профилей клиентов.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| CustomerId        | String       | Идентификатор профиля клиента        |
+| SegmentProvider      | String       | Приложение, которое публикует сегменты. По умолчанию: аналитика аудитории         |
+| SegmentMembershipType | String       | Тип клиента для этой записи о членстве в сегменте. Поддерживает несколько типов, таких как Клиент, Контакт или Организация. По умолчанию: клиент  |
+| Сегменты       | Строка JSON  | Список уникальных сегментов, участником которых является профиль клиента      |
+| msdynci_identifier  | String   | Уникальный идентификатор записи члена сегмента. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | Детерминированный GUID, созданный из `msdynci_identifier`          |
