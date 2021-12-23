@@ -84,17 +84,19 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Расширенные адреса
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Расширение данных компании
+        - name: Расширенные данные компании
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Обогащение с помощью Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Обогащение с помощью HERE Technologies
           href: audience-insights/enrichment-here.md
-        - name: Обогатить с помощью Leadspace
+        - name: Обогащение с помощью Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Обогатить с помощью Experian
+        - name: Обогащение с помощью Experian
           href: audience-insights/enrichment-experian.md
-        - name: Обогащение за счет настраиваемого импорта SFTP
+        - name: Обогащение данными Office 365
+          href: audience-insights/enrichment-office.md
+        - name: Обогащение с помощью настраиваемого импорта SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Сегменты
       items:
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Эксперименты с машинным обучением Azure
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Эксперименты со студией машинного обучения Azure
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Управляйте прогнозами
           href: audience-insights/manage-predictions.md
         - name: Создание сегментов на основе прогнозов
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: Подключение к учетной записи хранения ADLS с помощью субъекта-службы
               href: audience-insights/connect-service-principal.md
+            - name: Экспорт журналов диагностики
+              href: audience-insights/diagnostics.md
     - name: Расширяемость
       items:
         - name: Интеграция веб-данных из аналитики взаимодействия

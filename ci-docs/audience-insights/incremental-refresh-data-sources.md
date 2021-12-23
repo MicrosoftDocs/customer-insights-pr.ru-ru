@@ -1,7 +1,7 @@
 ---
 title: Пошаговое обновление для источников данных на основе Power Query
 description: Обновите новые и обновленные данные для больших источников данных на основе Power Query.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377850"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900301"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Инкрементное обновление для источников данных на основе Power Query
+
+В этой статье рассматривается, как настроить добавочное обновление для источников данных на базе Power Query.
 
 Инкрементное обновление для источников данных дает следующие преимущества:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377850"
 
 1. [Создание нового источника данных на основе Power Query](connect-power-query.md).
 
-1. Укажите имя источника данных.
+1. Укажите **Имя** источника данных.
 
-1. Выберите источник данных, который поддерживает инкрементное обновление, например базу данных SQL Azure.
+1. Выберите источник данных, который поддерживает инкрементное обновление, например [базу данных SQL Azure](/power-query/connectors/azuresqldatabase).
 
 1. Выберите сущности или таблицы для приема.
 

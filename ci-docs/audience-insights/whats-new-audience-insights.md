@@ -1,7 +1,7 @@
 ---
 title: Новые и запланированные компоненты
 description: Информация о новых функциях, улучшениях и исправлениях ошибок.
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753133"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884278"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Что нового в возможности аналитики аудитории в Dynamics 365 Customer Insights
 
@@ -26,6 +26,18 @@ ms.locfileid: "7753133"
 
 > [!TIP]
 > Чтобы отправить и проголосовать по запросам функций и предложениям по продукту, перейдите на [портал идей по приложениям Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="november-2021-updates"></a>Обновления за ноябрь 2021 г.
+
+Обновления в ноябре 2021 года включают новые функции, улучшения производительности и исправления ошибок.
+
+### <a name="segment-membership-now-available-in-dataverse"></a>Членство в сегменте теперь доступно в Dataverse
+
+Информация о членстве в сегментах для профилей клиентов теперь доступна в Dataverse наряду с профилями клиентов и аналитическими сведениями. Приложения действий Dynamics 365 и приложения на основе модели могут использовать эти данные для поиска сведений о членстве в сегменте для конкретного клиента.
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>Действия, поддерживающие сведения на уровне контактов для организаций
+
+Теперь вы можете настраивать, отображать и фильтровать действия для контактов на временных шкалах активности организаций, чтобы лучше понимать, какие контакты из организации принимали участие в тех или иных действиях.
 
 ## <a name="october-2021-updates"></a>Обновления за октябрь 2021 г.
 

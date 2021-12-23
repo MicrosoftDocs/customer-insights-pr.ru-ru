@@ -1,7 +1,7 @@
 ---
 title: Использование источников данных для приема данных
 description: Узнайте, как импортировать данные из различных источников.
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732171"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900395"
 ---
 # <a name="data-sources-overview"></a>Обзор источников данных
 
@@ -25,19 +25,22 @@ ms.locfileid: "7732171"
 
 ## <a name="add-a-data-source"></a>Добавить источник данных
 
-См. подробные статьи о том, как добавить источник данных, в зависимости от того, какой вариант вы выберете.
+Ознакомьтесь с подробными статьями о том, как добавить источник данных, в зависимости от выбранного вами варианта.
 
-Добавить источник данных можно тремя основными способами:
+Можно добавить следующие источники данных:
 
-- [Через десятки соединителей Power Query](connect-power-query.md)
-- [Из папки Common Data Model](connect-common-data-model.md)
-- [Из вашего собственного озера Microsoft Dataverse](connect-dataverse-managed-lake.md)
+- [Соединители Power Query](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [Озеро Microsoft Dataverse](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> Если вы используете пробную версию, в разделе способов импорта присутствует вариант **Библиотека данных Customer Insights**. Выберите этот вариант, чтобы выбрать демонстрационный набор данных, доступный для различных отраслей. Дополнительные сведения см. в статье [Пробная версия Dynamics 365 Customer Insights](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Добавление данных из локальных источников данных
 
-Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Потоки данных можно включить в Customer Insights, [указав URL-адрес среды Microsoft Dataverse](create-environment.md) при настройке среды.
+Прием данных из локальных источников данных в аналитике аудитории поддерживается на основе потоков данных Microsoft Power Platform. Вы можете включить потоки данных в Customer Insights путем [указания URL-адреса среды Microsoft Dataverse](create-environment.md) при настройке среды.
 
-Источники данных, которые создаются после привязки среды Dataverse к Customer Insights, будут использовать [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Удалите и воссоздайте источники данных, которые существовали до того, как среда Dataverse была связана с [использованием локальных шлюзов данных](/data-integration/gateway/service-gateway-app).
+Для источников данных, созданных после связывания среды Dataverse с Customer Insights, [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) используются по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Вы можете удалить и заново создать источники данных, которые существовали до того, как среда Dataverse была связана с Customer Insights, [с помощью локальных шлюзов данных](/data-integration/gateway/service-gateway-app).
 
 Шлюзы данных из существующей среды Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights. На странице источников данных показаны ссылки для перехода к среде Microsoft Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
 

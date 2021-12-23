@@ -1,7 +1,7 @@
 ---
 title: Эксперименты в машинном обучении Azure
 description: Используйте модели на основе машинного обучения Azure в Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033188"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881754"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Использование моделей на основе машинного обучения Azure
 
-Единые данные в Dynamics 365 Customer Insights являются источником для построения моделей машинного обучения, которые могут дать дополнительную бизнес-аналитику. Customer Insights интегрируется со студией машинного обучения (классической) и машинным обучением Azure для использования ваших собственных настраиваемых моделей. Примеры экспериментов, проведенных в студии машинного обучения (классической) см. в [Эксперименты в студии машинного обучения (классической)](machine-learning-studio-experiments.md). 
+Единые данные в Dynamics 365 Customer Insights являются источником для построения моделей машинного обучения, которые могут дать дополнительную бизнес-аналитику. Customer Insights интегрируется с машинным обучением Azure для использования ваших собственных моделей.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033188"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Работа с конструктором машинного обучения Azure
 
-Конструктор машинного обучения Azure предоставляет собой визуальный холст, на котором можно перетаскивать наборы данных и модули как в студии машинного обучения (классической). Пакетный конвейер, созданный конструктором, может быть интегрирован в Customer Insights, если он настроен соответствующим образом. 
+Конструктор Машинного обучения Azure — это визуальный холст, на который можно перетаскивать наборы данных и модули. Пакетный конвейер, созданный конструктором, может быть интегрирован в Customer Insights, если он настроен соответствующим образом. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Работа с пакетом SDK машинного обучения Azure
 

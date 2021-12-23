@@ -1,7 +1,7 @@
 ---
 title: Подключение к учетной записи Azure Data Lake Storage с использованием субъекта-службы
 description: Используйте субъект-службу Azure для подключения к собственному озеру данных Data Lake.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645188"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900291"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Подключение к учетной записи Azure Data Lake Storage с использованием субъекта-службы Azure
 
-У автоматизированных инструментов, использующих службы Azure, всегда должны быть ограниченные разрешения. Вместо того, чтобы приложения входили в систему как полностью привилегированный пользователь, Azure предлагает субъекты-службы. Далее вы узнаете, как подключить Dynamics 365 Customer Insights к учетной записи Azure Data Lake Storage с помощью субъекта-службы Azure вместо ключей учетной записи хранения. 
+В этой статье рассказывается, как связать Dynamics 365 Customer Insights с учетной записью Azure Data Lake Storage, используя субъект-службу Azure, а не учетную запись хранения. 
 
-Вы можете использовать субъект-службу для безопасного [добавления или редактирования папки Common Data Model в качестве источника данных](connect-common-data-model.md) или [создания или обновления среды](create-environment.md).
+У автоматизированных инструментов, использующих службы Azure, всегда должны быть ограниченные разрешения. Вместо того, чтобы приложения входили в систему как полностью привилегированный пользователь, Azure предлагает субъекты-службы. Вы можете использовать субъекты-службы для безопасного [добавления или редактирования папки Common Data Model в качестве источника данных](connect-common-data-model.md) или [создания или обновления среды](create-environment.md).
 
 > [!IMPORTANT]
 > - Учетная запись Data Lake Storage, которая будет использовать участника-службу, должна иметь [включенное иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
-> - Для создания субъекта-службы вам потребуются разрешения администратора для вашей подписки Azure.
+> - Для создания субъекта-службы вам потребуются права администратора в отношении вашей подписки Azure.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Создание субъекта-службы Azure для Customer Insights
 
-Перед созданием новой субъекта-службы для аналитики аудитории или аналитики взаимодействия проверьте, существует ли она уже в вашей организации.
+Перед созданием нового субъекта-службы для Customer Insights проверьте, не существует ли он уже в вашей организации.
 
 ### <a name="look-for-an-existing-service-principal"></a>Поиск существующего субъекта-службы
 

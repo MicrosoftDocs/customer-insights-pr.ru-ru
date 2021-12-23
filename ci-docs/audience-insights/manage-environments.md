@@ -1,7 +1,7 @@
 ---
 title: Создание сред и управление ими
 description: Узнайте, как зарегистрироваться для службы и как управлять средами.
-ms.date: 11/12/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799652"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892400"
 ---
 # <a name="manage-environments"></a>Управление средами
 
@@ -45,6 +45,9 @@ ms.locfileid: "7799652"
 На шаге **Microsoft Dataverse** можно связать Customer Insights с вашей средой Dataverse.
 
 Чтобы использовать [готовые модели прогноза](predictions-overview.md#out-of-box-models), настройте обмен данными с Dataverse. Или вы можете включить прием данных из локальных источников данных, предоставив URL-адрес среды Microsoft Dataverse, которую администрирует ваша организация. Выберите **Включить обмен данными**, чтобы поделиться выходными данными Customer Insights с озером данных Data Lake, управляемым Dataverse.
+
+> [!IMPORTANT]
+> Для обмена данными Customer Insights и Dataverse должны находиться в одном регионе.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Параметры конфигурации для включения обмена данными с Microsoft Dataverse.":::
 

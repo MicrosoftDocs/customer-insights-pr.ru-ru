@@ -1,20 +1,20 @@
 ---
-title: Надстройка карточек клиентов для приложений Dynamics 365
+title: Надстройка карточек клиентов для приложений Dynamics 365 (видео)
 description: Отображайте данные из аналитики аудитории в приложениях Dynamics 365 с помощью этой надстройки.
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792043"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904029"
 ---
 # <a name="customer-card-add-in-preview"></a>Надстройка карточек клиентов (предварительная версия)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7792043"
   - **Контроль мер**: требует [настроенных мер](measures.md) атрибутов типа клиента.
   - **Интеллектуальный контроль**: требуются данные, созданные с использованием [прогнозов](predictions.md) или [пользовательских моделей](custom-models.md).
   - **Контроль информации о клиенте**: все поля из профиля доступны в едином профиле клиента.
-  - **Контроль обогащения**: требуется активное [обогащение](enrichment-hub.md), примененное к профилям клиентов. Надстройка карточки поддерживает следующие дополнения: [Торговые марки](enrichment-microsoft.md), предоставленные Microsoft, [Интересы](enrichment-microsoft.md), предоставленные Microsoft.
+  - **Контроль обогащения**: требуется активное [обогащение](enrichment-hub.md), примененное к профилям клиентов. Надстройка карточек поддерживает следующие расширения: [Бренды](enrichment-microsoft.md) от Майкрософт, [Интересы](enrichment-microsoft.md) от Майкрософт, а также[Данные о взаимодействии с Office](enrichment-office.md) от Майкрософт.
   - **Контроль контактов**: требуется определение семантической сущности контактов типа.
   - **Контроль временной шкалы**: требуются [настроенные действия](activities.md).
 
