@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: 8ca30193ae4f4ef3ed9c60f2d694cd11fad46c76
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881800"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967671"
 ---
 # <a name="custom-machine-learning-models"></a>Пользовательские модели машинного обучения
 
@@ -40,6 +40,8 @@ ms.locfileid: "7881800"
 
    > [!NOTE]
    > Данные передаются между вашими экземплярами Customer Insights и выбранными веб-службами или конвейерами Azure в бизнес-процессе. При передаче данных в службу Azure убедитесь, что эта обработка данных этой службой осуществляется в соответствии с нормативно-правовыми требованиями для этих данных в вашей организации.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>Добавление нового рабочего процесса
 

@@ -1,7 +1,7 @@
 ---
 title: Улучшение данных компании
 description: Обогащайте и нормализируйте данные компании с помощью моделей Microsoft.
-ms.date: 11/15/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
-ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
+ms.openlocfilehash: 616efe723313a6fbec7f1c7219c236a8f0aab3b2
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813934"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927598"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Обогащение профилей компании с улучшенными данными компании
 
@@ -84,7 +84,17 @@ Microsft
 
 Вы можете получить доступ к детализированному представлению каждого обогащенного профиля, выбрав **Просмотр обогащенных данных**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+### <a name="overview-card"></a>Обзорная карточка
+
+На обзорной карточке показаны сведения об охвате обогащения. 
+
+* **Клиенты обработаны и изменены**: количество профилей клиентов, которые были успешно дополнены.
+
+* **Клиенты обработаны и не изменены**: количество профилей клиентов, которые были распознаны, но не были изменены. Обычно это происходит, когда входные данные действительны и не могут быть улучшены путем обогащения.
+
+* **Клиенты не обработаны и не изменены**: количество профилей клиентов, которые не были распознаны. Обычно для входных данных, которые недействительны или не поддерживаются обогащением.
+
+## <a name="next-steps"></a>Следующие шаги
 
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 

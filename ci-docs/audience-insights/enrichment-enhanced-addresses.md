@@ -1,7 +1,7 @@
 ---
-title: Обогащение и расширение адресов (видео)
+title: Обогащение и расширение адресов (содержит видео)
 description: Обогащайте и нормализируйте адресную информацию в профилях клиентов с помощью моделей Microsoft.
-ms.date: 07/25/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2158d80aa088c5bf8589fb7d23586496e2d8b855
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: afb1a6b4805702697889bb91ca36a96a714cba3d
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903966"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934939"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Пополнение профилей клиентов расширенными адресами
 
@@ -102,7 +102,17 @@ ms.locfileid: "7903966"
 
 Вы можете получить доступ к детализированному представлению каждого обогащенного профиля, выбрав **Просмотр обогащенных данных**.
 
-## <a name="next-steps"></a>Дальнейшие действия
+### <a name="overview-card"></a>Обзорная карточка
+
+На обзорной карточке показаны сведения об охвате обогащения. 
+
+* **Клиенты обработаны и изменены**: количество профилей клиентов, которые были успешно дополнены.
+
+* **Клиенты обработаны и не изменены**: количество профилей клиентов, которые были распознаны, но не были изменены. Обычно это происходит, когда входные данные действительны и не могут быть улучшены путем обогащения.
+
+* **Клиенты не обработаны и не изменены**: количество профилей клиентов, которые не были распознаны. Обычно для входных данных, которые недействительны или не поддерживаются обогащением.
+
+## <a name="next-steps"></a>Следующие шаги
 
 [!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 

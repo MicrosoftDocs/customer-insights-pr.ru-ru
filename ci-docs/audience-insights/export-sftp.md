@@ -1,5 +1,5 @@
 ---
-title: Экспорт данных Customer Insights на узлы SFTP (видео)
+title: Экспорт данных Customer Insights на узлы SFTP (содержит видео)
 description: Узнайте, как настроить подключение и экспорт в местоположение SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bb73c49cf87657b71e0c2f5934662b062eeffb21
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904145"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934903"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Экспорт сегментов и других данных по протоколу SFTP (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7904145"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Места назначения SFTP за брандмауэрами в настоящее время не поддерживаются. 
 - Время выполнения экспорта зависит от производительности вашей системы. Мы рекомендуем двухъядерный ЦП и 1 Гб памяти в качестве минимальной конфигурации вашего сервера. 
 - Экспорт сущностей с количеством профилей клиентов до 100 млн может занять 90 минут при использовании рекомендованной минимальной конфигурации из двухъядерного ЦП и 1 ГБ памяти. 
 

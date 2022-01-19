@@ -1,21 +1,20 @@
 ---
 title: Обзор поддерживаемых сценариев прогноза
 description: Сценарии прогноза и варианты, охватываемые приложением Dynamics 365 Customer Insights.
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673978"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7978029"
 ---
 # <a name="predictions-overview"></a>Обзор прогнозов
 
@@ -31,6 +30,7 @@ Dynamics 365 Customer Insights поставляется с множеством 
 - [Рекомендация продукта](predict-product-recommendation.md): наборы прогностических рекомендаций по продуктам, основанные на покупательском поведении и покупателях с похожими моделями покупок.
 - [Отток подписок](predict-subscription-churn.md): прогнозирование риска того, что клиент перестанет пользоваться предоставляемыми по подписке продуктами или услугами вашей компании.
 - [Транзакционный отток](predict-transactional-churn.md): спрогнозируйте, не будет ли клиент больше покупать ваши продукты или услуги в определенном интервале времени.
+- [Анализ тональности](sentiment-analysis.md): проанализируйте тональность отзывов клиентов и определите наиболее часто упоминаемые бизнес-аспекты.
 
 # <a name="business-accounts-b-to-b"></a>[Учетные записи компаний (B2B)](#tab/b2b)
 

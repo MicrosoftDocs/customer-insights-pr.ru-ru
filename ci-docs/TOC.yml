@@ -80,7 +80,7 @@
       items:
         - name: Обогащение профилей клиентов
           href: audience-insights/enrichment-hub.md
-        - name: Общности торговой марки и интересов
+        - name: Торговые марки и интересы
           href: audience-insights/enrichment-microsoft.md
         - name: Расширенные адреса
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Прогноз оттока транзакций
               href: audience-insights/predict-transactional-churn.md
+            - name: Анализ тональности в отзывах клиентов
+              href: audience-insights/sentiment-analysis.md
             - name: Используйте пользовательские модели из машинного обучения Azure
               href: audience-insights/custom-models.md
             - name: Заполнение частично отсутствующих данных
