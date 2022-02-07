@@ -1,6 +1,6 @@
 ---
 title: Создание сред и управление ими
-description: Узнайте, как зарегистрироваться для службы и как управлять средами.
+description: 'Узнайте, как зарегистрироваться для службы и как управлять средами.'
 ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,11 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892400"
 ---
+
 # <a name="manage-environments"></a>Управление средами
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ## <a name="switch-environments"></a>Переключить среды
 

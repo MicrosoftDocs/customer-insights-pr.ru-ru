@@ -1,6 +1,6 @@
 ---
 title: Использование источников данных для приема данных
-description: Узнайте, как импортировать данные из различных источников.
+description: 'Узнайте, как импортировать данные из различных источников.'
 ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977845"
 ---
+
 # <a name="data-sources-overview"></a>Обзор источников данных
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Возможность аналитики аудитории в Dynamics 365 Customer Insights подключается к данным из широкого набора источников. Подключение к источнику данных часто называется процессом *приема данных*. После приема данных вы можете [объединить](data-unification.md) их и принять действия с ними.
 

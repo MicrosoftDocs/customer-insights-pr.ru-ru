@@ -1,7 +1,7 @@
 ---
 title: Подключение данных Common Data Model к учетной записи Azure Data Lake
 description: Работа с данными Common Data Model с помощью Azure Data Lake Storage.
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900213"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Подключение к папке Common Data Model с помощью учетной записи Azure Data Lake
 
 В этой статье содержится информация о том, как принимать данные из папки Common Data Model с помощью вашей учетной записи Azure Data Lake Storage Gen2.
@@ -25,6 +20,8 @@ ms.locfileid: "7900213"
 - Данные в Azure Data Lake должны соответствовать стандарту Common Data Model. Другие форматы в настоящее время не поддерживаются.
 
 - Прием данных поддерживает исключительно учетные записи хранения Azure Data Lake *Gen2*. Вы не можете использовать учетные записи хранения Azure Data Lake Gen1 для приема данных.
+
+- Учетная запись Azure Data Lake Storage должна иметь [включенное иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
 
 - Чтобы пройти аутентификацию с помощью субъекта-службы Azure, убедитесь, что она настроена в вашем клиенте. Для получения дополнительной информации см. [Подключение аналитики аудитории к учетной записи Azure Data Lake Storage Gen2 с помощью субъекта-службы Azure](connect-service-principal.md).
 
