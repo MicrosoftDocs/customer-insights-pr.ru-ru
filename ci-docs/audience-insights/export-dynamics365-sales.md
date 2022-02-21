@@ -1,6 +1,6 @@
 ---
 title: Экспорт данных Customer Insights в Dynamics 365 Sales
-description: 'Узнайте, как настроить подключение и экспорт в Dynamics 365 Sales.'
+description: Узнайте, как настроить подключение и экспорт в Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090939"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Использование сегментов в Dynamics 365 Sales (предварительная версия)
 
 
 
 Используйте свои данные о клиентах для создания маркетинговых списков, бизнес-процессов для дальнейших действий, а также рассылки предложений с помощью Dynamics 365 Sales.
+
+## <a name="known-limitations"></a>Известные ограничения
+
+- Экспорт в Dynamics 365 Sales ограничен 100 000 участников на сегмент.
+- Экспорт сегмента в Dynamics 365 Sales может занять до 3 часов. 
 
 ## <a name="prerequisite-for-connection"></a>Предварительные требования для подключения
 

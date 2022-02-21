@@ -2,6 +2,22 @@
   href: index.yml
 - name: Обзор продукта
   href: overview.md
+- name: Каталог обучения
+  items:
+    - name: Начать
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Прием данных
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Создание объединенного профиля клиента
+      href: /learn/modules/unified-customer-profile/
+    - name: Работайте с аналитикой аудитории
+      href: /learn/modules/working-with-customer-insights/
+    - name: Обогащайте данные и делайте прогнозы
+      href: /learn/modules/enrich-data/
+    - name: Управляйте внешними подключениями
+      href: /learn/modules/configure-third-party-connections/
+    - name: Администрирование Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: Бесплатная пробная версия
   items:
     - name: Регистрация на бесплатную пробную версию
@@ -30,21 +46,11 @@
           href: audience-insights/home.md
     - name: Работа с организациями
       href: audience-insights/work-with-business-accounts.md
-    - name: Изучение модулей
-      items:
-        - name: Прием данных
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Создание объединенного профиля клиента
-          href: /learn/modules/unified-customer-profile/
-        - name: Работа с приложением
-          href: /learn/modules/working-with-customer-insights/
-        - name: Обогащайте данные и прогнозы
-          href: /learn/modules/enrich-data/
     - name: Источники данных
       items:
         - name: Обзор источников данных
           href: audience-insights/data-sources.md
-        - name: Добавление источников данных с помощью соединителей Power Query
+        - name: Добавьте источники данных через соединители Power Query
           href: audience-insights/connect-power-query.md
         - name: Добавление папки Common Data Model в качестве источника данных
           href: audience-insights/connect-common-data-model.md
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: Права и запросы DSR
   href: dsr-rights-requests.md
+- name: Получение поддержки
+  href: /power-platform/admin/get-help-support
