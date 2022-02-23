@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: ba43d24ac5ae8846da87f0d41234d8616c2f8070
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010925"
 ---
-
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Пополнение профилей клиентов расширенными адресами
 
 Адреса в ваших данных могут быть неструктурированными, неполными или неправильными. Используйте модели Microsoft для нормализации и обогащения ваших адресов в [формате Common Data Model](/common-data-model/schema/core/applicationcommon/address) для большей точности и понимания.
