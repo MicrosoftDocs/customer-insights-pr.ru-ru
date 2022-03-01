@@ -1,7 +1,7 @@
 ---
 title: Экспорт данных Customer Insights в Dynamics 365 Marketing
 description: Узнайте, как настроить подключение и экспорт в Dynamics 365 Marketing.
-ms.date: 08/24/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,20 +9,18 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e2ec9f1cc11fdab5ff313bb3041d2b158ed6ca67
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046763"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692497"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Использование сегментов в Dynamics 365 Marketing (предварительная версия)
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-
-Используйте [сегменты](segments.md) для создания кампаний и связи с определенными группами клиентов с помощью Dynamics 365 Marketing. Дополнительные сведения см. в [Использование сегментов из Dynamics 365 Customer Insights с Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
-
-Если вы используете новые возможности Dynamics 365 Marketing для оркестрации в реальном времени циклов взаимодействия с клиентами в организации Dataverse, вам не нужно создавать стандартный экспорт в Dynamics 365 Marketing. Контакты и сегменты из аналитики аудитории доступны непосредственно в Dynamics 365 Marketing после подключения Marketing и Customer Insights. Прежде чем удалять существующие экспорты, просмотрите документацию о том, [как связать аналитику аудитории и оркестрацию циклов взаимодействия с клиентами Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile).
+Используйте [сегменты](segments.md) для создания кампаний и связи с определенными группами клиентов с помощью Dynamics 365 Marketing. Дополнительные сведения см. в [Используйте сегменты из Dynamics 365 Customer Insights с Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
 ## <a name="prerequisite-for-a-connection"></a>Предварительное требование для подключения
 
@@ -45,7 +43,7 @@ ms.locfileid: "8046763"
 
 1. В разделе **Учетная запись администратора сервера** выберите **Войти** и выберите учетную запись Dynamics 365 Marketing.
 
-1. Сопоставьте поле "Идентификатор контакта" в сущности "Клиент" с идентификатором контакта Dynamics 365.
+1. Сопоставьте поле идентификатора клиента с идентификатором контакта Dynamics 365.
 
 1. Выберите **Сохранить**, чтобы завершить подключение. 
 

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a3d7f9276330a6daacbe9428d84a371b81bbefe
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466364"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461119"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>Использование демографических измерений для разделения поведенческих данных
 
@@ -29,7 +29,7 @@ ms.locfileid: "7466364"
 - Среда аналитики взаимодействия, в которой данные профиля клиентов связаны со средой аналитики аудитории, в которой создаются профили клиентов. Дополнительные сведения: [Создание связи между аналитикой аудитории и аналитикой взаимодействий](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> После того как вы создадите связь между средами аналитики аудитории и аналитики взаимодействия, вам могут понадобиться только данные, относящиеся к свойствам профиля клиента, которые могут быть полезны в качестве измерений в аналитике взаимодействия. Дополнительные сведения см. в разделе [Включение атрибутов и сегментов объединенных профилей аналитики аудитории](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
+> После того как вы создадите связь между средами аналитики аудитории и аналитики взаимодействия, вам могут понадобиться только данные, относящиеся к свойствам профиля клиента, которые могут быть полезны в качестве измерений в аналитике взаимодействия. Дополнительные сведения см. в разделе [Включение атрибутов и сегментов объединенных профилей аналитики аудитории](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
 
 ## <a name="create-a-new-custom-report"></a>Создание нового настраиваемого отчета
 

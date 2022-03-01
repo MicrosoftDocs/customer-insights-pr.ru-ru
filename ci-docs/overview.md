@@ -7,12 +7,13 @@ ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: b2dc5a1159f8baea1fa3c686de5ac294842b3e26
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.custom: intro-internal
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977614"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036527"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Обзор продукта Dynamics 365 Customer Insights
 
@@ -32,10 +33,5 @@ ms.locfileid: "7977614"
 1. На панели навигации выберите **Все приложения**, чтобы открыть окно **Выберите фокус**.
 1. Выберите **Перейти**, чтобы перейти к выбранной вами возможности.
 
-## <a name="pricing-and-licensing"></a>Ценообразование и лицензирование
-
-Customer Insights лицензируется на каждый клиент и включает несколько возможностей. Вы можете приобрести дополнительную емкость и лицензию, чтобы увеличить квоту по умолчанию. 
-- [Обзор цен](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
-- Емкость и объемы обслуживания: [Руководство по лицензированию Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

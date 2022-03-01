@@ -1,7 +1,7 @@
 ---
 title: Схемы сущностей Customer Insights в Common Data Model
 description: Работа с сущностями в Common Data Model.
-ms.date: 08/13/2021
+ms.date: 04/17/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046533"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692321"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схемы сущностей в Common Data Model
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [Common Data Model](/common-data-model/) — это декларативная спецификация и определение стандартных сущностей с открытым исходным кодом, представляющих концепции и действия, часто используемые в различных организациях и приложениях повышения производительности. Эта модель распространяется и на данные наблюдений и анализа. Common Data Model предоставляет четко определенные, модульные и расширяемые бизнес-сущности, такие как учетная запись, подразделение, обращение, контакт, интерес, возможная сделка и продукт, а также взаимодействия и связи с поставщиками, работниками и клиентами, например действия и соглашения об уровне обслуживания. Любой может создавать определения на основе Common Data Model и расширять такие определения для учета дополнительных специфичных для бизнеса идей.
 
@@ -42,7 +42,7 @@ ms.locfileid: "8046533"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Просмотр сущностей с помощью навигатора сущностей Common Data Model
 
-Вы можете просматривать сущности в [навигаторе сущностей Common Data Model](https://microsoft.github.io/CDM/). Выберите сущность в разделе «Приложение Insights», чтобы получить список сущностей Customer Insights и их определения.
+Вы можете просматривать сущности в [навигаторе сущностей Common Data Model](https://microsoft.github.io/CDM/). Выберите кнопку **Загрузить с GitHub!** и перейдите к разделу **foundationCommon** > **crmCommon** > **решения** > **customerInsights**, где вы найдете список сущностей Customer Insights и их определения.
 > [!div class="mx-imgBorder"]
 > ![Навигатор сущностей CDM, показывающий сущность CustomerActivity.](media/CDM-entity-navigator.png "Навигатор сущностей CDM, показывающий сущность CustomerActivity")
 
