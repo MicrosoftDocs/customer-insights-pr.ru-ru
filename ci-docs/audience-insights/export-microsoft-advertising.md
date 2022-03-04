@@ -1,20 +1,19 @@
 ---
 title: Экспорт данных Customer Insights в Microsoft Advertising
 description: Узнайте, как настроить подключение и экспорт в Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8f009ed0258ded424340061e5320dd7df68c199f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124540"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226907"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Экспорт сегментов в Microsoft Advertising (предварительная версия)
 
@@ -29,9 +28,9 @@ ms.locfileid: "6124540"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Вы можете экспортировать до 500 тыс профилей за один экспорт в Microsoft Advertising.
+- Всего в Microsoft Advertising можно экспортировать до 500 000 профилей клиентов на один экспорт.
 - Экспорт в Microsoft Advertising ограничен сегментами.
-- Экспорт до 500 тыс профилей в Microsoft Advertising может занять до 10 минут. 
+- Экспорт до 500 000 профилей клиентов в Microsoft Advertising может занять до 10 минут. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Настройка подключения к Microsoft Advertising
@@ -68,7 +67,7 @@ ms.locfileid: "6124540"
 
 1. Введите ваш **Идентификатор клиента Microsoft Advertising и идентификатор учетной записи**. Вы можете найти идентификатор клиента (`cid`) и идентификатор учетной записи (`aid`) в параметрах URL-адреса при входе в Microsoft Advertising.
 
-1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите поле в едином профиле клиента с адресом электронной почты клиента. Необходимо экспортировать сегменты в Microsoft Advertising.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в Microsoft Advertising.
 
 1. Нажмите кнопку **Сохранить**.
 

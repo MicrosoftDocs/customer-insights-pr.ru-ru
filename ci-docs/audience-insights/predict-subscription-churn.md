@@ -3,20 +3,19 @@ title: Прогноз оттока подписки (содержит видео
 description: Спрогнозируйте, существует ли риск того, что клиент прекратит пользоваться подпиской на продукты или услуги вашей компании.
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.openlocfilehash: b61e87ad833dd7a8e51c6619945a9e216d85f221
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967717"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354713"
 ---
-# <a name="subscription-churn-prediction-preview"></a>Прогноз оттока подписки (предварительная версия)
+# <a name="subscription-churn-prediction"></a>Прогноз оттока подписок
 
 Прогноз оттока подписки помогает спрогнозировать, существует ли риск того, что клиент прекратит пользоваться подпиской на продукты или услуги вашей компании. Вы можете создать новый прогноз оттока подписки на странице **Аналитика** > **Прогнозы**. Выбрать **Мои прогнозы**, чтобы увидеть другие прогнозы, которые вы создали.
 
@@ -63,7 +62,7 @@ ms.locfileid: "7967717"
 ## <a name="create-a-subscription-churn-prediction"></a>Создать прогноз оттока подписки
 
 1. В аналитике аудитории перейдите **Аналитика** > **Прогнозы**.
-1. Выберите плитка **Модель оттока подписки (предварительная версия)** и выберите **Использовать эту модель**.
+1. Выберите плитку **Модель оттока подписок** и выберите **Использовать эту модель**.
    > [!div class="mx-imgBorder"]
    > ![Плитка Модель оттока подписки с кнопкой «Использовать эту модель».](media/subscription-churn-usethismodel.PNG "Плитка Модель оттока подписки с кнопкой «Использовать эту модель»")
 

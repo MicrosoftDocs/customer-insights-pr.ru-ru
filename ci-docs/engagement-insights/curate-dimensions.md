@@ -2,18 +2,17 @@
 title: Использование демографических измерений для разделения поведенческих данных (отобранные измерения)
 description: Используйте отобранные измерения единого профиля, чтобы включить свойства профиля клиента аналитики аудитории.
 ms.date: 07/27/2021
-ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 95395e09bc0ba5ba93138957c62105f31c709e91
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461119"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8233063"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>Использование демографических измерений для разделения поведенческих данных
 
@@ -29,7 +28,7 @@ ms.locfileid: "7461119"
 - Среда аналитики взаимодействия, в которой данные профиля клиентов связаны со средой аналитики аудитории, в которой создаются профили клиентов. Дополнительные сведения: [Создание связи между аналитикой аудитории и аналитикой взаимодействий](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> После того как вы создадите связь между средами аналитики аудитории и аналитики взаимодействия, вам могут понадобиться только данные, относящиеся к свойствам профиля клиента, которые могут быть полезны в качестве измерений в аналитике взаимодействия. Дополнительные сведения см. в разделе [Включение атрибутов и сегментов объединенных профилей аналитики аудитории](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
+> После того как вы создадите связь между средами аналитики аудитории и аналитики взаимодействия, вам могут понадобиться только данные, относящиеся к свойствам профиля клиента, которые могут быть полезны в качестве измерений в аналитике взаимодействия. Дополнительные сведения см. в разделе [Включение атрибутов и сегментов объединенных профилей аналитики аудитории](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
 
 ## <a name="create-a-new-custom-report"></a>Создание нового настраиваемого отчета
 

@@ -5,16 +5,15 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 09/30/2021
 ms.topic: get-started
-ms.service: customer-insights
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: dc1ea94ad55886c605d27caea031e00964f6f7c8
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645507"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350239"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Регистрация на бесплатную пробную версию Dynamics 365 Customer Insights
 
@@ -32,23 +31,12 @@ Customer Insights содержит бесплатную 30-дневную про
 
 Пробная среда включает в себя те же функции, что и платная версия. ПО ссылкам ниже можно узнать некоторые ключевые особенности.
 
-### <a name="audience-insights"></a>Аналитика аудитории
-
 - [Краткое руководство по аналитике аудитории.](audience-insights/get-started.md)
 - [Добавьте дополнительных пользователей и назначьте разрешения.](audience-insights/permissions.md)
 - [Примите свои источники данных](audience-insights/data-sources.md) и обработайте их в [процессе объединения данных](audience-insights/data-unification.md), чтобы получить [единые профили клиентов](audience-insights/customer-profiles.md).
 - [Обогатите единые профили клиентов](audience-insights/enrichment-hub.md) или [запустите прогнозные модели](audience-insights/predictions-overview.md).
 - Создайте [сегменты](audience-insights/segments.md), чтобы группировать клиентов, и [меры](audience-insights/measures.md) для просмотра КПЭ.
 - Настройте [подключения](audience-insights/connections.md) и [экспорты](audience-insights/export-destinations.md) для обработки подмножеств ваших данных в других приложениях.
-
-### <a name="engagement-insights"></a>Аналитика взаимодействия
-
-- [Краткое руководство по аналитике взаимодействия.](engagement-insights/get-started.md)
-- [Создание рабочей области](engagement-insights/create-workspace.md) и добавление участников.
-- [Добавьте код на свой сайт](engagement-insights/instrument-website.md) или [мобильное приложение](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
-- Посмотрите [отчет в реальном времени](engagement-insights/view-reports.md) или создайте [настраиваемые отчеты](engagement-insights/custom-reports.md).
-- [Создать уточненные события](engagement-insights/refined-events.md) на экспорт.
-- [Экспорт данных](engagement-insights/export-events.md) в Azure Data Lake Storage.
 
 ## <a name="additional-resources"></a>Дополнительные ресурсы
 

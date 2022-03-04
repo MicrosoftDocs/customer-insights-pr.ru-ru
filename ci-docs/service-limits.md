@@ -2,19 +2,18 @@
 title: Ограничения служб в Dynamics 365 Customer Insights
 description: Понимание ограничений обслуживания.
 ms.date: 09/03/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7791997"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350423"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Ограничения обслуживания в возможностях Customer Insights
 
@@ -22,27 +21,25 @@ ms.locfileid: "7791997"
 
 ## <a name="audience-insights"></a>Аналитика аудитории
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Возможность ограничения обслуживания в аналитике аудитории Dynamics 365 Customer Insights
-
-| С областями  | Ограничения  | Примечания. |
+| Площадь  | Ограничения  | Примечания. |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Сегменты, меры и прогнозы | 300  | Общее количество [сегментов](audience-insights/segments.md), [мер](audience-insights/measures.md) и [прогнозов](audience-insights/predictions.md) вместе не может превышать 300.  |
 | Связи | 20 уровней глубины отношений в путях сущностей. | При создании [сегментов](audience-insights/segments.md) или [мер](audience-insights/measures.md) с помощью интерфейса построителя пути к сущностям могут иметь до 20 переходов отношений между начальной и конечной сущностями.  |
 
+<!--
+## Engagement insights
 
-## <a name="engagement-insights"></a>Аналитика взаимодействия
+### Workspace and event quotas
 
-### <a name="workspace-and-event-quotas"></a>Рабочая область и квоты на события
+Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
 
-Аналитика вовлеченности — это масштабируемое приложение, которое может поддерживать миллионы событий в секунду. Во время общедоступная предварительная версия события имеют порог объема. Также существует ограничение на количество рабочих областей в организации.
+### Engagement insights limits
 
-### <a name="engagement-insights-limits"></a>Границы аналитики взаимодействий
+- Maximum event volume per workspace  = 100 events per second
 
-- Максимальный объем событий на рабочую область = 100 событий в секунду.
+- Maximum number of workspaces per organization = 100
 
-- Максимальное количество рабочих областей на организацию = 100.
-
-Когда события превышают порог, это может привести к потере данных в отчетах, основанных на этих событиях. Вы можете [обратитесь в службу поддержки](https://go.microsoft.com/fwlink/?linkid=2145734), чтобы запросить увеличение объема до того, как вы превысите границы. Мы будем работать с вами, чтобы определить вашу потребность в увеличении объема и поддержать ваш запрос.
-
+When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
+-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

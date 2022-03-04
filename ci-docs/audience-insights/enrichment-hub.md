@@ -1,21 +1,25 @@
 ---
 title: Обогащение унифицированных профилей клиентов
 description: Используйте возможности для обогащения данных о ваших клиентах.
-ms.date: 11/05/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884232"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355399"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогащение профилей клиентов (предварительная версия)
 
@@ -37,6 +41,7 @@ ms.locfileid: "7884232"
 - [Демографическая информация](enrichment-experian.md), предоставленная Experian
 - [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
 - [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+- [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
 
 # <a name="business-accounts-b-to-b"></a>[Учетные записи компаний (B2B)](#tab/b2b)
 

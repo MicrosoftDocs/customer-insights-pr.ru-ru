@@ -3,18 +3,20 @@ title: Пользовательские модели машинного обуч
 description: Работа с пользовательскими моделями из машинного обучения Azure в Dynamics 365 Customer Insights.
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881800"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355102"
 ---
 # <a name="custom-machine-learning-models"></a>Пользовательские модели машинного обучения
 
@@ -40,6 +42,8 @@ ms.locfileid: "7881800"
 
    > [!NOTE]
    > Данные передаются между вашими экземплярами Customer Insights и выбранными веб-службами или конвейерами Azure в бизнес-процессе. При передаче данных в службу Azure убедитесь, что эта обработка данных этой службой осуществляется в соответствии с нормативно-правовыми требованиями для этих данных в вашей организации.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>Добавление нового рабочего процесса
 

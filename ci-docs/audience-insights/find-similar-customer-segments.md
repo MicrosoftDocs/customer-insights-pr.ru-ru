@@ -1,24 +1,29 @@
 ---
-title: Найти похожих клиентов с помощью ИИ
+title: Поиск похожих клиентов с помощью ИИ (содержит видео)
 description: Ищите похожие сегменты клиентов с помощью искусственного интеллекта.
 ms.date: 06/25/2020
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-segment-builder
+- ci-segment-insights
+- customerInsights
+ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034559"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355261"
 ---
 # <a name="similar-customers-preview"></a>Похожие клиенты (предварительная версия)
 
 Эта функция позволяет вам найти похожих клиентов в вашей клиентской базе, используя искусственный интеллект. Для использования этой функции необходимо создать хотя бы один сегмент. Расширение критериев существующего сегмента поможет найти клиентов, похожих на этот сегмент.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *Поиск похожих клиентов* использует автоматизированные средства для оценки данных и прогнозирования на основе этих данных и, следовательно, может использоваться в качестве метода профилирования, как этот термин определяется в Общем регламенте по защите данных (GDPR). Использование клиентом этой функции для обработки данных может регулироваться GDPR или другими законами или правилами. Вы несете ответственность за то, что использование Dynamics 365 Customer Insights, включая прогнозы, соответствует всем применимым законам и требованиям, включая законы, касающиеся конфиденциальности, личных данных, биометрических данных, защиты данных и конфиденциальности сообщений.

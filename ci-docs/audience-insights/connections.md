@@ -3,18 +3,20 @@ title: Подключения к другим службам из Customer Insig
 description: Делитесь данными с другими службами.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+searchScope:
+- ci-connections
+- customerInsights
+ms.openlocfilehash: ccad090d3bf6eab96eff37f7a96289ca2882d369
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304988"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354400"
 ---
 # <a name="connections-preview-overview"></a>Обзор подключений (предварительная версия)
 
@@ -47,6 +49,7 @@ ms.locfileid: "6304988"
 1. В области **Настроить подключение** укажите необходимые сведения. 
    1. **Отображаемое имя** и тип подключения описывают подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель этого подключения.
    1. Точные поля зависят от того, к какой службе вы подключаетесь. Подробнее о конкретном типе подключения вы можете узнать из статьи о целевой службе.
+   1. Если вы [используете собственное Key Vault](use-azure-key-vault.md), чтобы хранить секреты, включите **Использовать Key Vault** и выберите секрет из списка.
 
 1. Чтобы создать подключение, выберите **Сохранить**.
 
@@ -93,3 +96,6 @@ ms.locfileid: "6304988"
 
 1. Для подтверждения удаления выберите **Удалить**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Настройте подключения с секретами, управляемыми вашим собственным Key Vault
+
+Некоторым соединениям нужны секреты, такие как ключи API или пароли. Некоторые подключения поддерживают секреты, хранящиеся в вашем собственном Key Vault. Узнайте больше о поддерживаемых соединениях и о том, как настроить [собственное Key Vault для аналитики аудитории](use-azure-key-vault.md).

@@ -1,27 +1,26 @@
 ---
 title: Бот для Microsoft Teams
 description: Смотрите единые профили клиентов в Microsoft Teams с помощью бота.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 45ea23fbefe5f1d44c3961183b76d2cc5c45355e
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4406752"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232118"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Бот Teams для Dynamics 365 Customer Insights (предварительная версия)
 
 Подключитесь с Microsoft Teams, чтобы бот мог искать унифицированные профили клиентов в каналах Teams.
 
 > [!div class="mx-imgBorder"]
-> ![Бот Teams показывает запись клиента](media/teams-bot.png "Бот Teams показывает запись клиента")
+> ![Бот Teams показывает запись клиента.](media/teams-bot.png "Бот Teams показывает запись клиента")
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -31,7 +30,10 @@ ms.locfileid: "4406752"
 - [Процесса унификации](data-unification.md) завершен.
 - Поля добавлены в [индекс поиска и фильтрации](search-filter-index.md).
 - Customer Insights и Teams находятся в одной организации.
+- В вашей среде основная целевая аудитория настроена на частных клиентов. Организации не поддерживаются.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Настройка бота
 
 1. В аналитике аудитории перейдите **Администрирование** > **Экспорт пунктов назначения**.
@@ -52,3 +54,6 @@ ms.locfileid: "4406752"
 - Если ваша организация поддерживает несколько сред Customer Insights в одной организации, вы можете ввести **switchinstance**, чтобы выбрать, к какой среде вы хотите подключить бота.
 
 - Введите **справка**, чтобы увидеть список доступных команд для бота.  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

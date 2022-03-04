@@ -4,15 +4,14 @@ metadata:
   author: m-hartmann
   description: Найдите соответствующие статьи, чтобы начать со справочной информации.
   ms.author: mhart
-  ms.date: 10/29/2020
-  ms.service: customer-insights
+  ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598485"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350485"
 title: Документация по Dynamics 365 Customer Insights
 summary: Найдите полезные ресурсы, чтобы начать работу и узнать о функциях и возможностях Customer Insights.
 landingContent:
@@ -23,19 +22,41 @@ landingContent:
     - text: Обзор Customer Insights
       url: overview.md
     - text: Планы выпуска
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: Доступ к своей среде
-      url: https://home.ci.ai.dynamics.com/
-- title: Начните работу с аналитикой аудитории
+      url: /dynamics365/release-plans/
+    - text: Обнаружение CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: Схема обучения Customer Insights
+      url: /learn/paths/build-customer-insights/
+- title: Начало работы с Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: Зарегистрироваться для получения пробной версии
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Новые возможности
+    - text: Что нового в аналитике аудитории
       url: audience-insights/whats-new-audience-insights.md
-    - text: Документация по аналитике аудитории
-      url: audience-insights/index.yml
+    - text: Краткое руководство
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: Начать
+      url: /learn/modules/get-started-customer-data-platform/
+- title: Администрирование Customer Insights
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка системы
+      url: audience-insights/system.md
+    - text: Определение разрешений пользователя
+      url: audience-insights/permissions.md
+    - text: Управление несколькими средами
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: Администрирование Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: Контакты
   linkLists:
   - linkListType: overview
@@ -46,63 +67,3 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Сообщить о проблеме
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Учебники по аналитике аудитории
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Создать среду
-      url: audience-insights/home.md
-    - text: Создание объединенного профиля клиента
-      url: /learn/modules/unified-customer-profile/
-    - text: Работа с приложением
-      url: /learn/modules/working-with-customer-insights/
-- title: Экспорт данных аналитики аудитории
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Настройка пунктов назначения экспорта
-      url: audience-insights/export-destinations.md
-    - text: Карточки клиентов в приложениях Dynamics 365
-      url: audience-insights/customer-card-add-in.md
-    - text: Соединитель Power BI
-      url: audience-insights/export-power-bi.md
-- title: Администрирование аналитики аудитории
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Настройка системы
-      url: audience-insights/system.md
-    - text: Определение разрешений пользователя
-      url: audience-insights/permissions.md
-    - text: Управление несколькими средами
-      url: audience-insights/manage-environments.md
-- title: Об аналитике взаимодействий (предварительная версия)
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Обзор возможностей
-      url: engagement-insights/overview.md
-    - text: Термины и понятия
-      url: engagement-insights/glossary.md
-    - text: Начать
-      url: engagement-insights/get-started.md
-- title: Отчеты для аналитики взаимодействия (предварительная версия)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Просмотр отчетов
-      url: engagement-insights/view-reports.md
-    - text: Создайте настраиваемые отчеты
-      url: engagement-insights/custom-reports.md
-    - text: Просмотреть отчет по унифицированным профилям
-      url: engagement-insights/profile-reports.md
-- title: События для аналитики взаимодействия (предварительная версия)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Создавайте усовершенствованные мероприятия
-      url: engagement-insights/refined-events.md
-    - text: Экспорт событий
-      url: engagement-insights/export-events.md
-    - text: Удалить и экспортировать личные данные
-      url: engagement-insights/delete-export-personal-data.md

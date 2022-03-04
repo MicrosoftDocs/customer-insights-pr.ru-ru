@@ -3,18 +3,20 @@ title: Сущности и наборы данных
 description: Просмотр данных на странице сущностей.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 00c5ee50fb9f0906622c91699852ffba0acb5c15
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-entities
+- customerInsight
+ms.openlocfilehash: 1e1abdf49a3c1fe6f9fdd2cf5353a7723454f47b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900443"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355336"
 ---
 # <a name="entities-in-audience-insights"></a>Сущности в аналитике аудитории
 
@@ -71,7 +73,9 @@ ms.locfileid: "7900443"
 
 Например, для столбца «дата рождения» задан тип данных «дата». В записи клиента дата рождения указана как «01.01.19777». Система отметит эту запись как поврежденную. Теперь кто-то может изменить дату рождения в исходной системе на «1977». После автоматического обновления источников данных поле теперь имеет допустимый формат, и запись будет удалена из поврежденной сущности. 
 
-Перейдите в раздел **Данные** > **Сущности** и найдите поврежденные сущности в разделе **Система**. Схема именования поврежденных сущностей: 'DataSourceName_EntityName_corrupt'.
+Перейдите в раздел **Данные** > **Сущности** и найдите поврежденные сущности в разделе **Система**. Схема именования поврежденных сущностей: 'DataSourceName_EntityName_corrupt'. Выберите поврежденный объект, чтобы определить все поврежденные поля и причину на уровне отдельной записи.
+> [!div class="mx-imgBorder"]
+> ![Причина повреждения.](media/corruption-reason.png "Причина повреждения")
 
 Customer Insights по-прежнему обрабатывает поврежденные записи. Однако они могут вызвать проблемы при работе с едиными данными.
 

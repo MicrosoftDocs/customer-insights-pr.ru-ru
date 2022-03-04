@@ -1,20 +1,19 @@
 ---
 title: Экспорт данных Customer Insights в ActiveCampaign
 description: Узнайте, как настроить подключение и экспорт в ActiveCampaign.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314665"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227825"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Экспорт сегментов в ActiveCampaign (предварительная версия)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314665"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Вы можете экспортировать до 1 миллиона профилей за один экспорт в ActiveCampaign, и это может занять до 90 минут.
+- Вы можете экспортировать до 1 миллиона профилей клиентов за один экспорт в ActiveCampaign, и это может занять до 90 минут.
 - Экспорт в ActiveCampaign ограничен сегментами.
-- Количество профилей, которые вы можете экспортировать в ActiveCampaign, зависит от вашего контракта с ActiveCampaign.
+- Количество профилей клиентов, которые вы можете экспортировать в ActiveCampaign, зависит от вашего контракта с ActiveCampaign.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Настройте подключение к ActiveCampaign
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314665"
 
 1. Введите ваш [**Идентификатор списка ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. Это требуется для экспорта сегментов в ActiveCampaign. При желании вы можете экспортировать имя, фамилию и телефон, чтобы создавать более персонализированные электронные письма. Выберите Добавить атрибут, чтобы сопоставить эти поля.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Это требуется для экспорта сегментов в ActiveCampaign. При желании вы можете экспортировать имя, фамилию и телефон, чтобы создавать более персонализированные электронные письма. Выберите Добавить атрибут, чтобы сопоставить эти поля.
 
 1. Нажмите кнопку **Сохранить**.
 

@@ -1,22 +1,21 @@
 ---
 title: Экспорт данных Customer Insights в Snapchat
 description: Узнайте, как настроить подключение и экспорт в Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d3dae7f0fef1fc3792c90c8ac0d3b037f5c0923d
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760615"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227264"
 ---
-# <a name="export-segment-lists-to-snapchat-preview"></a>Экспорт списков сегментов в Snapchat (предварительная версия)
+# <a name="export-segments-to-snapchat-preview"></a>Экспорт сегментов в Snapchat (предварительная версия)
 
 Экспортируйте сегменты унифицированных профилей клиентов в Snapchat и используйте их для рекламы. 
 
@@ -29,7 +28,7 @@ ms.locfileid: "5760615"
 ## <a name="known-limitations"></a>Известные ограничения
 
 - Экспорт в Snapchat ограничен сегментами.
-- Экспорт до 1 миллиона профилей в Snapchat может занять до 15 минут. 
+- Экспорт до 1 млн профилей клиентов в Snapchat может занять до 15 минут. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Настройка подключения к Snapchat
 
@@ -63,7 +62,7 @@ ms.locfileid: "5760615"
 
 1. Введите [**ИД аудитории Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в Snapchat.
+1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. Необходимо экспортировать сегменты в Snapchat.
 
 1. Выберите сегменты, которые нужно экспортировать. 
 

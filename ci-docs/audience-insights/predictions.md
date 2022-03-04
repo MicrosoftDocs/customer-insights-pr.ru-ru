@@ -1,24 +1,28 @@
 ---
 title: Заполнение частичных данных с помощью прогнозов
 description: Используйте прогнозы, чтобы заполнить неполные данные о клиентах.
-ms.date: 05/05/2020
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-predictions
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645050"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354019"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>Дополните частичные данные прогнозами
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>Дополнение частичных данных прогнозами (устарело)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Эта функция будет объявлена **устаревшей** с **5 ноября 2021 г.** Текущие реализации будут работать до тех пор, пока функция не будет удалена, но вы не сможете создавать новые интеграции, используя приведенные ниже инструкции.
 
 Прогнозы позволяют вам легко создавать прогнозируемые значения, которые могут улучшить ваше понимание клиента. На странице **Аналитика** > **Прогнозы** вы можете выбрать **Мои прогнозы**, чтобы увидеть прогнозы, которые вы настроили в других частях аналитики аудитории, и дополнительно настроить их.
 
@@ -60,6 +64,8 @@ ms.locfileid: "7645050"
    > ![Пример, показывающий значения полей, сопоставленные категориям.](media/intelligence-categorymapping.png "Пример, показывающий значения полей, сопоставленные категориям")
 
 8. Выберите **Готово**, и прогноз будет обработан. Обработка займет некоторое время, в зависимости от размера и сложности данных. Результаты будут доступны в новой сущности на основе значения **Имя выходной сущности** созданного прогноза.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>Создание прогноза при создании сегмента
 
@@ -110,7 +116,7 @@ ms.locfileid: "7645050"
 
 ## <a name="edit-a-prediction"></a>Изменение прогноза
 
-После того как вы создали прогноз, вы можете настроить модель в AI Builder, чтобы повысить эффективность вашей модели.  
+После того, как вы создали прогноз, вы можете настроить модель в AI Builder для повышения эффективности вашей модели.  
 
 1. В аналитике аудитории перейдите **Аналитика** > **Прогнозы** > **Мои прогнозы**.
 
@@ -120,12 +126,12 @@ ms.locfileid: "7645050"
 
 4. Выберите **Настроить в AI Builder**.
 
-5. Обновите вашу модель в AI Builder. [Подробнее об управлении моделями в AI Builder](/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. Обновление модели в AI Builder. [Подробнее об управлении моделями в AI Builder](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 Следующий прогон вашего прогноза будет использовать обновленную модель, которую вы создали.
 
 > [!NOTE]
-> Новые модели, созданные в AI Builder, не будут отображаться в аналитике аудитории, если модель не была создана на основе перечисленных выше возможностей.
+> Новые модели, созданные в AI Builder, не будут отображаться в аналитике аудитории, если только модель не была создана на основе описанного выше опыта.
 
 ## <a name="remove-a-prediction"></a>Удаление прогноза
 

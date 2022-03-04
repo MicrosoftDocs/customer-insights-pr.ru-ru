@@ -4,17 +4,16 @@ description: Узнайте, как персонализировать и зап
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/30/2020
-ms.service: customer-insights
+ms.date: 10/01/2021
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 97e50a51231bcf05f3e381397f0cf41e49afc10e3c3674d7c709c8f521979e12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a50a10db784ec7c1943c94e74000713309787e5c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036619"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225347"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>Запустите образец веб-пакета SDK для возможность аналитики вовлеченности Dynamics 365 Customer Insights
 
@@ -26,7 +25,7 @@ ms.locfileid: "7036619"
 
 - Установка [Кода Visual Studio](https://code.visualstudio.com/).
 - [Установите расширение Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) в Visual Studio Code и узнайте, как запустить Live Server.
-- Вы должны иметь [ключ приема](instrument-website.md).
+- Вы должны иметь [рабочую область аналитики взаимодействия](create-workspace.md).
 
 ## <a name="run-sample"></a>Выполнить образец
 
@@ -36,7 +35,11 @@ ms.locfileid: "7036619"
 
 1. Откройте распакованную папку в Visual Studio Code.
 
-1. В файле `ei_websdk_sample.html` замените строку «INGESTION_KEY» на свой ключ приема с портала возможностей аналитики вовлеченности, а строку «NAME» — на глобальное имя, в котором вы хотите создать экземпляр SDK. Убедитесь, что вы заменили все вхождения.
+1. Перейдите на портал аналитики взаимодействия для вашей рабочей области. Выберите **Администрирование** > **Рабочая область** и **Руководство по установке**. Следуйте первому варианту и выберите **Скопировать код**, чтобы скопировать фрагмент кода JavaScript.
+
+1. В файле `ei_websdk_sample.html` вставьте фрагмент кода, который вы только что скопировали, под этой строкой:
+
+   - <-- ВСТАВЬТЕ ФРАГМЕНТ КОДА JAVASCRIPT С ПОРТАЛА АНАЛИТИКИ ВЗАИМОДЕЙСТВИЯ ПОД ЭТОЙ СТРОКОЙ -->
 
 1. Откройте файл `ei_websdk_sample.html` с помощью Live Server в Visual Studio Code, выбрав **Ввести в действие** из строки состояния.
 
