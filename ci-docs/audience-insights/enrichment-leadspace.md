@@ -1,31 +1,32 @@
 ---
 title: Обогащение профилей компаний сторонним обогащением Leadspace
 description: Общие сведения о стороннем обогащении Leadspace.
-ms.date: 09/30/2021
+ms.date: 04/09/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230650"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031719"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 
-Leadspace — это компания, занимающаяся обработкой и анализом данных, которая предоставляет платформу данных о клиентах B-to-B. Позволяет создавать среды с едиными профилями клиентов на основе учетных записей для обогащения их данных. Обогатите *Профили клиентов* такими атрибутами, как размер компании, местоположение или отрасль. Обогатите *Профили контактов* такими атрибутами, как должность, личность или подтверждение адреса электронной почты.
+Leadspace — это компания, занимающаяся обработка и анализ данных, которая предоставляет платформу B2B Customer Data Platform. Это позволяет клиентам с унифицированными профилями клиентов для компаний обогащать свои данные. Обогащения включают дополнительные атрибуты, такие как размер компании, местоположение, отрасль и т. д.
 
 ## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы настроить Leadspace должны выполняться следующие требования:
 
 - У вас есть активная лицензия Leadspace.
-- У вас есть [единые профили клиентов](customer-profiles.md) на основе организаций.
-- Подключение Leadspace уже настроено администратором или у вас есть разрешения [администратора](permissions.md#administrator) и "бессрочный ключ" (именуемый **Токен Leadspace**). Обращайтесь напрямую в [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) для получения подробной информации об их продукте.
+- У вас есть [унифицированные профили клиентов](customer-profiles.md) для компаний.
+- Подключение Leadspace уже настроено администратором или у вас есть разрешения [администратора](permissions.md#administrator) и "бессрочный ключ" (именуемый **Токен Leadspace**). Обращайтесь напрямую в [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) для получения подробной информации об их продукте.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения
 
@@ -49,10 +50,6 @@ Leadspace — это компания, занимающаяся обработк
 
 1. Выберите **Далее**, чтобы завершить сопоставление полей.
 
-1. Установите флажок, если у вас есть *Профили контактов*, которые вы хотели бы обогатить. Аналитика аудитории автоматически сопоставит требуемые поля.
-
-   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Обогащение записей контактов Leadspace.":::
- 
 1. Введите имя обогащения и выберите **Сохранить обогащение** после просмотра вашего выбора.
 
 
@@ -82,10 +79,9 @@ Leadspace — это компания, занимающаяся обработк
 
 Дополнительные сведения см. в [Leadspace API](https://support.leadspace.com/hc/en-us/sections/201997649-API).
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
-
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Основывайтесь на ваших обогащенных данных клиентов. Создайте [сегменты](segments.md) и [меры](measures.md), и даже [экспортируйте данные](export-destinations.md), чтобы предоставить вашим клиентам индивидуальный подход.
 
 ## <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
 

@@ -2,23 +2,21 @@
 title: Интегрируйте веб-данные из аналитики взаимодействий с помощью аналитики аудитории
 description: Перенесите веб-информацию о клиентах из аналитики взаимодействия в аналитику аудитории.
 ms.date: 06/24/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 037e264658bc354618cff56a89645ef7552aeb13
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: 76a53a897e90152707a7c1255ed5ed93a5f3b5a0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350561"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305034"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>Интегрируйте веб-данные из аналитики взаимодействий с помощью аналитики аудитории
-
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../engagement-insights/includes/cc-beta-prerelease-disclaimer.md)]
 
 Клиенты часто проводят свои повседневные транзакции в Интернете с помощью веб-сайтов. Возможность аналитики взаимодействия (предварительная версия) в Dynamics 365 Customer Insights — удобное решение для интеграции веб-данных в качестве источника. В дополнение к транзакционным, демографическим или поведенческим данным мы можем видеть действия в Интернете в единых профилях клиентов. Мы можем использовать эти профили, чтобы получить дополнительную информацию, такую как сегменты, показатели или прогнозы для действий аудитории.
 

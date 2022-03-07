@@ -3,17 +3,18 @@ title: Экспорт данных Customer Insights в Azure Synapse Analytics
 description: Узнайте, как настроить подключение к Azure Synapse Analytics.
 ms.date: 01/05/2022
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 6f630b8fb03bf615ada6d40fe27a91975d0c856e
+ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231328"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7951058"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Экспорт данных в Azure Synapse Analytics (предварительная версия)
 
@@ -52,7 +53,7 @@ Azure Synapse — это служба аналитики, которая уск
 
 1. Перейти в раздел **Администрирование** > **Подключения**.
 
-1. Выберите **Добавить подключение** и выберите **Azure Synapse Analytics** или выберите **Настройка** на плитка **Azure Synapse Analytics** для настройки подключения.
+1. Выберите **Добавить подключение** и выберите **Azure Synapse Analytics** или выберите **Настройка** на плитке **Azure Synapse Analytics** для настройки подключения.
 
 1. Дайте вашему подключению узнаваемое имя в поле Отображаемое имя. Имя и тип подключения описывают это подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель подключения.
 
@@ -74,7 +75,7 @@ Azure Synapse — это служба аналитики, которая уск
 
 1. Укажите узнаваемое **Отображаемое имя** для вашего экспорта и **Имя базы данных**.
 
-1. Выберите объекты, в которые вы хотите экспортировать Azure Synapse Analytics.
+1. Выберите, в какие сущности вы хотите экспортировать Azure Synapse Analytics.
    > [!NOTE]
    > Источники данных на основе [папки Common Data Model](connect-common-data-model.md) не поддерживаются.
 

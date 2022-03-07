@@ -1,23 +1,21 @@
 ---
 title: Создание сегментов в Customer Insights
 description: Шаги по созданию сред с лицензионной подпиской для Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 12/06/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-searchScope:
-- ci-home
-- customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354111"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088129"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Создайте среду в аналитике аудитории
 
@@ -78,14 +76,12 @@ ms.locfileid: "8354111"
    
 На шаге **Microsoft Dataverse** можно связать Customer Insights с вашей средой Dataverse.
 
-Предоставьте свою собственную среду Microsoft Dataverse для обмена данными (профилями и аналитиками) с бизнес-приложениями на основе Dataverse, например Dynamics 365 Marketing или приложения на основе модели в Power Apps. Оставьте это поле пустым, если у вас нет своей среды Dataverse, и мы предоставим ее вам.
-
-Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](data-sources.md#add-data-from-on-premises-data-sources). Вы также можете использовать [готовые модели прогноза](predictions-overview.md?tabs=b2c#out-of-box-models) путем подключения к среде Dataverse.
+Чтобы использовать [готовые модели прогноза](predictions-overview.md#out-of-box-models), настройте обмен данными с Dataverse. Или вы можете включить прием данных из локальных источников данных, предоставив URL-адрес среды Microsoft Dataverse, которую администрирует ваша организация. Выберите **Включить обмен данными**, чтобы поделиться выходными данными Customer Insights с озером данных Data Lake, управляемым Dataverse.
 
 > [!IMPORTANT]
 > Для обмена данными Customer Insights и Dataverse должны находиться в одном регионе.
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="обмен данными с Microsoft Dataverse автоматически включен для новых экземпляров сети.":::
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Параметры конфигурации для включения обмена данными с Microsoft Dataverse.":::
 
 > [!NOTE]
 > Конфигурация Customer Insights не поддерживает следующие сценарии передачи данных:

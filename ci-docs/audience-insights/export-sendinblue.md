@@ -1,19 +1,20 @@
 ---
 title: Экспорт данных Customer Insights в Sendinblue
 description: Узнайте, как настроить подключение и экспорт в Sendinblue.
-ms.date: 10/08/2021
+ms.date: 06/29/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8d870ff31ce2d441e619ac18899c4d1b6c69ca41
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 58ca0ae5ad4a3a291f4336984d14fefb23a58ab3
+ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231435"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314664"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Экспорт сегментов в Sendinblue (предварительная версия)
 
@@ -28,10 +29,10 @@ ms.locfileid: "8231435"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- До 1 миллиона профилей клиентов за один экспорт в Sendinblue.
+- До 1 миллиона профилей на экспорт в Sendinblue.
 - Экспорт в Sendinblue ограничен сегментами.
-- Экспорт сегментов всего с 1 млн профилей клиентов может занять до 90 минут. 
-- Количество профилей клиентов, которые вы можете экспортировать в Sendinblue, зависит от вашего контракта с Sendinblue и ограничен им.
+- Экспорт сегментов с общим количеством профилей 1 миллион может занять до 90 минут. 
+- Количество профилей, которые вы можете экспортировать в Sendinblue, зависит и ограничено вашим контрактом с Sendinblue.
 
 ## <a name="set-up-connection-to-sendinblue"></a>Настройка подключения к Sendinblue
 
@@ -63,7 +64,7 @@ ms.locfileid: "8231435"
 
 1. Введите ваш **Идентификатор списка Sendinblue**. 
 
-1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. 
+1. В разделе **Сопоставление данных** в поле **Электронная почта** выберите унифицированный профиль клиента, который представляет адрес электронной почты клиента. 
 
 1. При желании вы можете экспортировать **имя**, **фамилию** и **телефон**, чтобы создавать более персонализированные электронные письма. Выберите **Добавить атрибут**, чтобы сопоставить эти поля.
 

@@ -3,17 +3,18 @@ title: Соединитель Power Automate | Документация Майк
 description: Создание потоков в Microsoft Power Automate из Dynamics 365 Customer Insights.
 ms.date: 06/24/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 57be0a204ef920b7a4bb31cf9a5b3a77f96eca0d
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226730"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305080"
 ---
 # <a name="power-automate-connector-preview"></a>Соединитель Power Automate (предварительная версия)
 

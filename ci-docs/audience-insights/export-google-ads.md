@@ -2,18 +2,19 @@
 title: Экспорт данных Customer Insights в Google Ads
 description: Узнайте, как настроить подключение и экспорт в Google Реклама.
 ms.date: 09/27/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227026"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617939"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Экспорт сегментов в Google Рекламу (предварительная версия)
 
