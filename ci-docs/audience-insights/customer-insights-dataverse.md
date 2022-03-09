@@ -1,20 +1,22 @@
 ---
 title: Набор данных Customer Insights в Microsoft Dataverse
 description: Используйте сущности Customer Insights в виде таблиц в Microsoft Dataverse.
-ms.date: 06/15/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259207"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355445"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
@@ -24,11 +26,7 @@ Customer Insights предоставляет возможность сделат
 
 **Организации с существующими средами Dataverse**
 
-Организации, которые уже используют Dataverse, могут [использовать одну из существующих сред Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization), когда администратор настраивает аналитику аудитории. Предоставляя URL-адрес для среды Dataverse, он прикрепляется к новой среде аналитики аудитории. Для обеспечения максимальной производительности, Customer Insights и среды Dataverse должны размещаться в одном регионе.
-
-Чтобы прикрепить среду Dataverse, разверните **Дополнительные параметры** при создании среды аналитики аудитории. Предоставьте **URL-адрес среды Microsoft Dataverse** и установите флажок, чтобы **Включить обмен данными**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+Организации, которые уже используют Dataverse, могут [использовать одну из существующих сред Dataverse](create-environment.md), когда администратор настраивает аналитику аудитории. Предоставляя URL-адрес для среды Dataverse, он прикрепляется к новой среде аналитики аудитории. Для обеспечения максимальной производительности, Customer Insights и среды Dataverse должны размещаться в одном регионе.
 
 **Новая организация**
 
@@ -49,6 +47,7 @@ Customer Insights предоставляет возможность сделат
 - [CustomerMeasure](#customermeasure)
 - [Обогащение](#enrichment)
 - [Прогноз](#prediction)
+- [Членство в сегменте](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -125,3 +124,16 @@ Customer Insights предоставляет возможность сделат
 | Значения               | Строка JSON | Список атрибутов, созданных моделью |
 | msdynci_predictionid | GUID        | Детерминированный GUID, созданный из msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>Членство в сегменте
+
+Эта таблица содержит информацию о членстве в сегментах профилей клиентов.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| CustomerId        | String       | Идентификатор профиля клиента        |
+| SegmentProvider      | String       | Приложение, которое публикует сегменты. По умолчанию: аналитика аудитории         |
+| SegmentMembershipType | String       | Тип клиента для этой записи о членстве в сегменте. Поддерживает несколько типов, таких как Клиент, Контакт или Организация. По умолчанию: клиент  |
+| Сегменты       | Строка JSON  | Список уникальных сегментов, участником которых является профиль клиента      |
+| msdynci_identifier  | String   | Уникальный идентификатор записи члена сегмента. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | Детерминированный GUID, созданный из `msdynci_identifier`          |

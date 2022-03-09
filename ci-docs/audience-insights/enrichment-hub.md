@@ -1,21 +1,25 @@
 ---
 title: Обогащение унифицированных профилей клиентов
 description: Используйте возможности для обогащения данных о ваших клиентах.
-ms.date: 09/30/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617571"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355399"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогащение профилей клиентов (предварительная версия)
 
@@ -29,7 +33,7 @@ ms.locfileid: "7617571"
 
 На вкладке **Обнаружить** вы найдете все поддерживаемые варианты обогащения.
 
-# <a name="individual-customers-b2c"></a>[Частные клиенты (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Индивидуальные потребители (B2C)](#tab/b2c)
 
 - [Бренды](enrichment-microsoft.md), предоставленные Microsoft
 - [Интересы](enrichment-microsoft.md), предоставленные Microsoft
@@ -37,14 +41,17 @@ ms.locfileid: "7617571"
 - [Демографическая информация](enrichment-experian.md), предоставленная Experian
 - [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
 - [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+- [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
 
-# <a name="business-accounts-b2b"></a>[Организации (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Учетные записи компаний (B2B)](#tab/b2b)
 
 - [Данные компании](enrichment-leadspace.md) предоставлены Leadspace
 - [Расширенные адреса](enrichment-enhanced-addresses.md), предоставленные Microsoft 
+- [Расширенные данные компании](enrichment-enhanced-company-data.md), предоставленные Microsoft
 - [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
 - [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
 - [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
+- [Данные взаимодействия с организациями](enrichment-office.md), предоставленные Майкрософт
 
 ---
 

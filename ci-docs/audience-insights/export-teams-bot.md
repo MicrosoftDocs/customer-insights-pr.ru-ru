@@ -1,20 +1,19 @@
 ---
 title: Бот для Microsoft Teams
 description: Смотрите единые профили клиентов в Microsoft Teams с помощью бота.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554403"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232118"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Бот Teams для Dynamics 365 Customer Insights (предварительная версия)
 
@@ -31,7 +30,10 @@ ms.locfileid: "6554403"
 - [Процесса унификации](data-unification.md) завершен.
 - Поля добавлены в [индекс поиска и фильтрации](search-filter-index.md).
 - Customer Insights и Teams находятся в одной организации.
+- В вашей среде основная целевая аудитория настроена на частных клиентов. Организации не поддерживаются.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Настройка бота
 
 1. В аналитике аудитории перейдите **Администрирование** > **Экспорт пунктов назначения**.
