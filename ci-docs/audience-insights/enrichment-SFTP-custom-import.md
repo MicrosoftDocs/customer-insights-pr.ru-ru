@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229654"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376616"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Обогащение настраиваемого импорта пользовательскими данными (предварительная версия)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229654"
 
 - У вас есть имя файла и расположение (путь) файла, который нужно импортировать на узле SFTP.
 - Eсть файл *model.json*, который указывает [схему Common Data Model](/common-data-model/) для импортируемых данных. Этот файл должен находиться в том же каталоге, что и импортируемый файл.
-- Подключение SFTP уже настроено администратором *или* у вас есть разрешения [администратора](permissions.md#administrator). Вам потребуются учетные данные пользователя, URL-адрес и номер порта для расположения SFTP, из которого вы хотите импортировать данные.
+- Подключение SFTP уже настроено администратором *или* у вас есть разрешения [администратора](permissions.md#admin). Вам потребуются учетные данные пользователя, URL-адрес и номер порта для расположения SFTP, из которого вы хотите импортировать данные.
 
 
 ## <a name="configure-the-import"></a>Настройка импорта

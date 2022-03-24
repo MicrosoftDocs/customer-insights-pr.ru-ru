@@ -1,7 +1,7 @@
 ---
 title: Обогащение унифицированных профилей клиентов
 description: Используйте возможности для обогащения данных о ваших клиентах.
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355399"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372735"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Обогащение профилей клиентов (предварительная версия)
 
@@ -42,6 +42,7 @@ ms.locfileid: "8355399"
 - [Пользовательские данные](enrichment-SFTP-custom-import.md) через протокол SFTP 
 - [Azure Maps](enrichment-azure-maps.md), предоставленные Microsoft
 - [Данные расположения](enrichment-here.md) предоставлены HERE Technologies 
+- [Идентификатор](enrichment-liveramp.md), предоставленный LiveRamp AbiliTec
 
 # <a name="business-accounts-b-to-b"></a>[Учетные записи компаний (B2B)](#tab/b2b)
 
@@ -80,6 +81,10 @@ ms.locfileid: "8355399"
 ## <a name="multiple-enrichments-of-the-same-type"></a>Несколько обогащений одного типа
 
 Сущность, которую нужно обогатить, указывается во время настройки обогащения, что позволяет вам обогатить только подмножество ваших профилей. Например, обогащать данные только для определенного сегмента. Вы можете настроить несколько обогащений одного типа и повторно использовать одно и то же подключение. Некоторые обогащения будут иметь ограничения на количество обогащений одного и того же типа, которые могут быть созданы. Пределы и текущее использование можно увидеть на странице **Обогащение**.
+
+## <a name="enrich-data-sources-before-unification"></a>Обогащайте источники данных перед унификацией
+
+Вы можете обогатить данные о клиентах перед унификацией данных, чтобы повысить качество сопоставления данных. Дополнительная информация дана в теме по [обогащению источника данных](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Смотрите, как идет процесс обогащения
 

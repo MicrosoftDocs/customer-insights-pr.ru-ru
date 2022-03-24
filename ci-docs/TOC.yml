@@ -58,6 +58,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Добавление Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: Обогащение источников данных
+          href: audience-insights/data-sources-enrichment.md
         - name: Инкрементное обновление для источников данных
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Прием данных в режиме реального времени
@@ -100,6 +102,8 @@
           href: audience-insights/enrichment-here.md
         - name: Обогащение с помощью Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Обогащение с помощью LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: Обогащение с помощью Experian
           href: audience-insights/enrichment-experian.md
         - name: Обогащение данными Office 365

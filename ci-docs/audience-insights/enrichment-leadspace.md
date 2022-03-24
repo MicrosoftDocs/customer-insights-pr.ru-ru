@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230650"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376800"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 
@@ -25,7 +25,7 @@ Leadspace — это компания, занимающаяся обработк
 
 - У вас есть активная лицензия Leadspace.
 - У вас есть [единые профили клиентов](customer-profiles.md) на основе организаций.
-- Подключение Leadspace уже настроено администратором или у вас есть разрешения [администратора](permissions.md#administrator) и "бессрочный ключ" (именуемый **Токен Leadspace**). Обращайтесь напрямую в [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) для получения подробной информации об их продукте.
+- Подключение Leadspace уже настроено администратором или у вас есть разрешения [администратора](permissions.md#admin) и "бессрочный ключ" (именуемый **Токен Leadspace**). Обращайтесь напрямую в [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) для получения подробной информации об их продукте.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения
 

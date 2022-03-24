@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 47239bd7f0c89742cf9c673bb2ebe4c41d853233
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228490"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376846"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Обогащение профилей клиентов данными о взаимодействии (предварительная версия)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8228490"
 - Необходимо иметь активную облачную лицензию на Office 365.
 - Необходимо иметь [единые профили клиентов](customer-profiles.md) на основе [организаций](work-with-business-accounts.md).
 - К вашей среде Customer Insights должна быть [прикреплена организация Microsoft Dataverse](create-environment.md#step-3-connect-to-microsoft-dataverse).
-- У вас должны быть разрешения [администратора](permissions.md#administrator).
+- У вас должны быть разрешения [администратора](permissions.md#admin).
 - У вас должно быть согласие администратора вашего клиента Office 365на использование данных Office 365 для получения **аналитики по организации** в приложениях Dynamics 365.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения

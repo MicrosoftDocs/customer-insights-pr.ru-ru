@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350147"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8456014"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Начало после покупки Customer Insights
 
@@ -39,7 +39,4 @@ Customer Insights лицензируется на каждый клиент и �
 
 ## <a name="create-your-own-environment"></a>Создать собственную среду
 
-После первого входа вы увидите среду с образцами данных. Вы можете использовать эти данные для изучения функций и ознакомления с приложением. Чтобы использовать собственные данные, вам необходимо [создать среду](audience-insights/get-started-paid.md).
-
-
-
+После первого входа вы увидите среду с образцами данных. Вы можете использовать эти данные для изучения функций и ознакомления с приложением. Чтобы использовать собственные данные, вам необходимо [создать среду](/dynamics365/customer-insights/audience-insights/create-environment).

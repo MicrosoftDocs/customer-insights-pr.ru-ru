@@ -8,16 +8,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: dd90ef4576246b49d4a9c74005196ee9813a6744
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226730"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455927"
 ---
 # <a name="power-automate-connector-preview"></a>Соединитель Power Automate (предварительная версия)
 
 Автоматически запускайте определенные события при изменении данных и управляйте более сложными потоками непосредственно в [Power Automate](https://flow.microsoft.com/).
+
+## <a name="known-limitations"></a>Известные ограничения
+
+- Вы можете сделать максимум 100 звонков за 60 секунд. Вы можете вызывать конечную точку API несколько раз, используя параметр $skip. [Узнайте больше о параметре $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## <a name="power-automate-triggers"></a>Триггеры Power Automate
 

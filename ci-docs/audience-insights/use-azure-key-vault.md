@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355907"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376524"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Использовать свое Azure Key Vault (предварительная версия)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355907"
 
 - Необходимо иметь активную подписку Azure.
 
-- Вам присвоена роль [Администратор](permissions.md#administrator) в аналитике аудитории. Узнать больше о [разрешениях пользователей в аналитике аудитории](permissions.md#assign-roles-and-permissions).
+- Вам присвоена роль [Администратор](permissions.md#admin) в аналитике аудитории. Узнать больше о [разрешениях пользователей в аналитике аудитории](permissions.md#assign-roles-and-permissions).
 
 - У вас роли [участник](/azure/role-based-access-control/built-in-roles#contributor) и [администратор доступа пользователя](/azure/role-based-access-control/built-in-roles#user-access-administrator) в хранилище ключей или группе ресурсов, которой принадлежит хранилище ключей. Для получения дополнительной информации см. [Добавление или удаление назначений ролей Azure с помощью портала Azure](/azure/role-based-access-control/role-assignments-portal). Если у вас нет роли администратора доступа пользователя в хранилище ключей, необходимо настроить разрешения на управление доступом на основе ролей для субъекта-службы Azure для Dynamics 365 Customer Insights отдельно. Следуйте инструкциям, чтобы [использовать субъект-службу Azure](connect-service-principal.md) для связываемого хранилища ключей.
 

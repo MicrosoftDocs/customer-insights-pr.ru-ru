@@ -8,12 +8,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 18cc32a169e79794d2d3203d462620ab41efaafe
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229048"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455968"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Соединитель Microsoft Power Apps (предварительная версия)
 
@@ -38,6 +38,8 @@ Customer Insights является одним из многих [доступн�
 ### <a name="retrievable-entities"></a>Извлекаемые сущности
 
 Вы можете получить только сущности **Customer**, **UnifiedActivity**, **Segments** и **ContactProfile** через соединитель Power Apps. ContactProfile доступна только в экземпляре аналитики аудитории для организаций. Другие сущности показаны, потому что базовый соединитель поддерживает их через триггеры в Power Automate.
+
+Вы можете сделать максимум 100 звонков за 60 секунд. Вы можете вызывать конечную точку API несколько раз, используя параметр $skip. [Узнайте больше о параметре $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>Делегирование
 

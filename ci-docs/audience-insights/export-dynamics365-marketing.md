@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: d3254bf13b843fe8e1b6e6db49dd6ee1dc22290c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 0bd2bfa7402ed19cb92ff1f35208b150cfec48c3
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353927"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455848"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Использование сегментов в Dynamics 365 Marketing (предварительная версия)
 
@@ -28,7 +28,7 @@ ms.locfileid: "8353927"
 
 ## <a name="prerequisite-for-a-connection"></a>Предварительное требование для подключения
 
-- Записи контактов должны присутствовать в Dynamics 365 Marketing, прежде чем вы сможете экспортировать сегмент из Customer Insights в Marketing. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Marketing с помощью Microsoft Dataverse](connect-power-query.md).
+- Записи контактов должны присутствовать в Dynamics 365 Marketing, прежде чем вы сможете экспортировать сегмент из Customer Insights в Marketing. См. дополнительные сведения о загрузке контактов в [Dynamics 365 Marketing с помощью Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
   > [!NOTE]
   > Экспорт сегментов из аналитики аудитории в Marketing не приведет к созданию новых записей контактов в экземплярах Marketing. Записи контактов из Marketing должны быть загружены в аналитику аудитории и использованы как источник данных. Их также необходимо включить в объединенную сущность «Клиент», чтобы сопоставить идентификаторы клиентов с идентификаторами контактов, прежде чем сегменты можно будет экспортировать.

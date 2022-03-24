@@ -1,7 +1,7 @@
 ---
 title: Управление разрешениями пользователей
 description: Узнайте о разрешениях и ролях пользователей.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355953"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376754"
 ---
 # <a name="user-permissions"></a>Разрешения пользователя
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355953"
 - Управление конфигурацией и обогащение профилей клиентов со страницы **обогащение** (только для собственных обогащений).
 - Управляйте и создавайте экспорты на основе подключений, которыми поделились с участниками. [Узнайте больше о том, как администраторы разрешают участникам использовать подключение для экспортов](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Администратор
+## <a name="admin"></a>Администрирование
 
 - Все разрешения, доступные участнику.
 - Изменение настроек на странице **Система**, включая рабочий язык и расписание обновлений для ваших системных процессов.
@@ -60,6 +60,12 @@ ms.locfileid: "8355953"
 - Установка и использование **Надстройки карточек клиентов**.
 - Добавьте и используйте **соединитель Power Apps**.
 - Разрешение использования [API Customer Insights](apis.md).
+- [Назначьте владельца среды](manage-environments.md#change-the-owner-of-an-environment) другому администратору.
+
+## <a name="admin-owner"></a>Администратор (владелец)
+
+- Все разрешения доступны администратору.
+- [Сбросить и удалить](manage-environments.md#reset-an-existing-environment) среду.
 
 ## <a name="assign-roles-and-permissions"></a>Назначение ролей и разрешений
 
