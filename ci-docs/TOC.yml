@@ -24,8 +24,6 @@
       href: trial-signup.md
     - name: 'Пробная версия: вопросы и ответы'
       href: trial-FAQ.md
-- name: Начните с платной лицензии
-  href: paid-license.md
 - name: Доступ к своей среде
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Аналитика аудитории
@@ -40,12 +38,14 @@
       items:
         - name: Краткое руководство
           href: audience-insights/get-started.md
+        - name: Начните с платной лицензии
+          href: paid-license.md
         - name: Создать новую среду
           href: audience-insights/create-environment.md
         - name: Изучение аналитики аудитории
           href: audience-insights/home.md
-    - name: Работа с организациями
-      href: audience-insights/work-with-business-accounts.md
+        - name: Работа с организациями
+          href: audience-insights/work-with-business-accounts.md
     - name: Источники данных
       items:
         - name: Обзор источников данных
@@ -64,8 +64,6 @@
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Прием данных в режиме реального времени
           href: audience-insights/real-time-data-ingestion.md
-        - name: Сведения о сущностях и наборах данных
-          href: audience-insights/entities.md
     - name: Объединение данных
       items:
         - name: Обзор унификации данных
@@ -76,16 +74,6 @@
           href: audience-insights/match-entities.md
         - name: Объединение сущностей
           href: audience-insights/merge-entities.md
-        - name: Проверка объединенных профилей клиентов
-          href: audience-insights/customer-profiles.md
-        - name: Фильтрация объединенных профилей клиентов
-          href: audience-insights/search-filter-index.md
-        - name: Сборка отношения и связанных сущностей
-          href: audience-insights/relationships.md
-        - name: Список пользовательских действий
-          href: audience-insights/activities.md
-        - name: Определение семантических сопоставлений
-          href: audience-insights/semantic-mappings.md
     - name: Обогащение данных
       items:
         - name: Обогащение профилей клиентов
@@ -110,7 +98,15 @@
           href: audience-insights/enrichment-office.md
         - name: Обогащение с помощью настраиваемого импорта SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: Сегменты
+    - name: Единые профили
+      items:
+        - name: Проверка объединенных профилей клиентов
+          href: audience-insights/customer-profiles.md
+        - name: Фильтрация объединенных профилей клиентов
+          href: audience-insights/search-filter-index.md
+        - name: Определение действий клиента
+          href: audience-insights/activities.md
+    - name: Segments
       items:
         - name: Обзор сегментов
           href: audience-insights/segments.md
@@ -190,6 +186,8 @@
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
+            - name: Braze
+              href: audience-insights/export-braze.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
             - name: Constant Contact
@@ -198,12 +196,14 @@
               href: audience-insights/export-dotdigital.md
             - name: Dynamics 365 Marketing
               href: audience-insights/export-dynamics365-marketing.md
-            - name: Dynamics 365 Sales
+            - name: "Dynamics\_365\_Sales"
               href: audience-insights/export-dynamics365-sales.md
             - name: Facebook Ads Manager
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Iterable
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
@@ -242,6 +242,18 @@
               href: audience-insights/export-power-automate.md
             - name: Power BI
               href: audience-insights/export-power-bi.md
+    - name: Сущности
+      items:
+        - name: Общие сведения о сущностях
+          href: audience-insights/entities.md
+        - name: Просмотр схем сущностей в Common Data Model
+          href: audience-insights/entity-schemas.md
+        - name: Набор данных Customer Insights в Dataverse
+          href: audience-insights/customer-insights-dataverse.md
+        - name: Сборка отношения и связанных сущностей
+          href: audience-insights/relationships.md
+        - name: Определение семантических сопоставлений
+          href: audience-insights/semantic-mappings.md
     - name: Администрирование
       items:
         - name: Настройка конфигурации системы
@@ -252,15 +264,17 @@
           href: audience-insights/connections.md
         - name: Управление несколькими средами
           href: audience-insights/manage-environments.md
-        - name: Безопасность
-          items:
-            - name: Использовать свое Key Vault
-              href: audience-insights/use-azure-key-vault.md
-            - name: Подключение к учетной записи хранения ADLS с помощью субъекта-службы
-              href: audience-insights/connect-service-principal.md
-            - name: Экспорт журналов диагностики
-              href: audience-insights/diagnostics.md
-    - name: Расширяемость
+        - name: Использовать свое Key Vault
+          href: audience-insights/use-azure-key-vault.md
+        - name: Подключение к учетной записи хранения с помощью субъекта-службы
+          href: audience-insights/connect-service-principal.md
+        - name: Экспорт журналов диагностики
+          href: audience-insights/diagnostics.md
+        - name: Ограничения обслуживания
+          href: service-limits.md
+        - name: Права и запросы DSR
+          href: dsr-rights-requests.md
+    - name: API
       items:
         - name: Просмотр схем сущностей в Common Data Model
           href: audience-insights/entity-schemas.md
@@ -306,9 +320,5 @@
           href: consent-management/predictions-consent-data.md
 - name: Аналитика взаимодействий (предварительная версия)
   href: engagement-insights/overview.md
-- name: Ограничения обслуживания
-  href: service-limits.md
-- name: Права и запросы DSR
-  href: dsr-rights-requests.md
 - name: Получение поддержки
   href: /power-platform/admin/get-help-support

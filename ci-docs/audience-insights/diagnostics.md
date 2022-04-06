@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376432"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523685"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Пересылка журналов в Dynamics 365 Customer Insights с помощью Azure Monitor (предварительная версия)
 
@@ -230,7 +230,7 @@ Customer Insights отправляет следующие журналы соб�
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Да      | Да  | Всегда `WorkflowEvent`, что помечает событие как событие рабочего процесса.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Да      | Да  | Идентификатор выполнения рабочего процесса. Все события рабочего процесса и задачи в рамках выполнения рабочего процесса имеют одно и то же значение `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Да      | Да  | Идентификатор операции, см. раздел [Типы операций].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Да      | Да  | Идентификатор операции, см. раздел [Типы операций](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Да      | No   | Только для рабочих процессов. Количество задач, активируемых рабочим процессом.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Да      | Нет   | Необязательно. Только для событий рабочих процессов. [objectId в Azure Active Directory пользователя](/azure/marketplace/find-tenant-object-id#find-user-object-id), который активировал рабочий процесс; см. также `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Да      | Нет   | Полное (`full`) или добавочное (`incremental`) обновление.                                                                                                                                                                                                                            |

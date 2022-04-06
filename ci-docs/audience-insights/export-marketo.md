@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232007"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487531"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Экспорт сегментов в Marketo (предварительная версия)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8232007"
 
 1. Введите ваш **[Идентификатор списка Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Идентификатор списка — это чисто числовое значение. Например, если ваш идентификатор списка Marketo имеет вид ST12345A7, удалите символы до и после цифр и введите `12345`. 
 
-1. В разделе **Сопоставление данных** в поле **Эл. почта** выберите поле, которое представляет адрес электронной почты клиента. 
+1. В разделе **Сопоставление данных** выберите хотя бы одно поле, представляющее адрес электронной почты клиента или идентификатор Marketo клиента. 
 
 1. При желании вы можете экспортировать поля **Имя**, **Фамилия**, **Город**, **Штат** и **Страна/регион** для создания более персонализированных сообщений электронной почты. Выберите **Добавить атрибут**, чтобы сопоставить эти поля.
 
