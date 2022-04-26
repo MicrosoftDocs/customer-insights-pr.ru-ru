@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: Изучение аналитики аудитории
           href: audience-insights/home.md
+        - name: Работа с тегами и столбцами
+          href: audience-insights/work-with-tags-columns.md
         - name: Работа с организациями
           href: audience-insights/work-with-business-accounts.md
     - name: Источники данных

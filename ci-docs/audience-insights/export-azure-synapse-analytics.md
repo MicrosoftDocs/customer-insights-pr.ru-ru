@@ -1,19 +1,19 @@
 ---
 title: Экспорт данных Customer Insights в Azure Synapse Analytics
 description: Узнайте, как настроить подключение к Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231328"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560403"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Экспорт данных в Azure Synapse Analytics (предварительная версия)
 
@@ -28,21 +28,21 @@ Azure Synapse — это служба аналитики, которая уск
 
 ## <a name="prerequisites-in-customer-insights"></a>Предварительные требования в Customer Insights
 
-* Вам присвоена роль **Администратор** в аналитике аудитории. Узнайте больше об [установке разрешений пользователей в аналитики аудитории](permissions.md#assign-roles-and-permissions)
+* Ваша учетная запись пользователя Azure Active Directory (AD) имеет роль **администратора** в Customer Insights. Узнайте больше об [установке разрешений пользователей в аналитики аудитории](permissions.md#assign-roles-and-permissions)
 
 В Azure: 
 
 - Активная подписка Azure.
 
-- При использовании новой учетной записи Azure Data Lake Storage 2-го поколения *субъекту службы для аналитики аудитории* необходимы разрешения **участника данных больших двоичных объектов хранилищ**. Узнайте больше о [подключении к учетной записи Azure Data Lake Storage 2-го поколения с субъектом службы Azure для аналитики аудитории](connect-service-principal.md). В Data Lake Storage 2-го поколения **должно быть** включено [иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
+- Если использовать новую учетную запись Azure Data Lake Storage Gen2, *субъекту-службе* для Customer Insights нужны разрешения **участника данных больших двоичных объектов хранилища**. Узнайте больше о [подключении к учетной записи Azure Data Lake Storage 2-го поколения с субъектом службы Azure для аналитики аудитории](connect-service-principal.md). В Data Lake Storage 2-го поколения **должно быть** включено [иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
 
-- В группе ресурсов, в которой расположена рабочая область Azure Synapse, *субъект-службе* и *пользователю для аналитики аудитории* необходимо назначить по крайней мере разрешения **Читатель**. Дополнительные сведения см. в разделе [Назначение ролей Azure с помощью портала Azure](/azure/role-based-access-control/role-assignments-portal).
+- В группе ресурсов, в которой находится Azure Synapse workspace, *субъект-служба* и *пользователь Azure AD с разрешениями администратора в Customer Insights* должны иметь разрешения не менее **Читатель**. Дополнительные сведения см. в разделе [Назначение ролей Azure с помощью портала Azure](/azure/role-based-access-control/role-assignments-portal).
 
-- *Пользователю* требуются разрешения **Участник данных больших двоичных объектов хранилища** в учетной записи Azure Data Lake Storage 2-го поколения, в которой данные расположены и связаны с рабочей областью Azure Synapse. Узнайте больше об [использовании портала Azure для назначения роли Azure для доступа к данным BLOB-объектов и очередей](/azure/storage/common/storage-auth-aad-rbac-portal) и о [разрешениях участника данных больших двоичных объектов хранилища](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- *Пользователю Azure AD с разрешениями администратора в Customer Insights* требуются разрешения **участника данных больших двоичных объектов хранилища** в учетной записи Azure Data Lake Storage Gen2, в которой находятся данные и связаны с Azure Synapse workspace. Узнайте больше об [использовании портала Azure для назначения роли Azure для доступа к данным BLOB-объектов и очередей](/azure/storage/common/storage-auth-aad-rbac-portal) и о [разрешениях участника данных больших двоичных объектов хранилища](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - Для *[управляемого удостоверения рабочей области Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* требуются разрешения **Участник данных больших двоичных объектов хранилища** в учетной записи Azure Data Lake Storage 2-го поколения, в которой данные расположены и связаны с рабочей областью Azure Synapse. Узнайте больше об [использовании портала Azure для назначения роли Azure для доступа к данным BLOB-объектов и очередей](/azure/storage/common/storage-auth-aad-rbac-portal) и о [разрешениях участника данных больших двоичных объектов хранилища](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- В рабочей области Azure Synapse *субъект-служба для аналитики аудитории* должна быть назначена роль **Администратор Synapse**. Дополнительные сведения см. в разделе [Как настроить контроль доступа к вашей рабочей области Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- В Azure Synapse workspace *субъекту-службе для Customer Insights* должна быть назначена роль **администратора Synapse**. Дополнительные сведения см. в разделе [Как настроить контроль доступа к вашей рабочей области Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Настройка подключения и экспорт в Azure Synapse
 

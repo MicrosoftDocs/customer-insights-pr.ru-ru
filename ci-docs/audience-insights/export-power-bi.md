@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225541"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552072"
 ---
 # <a name="connector-for-power-bi-preview"></a>Соединитель для Power BI (предварительная версия)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225541"
 
 При загрузке сущностей, содержащих поля с форматом даты, например ММ/ДД/ГГГГ, вы можете столкнуться с ошибками из-за несоответствия форматов языкового стандарта. Это несоответствие случается, когда для вашего файла Power BI Desktop задан языковой стандарт, отличный от английского (США), поскольку поля даты в аналитике аудитории сохраняются в формате США.
 
-Файл Power BI Desktop имеет одну настройку языкового стандарта, которая применяется при извлечении данных. Чтобы эти поля даты интерпретировались правильно, установите языковой стандарт файла .BPI на английский (США). [Узнайте, как изменить языковой стандарт файла Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Файл Power BI Desktop имеет одну настройку языкового стандарта, которая применяется при извлечении данных. Чтобы эти поля даты интерпретировались правильно, установите языковой стандарт файла .BPI на английский (США). [Узнайте, как изменить языковой стандарт файла Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
