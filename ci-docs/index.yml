@@ -6,12 +6,12 @@ metadata:
   ms.author: mhart
   ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
-  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
+  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/25/2022
-  ms.locfileid: "8350485"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "8641672"
 title: Документация по Dynamics 365 Customer Insights
 summary: Найдите полезные ресурсы, чтобы начать работу и узнать о функциях и возможностях Customer Insights.
 landingContent:
@@ -23,8 +23,8 @@ landingContent:
       url: overview.md
     - text: Планы выпуска
       url: /dynamics365/release-plans/
-    - text: Обнаружение CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
+    - text: Новые и обновленные компоненты
+      url: whats-new-customer-insights.md
   - linkListType: learn
     links:
     - text: Схема обучения Customer Insights
@@ -35,24 +35,94 @@ landingContent:
     links:
     - text: Зарегистрироваться для получения пробной версии
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Что нового в аналитике аудитории
-      url: audience-insights/whats-new-audience-insights.md
-    - text: Краткое руководство
-      url: audience-insights/get-started.md
+    - text: Начните с пробной версии
+      url: trial-signup.md
+    - text: Начало работы с Customer Insights
+      url: get-started.md
   - linkListType: learn
     links:
     - text: Начать
       url: /learn/modules/get-started-customer-data-platform/
+- title: Объединение данных
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Обзор источников данных
+      url: data-sources.md
+    - text: Обзор объединения
+      url: data-unification.md
+    - text: Общие сведения о сущностях
+      url: entities.md
+  - linkListType: learn
+    links:
+    - text: Создайте единый профиль
+      url: /learn/modules/unified-customer-profile/
+- title: Получайте аналитику
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Обогащение профилей клиентов
+      url: enrichment-hub.md
+    - text: Настройка отношений
+      url: relationships.md
+    - text: Полные данные с прогнозами
+      url: predictions.md
+  - linkListType: learn
+    links:
+    - text: Обогащайте и прогнозируйте данные
+      url: /learn/modules/enrich-data/
+- title: Заложите в основу свои данные
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Создать сегменты
+      url: segments.md
+    - text: Создать меры
+      url: measures.md
+    - text: Определение действий клиента
+      url: activities.md
+  - linkListType: learn
+    links:
+    - text: Работа с приложением
+      url: /learn/modules/working-with-customer-insights/
+- title: Экспортировать данные
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка пунктов назначения экспорта
+      url: export-destinations.md
+    - text: Карточки клиентов в приложениях Dynamics 365
+      url: customer-card-add-in.md
+    - text: Соединитель Power BI
+      url: export-power-bi.md
+  - linkListType: learn
+    links:
+    - text: Управляйте внешними подключениями
+      url: /learn/modules/configure-third-party-connections/
+- title: Администрирование приложения
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Настройка системы
+      url: system.md
+    - text: Определение разрешений пользователя
+      url: permissions.md
+    - text: Управление несколькими средами
+      url: manage-environments.md
+  - linkListType: learn
+    links:
+    - text: Администрирование Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: Администрирование Customer Insights
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Настройка системы
-      url: audience-insights/system.md
+      url: system.md
     - text: Определение разрешений пользователя
-      url: audience-insights/permissions.md
+      url: permissions.md
     - text: Управление несколькими средами
-      url: audience-insights/manage-environments.md
+      url: manage-environments.md
   - linkListType: learn
     links:
     - text: Администрирование Customer Insights

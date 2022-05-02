@@ -2,6 +2,8 @@
   href: index.yml
 - name: Обзор продукта
   href: overview.md
+- name: Новые и обновленные компоненты
+  href: whats-new-customer-insights.md
 - name: Каталог обучения
   items:
     - name: Начать
@@ -10,7 +12,7 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: Создание объединенного профиля клиента
       href: /learn/modules/unified-customer-profile/
-    - name: Работайте с аналитикой аудитории
+    - name: Работа с Customer Insights
       href: /learn/modules/working-with-customer-insights/
     - name: Обогащайте данные и делайте прогнозы
       href: /learn/modules/enrich-data/
@@ -26,266 +28,260 @@
       href: trial-FAQ.md
 - name: Доступ к своей среде
   href: 'https://home.ci.ai.dynamics.com/'
-- name: Аналитика аудитории
+- name: Начать
   items:
-    - name: Справочный центр
-      href: audience-insights/index.yml
-    - name: Обзор возможностей
-      href: audience-insights/overview.md
-    - name: Новые и обновленные компоненты
-      href: audience-insights/whats-new-audience-insights.md
-    - name: Начать
+    - name: Краткое руководство
+      href: get-started.md
+    - name: Начните с платной лицензии
+      href: paid-license.md
+    - name: Создать новую среду
+      href: create-environment.md
+    - name: Изучение Customer Insights
+      href: home.md
+    - name: Работа с тегами и столбцами
+      href: work-with-tags-columns.md
+    - name: Работа с организациями
+      href: work-with-business-accounts.md
+    - name: Интеграция с Dynamics 365 Marketing
+      href: marketing-get-started.md
+- name: Источники данных
+  items:
+    - name: Обзор источников данных
+      href: data-sources.md
+    - name: Добавьте источники данных через соединители Power Query
+      href: connect-power-query.md
+    - name: Добавление папки Common Data Model в качестве источника данных
+      href: connect-common-data-model.md
+    - name: 'Добавление Data Lake, управляемого Dataverse'
+      href: connect-dataverse-managed-lake.md
+    - name: Добавление Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Обогащение источников данных
+      href: data-sources-enrichment.md
+    - name: Инкрементное обновление для источников данных
+      href: incremental-refresh-data-sources.md
+    - name: Прием данных в режиме реального времени
+      href: real-time-data-ingestion.md
+- name: Объединение данных
+  items:
+    - name: Обзор унификации данных
+      href: data-unification.md
+    - name: Сопоставление сущностей и атрибутов
+      href: map-entities.md
+    - name: Поиск совпадений сущностей
+      href: match-entities.md
+    - name: Объединение сущностей
+      href: merge-entities.md
+- name: Обогащение данных
+  items:
+    - name: Обогащение профилей клиентов
+      href: enrichment-hub.md
+    - name: Торговые марки и интересы
+      href: enrichment-microsoft.md
+    - name: Расширенные адреса
+      href: enrichment-enhanced-addresses.md
+    - name: Расширенные данные компании
+      href: enrichment-enhanced-company-data.md
+    - name: Обогащение с помощью Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Обогащение с использованием Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Обогащение с помощью HERE Technologies
+      href: enrichment-here.md
+    - name: Обогащение с помощью Leadspace
+      href: enrichment-leadspace.md
+    - name: Обогащение с помощью LiveRamp
+      href: enrichment-liveramp.md
+    - name: Обогащение с помощью Experian
+      href: enrichment-experian.md
+    - name: Обогащение данными Office 365
+      href: enrichment-office.md
+    - name: Обогащение с помощью настраиваемого импорта SFTP
+      href: enrichment-SFTP-custom-import.md
+- name: Единые профили
+  items:
+    - name: Проверка объединенных профилей клиентов
+      href: customer-profiles.md
+    - name: Фильтрация объединенных профилей клиентов
+      href: search-filter-index.md
+    - name: Определение действий клиента
+      href: activities.md
+- name: Segments
+  items:
+    - name: Обзор сегментов
+      href: segments.md
+    - name: Создать сегменты
+      href: segment-builder.md
+    - name: Предложенные сегменты на основе мер
+      href: suggested-segments.md
+    - name: Предложенные сегменты на основе действий
+      href: suggested-segments-activity.md
+    - name: Получение аналитики по сегментам
+      href: segment-insights.md
+    - name: Найти похожих клиентов
+      href: find-similar-customer-segments.md
+- name: Меры (Measures)
+  items:
+    - name: Обзор мер
+      href: measures.md
+    - name: Создание новой меры
+      href: measure-builder.md
+    - name: Использовать шаблон меры
+      href: measure-templates.md
+- name: Прогнозы
+  items:
+    - name: Прогнозируйте данные с помощью ИИ
       items:
-        - name: Краткое руководство
-          href: audience-insights/get-started.md
-        - name: Начните с платной лицензии
-          href: paid-license.md
-        - name: Создать новую среду
-          href: audience-insights/create-environment.md
-        - name: Изучение аналитики аудитории
-          href: audience-insights/home.md
-        - name: Работа с тегами и столбцами
-          href: audience-insights/work-with-tags-columns.md
-        - name: Работа с организациями
-          href: audience-insights/work-with-business-accounts.md
-    - name: Источники данных
+        - name: Обзор моделей прогнозирования
+          href: predictions-overview.md
+        - name: Прогноз ценности клиента на протяжении жизненного цикла (CLV)
+          href: predict-customer-lifetime-value.md
+        - name: Прогноз рекомендации продуктов
+          href: predict-product-recommendation.md
+        - name: Прогнозировать отток подписки
+          href: predict-subscription-churn.md
+        - name: Прогноз оттока транзакций
+          href: predict-transactional-churn.md
+        - name: Анализ тональности в отзывах клиентов
+          href: sentiment-analysis.md
+        - name: Используйте пользовательские модели из машинного обучения Azure
+          href: custom-models.md
+        - name: Заполнение частично отсутствующих данных
+          href: predictions.md
+    - name: Примеры руководств
       items:
-        - name: Обзор источников данных
-          href: audience-insights/data-sources.md
-        - name: Добавьте источники данных через соединители Power Query
-          href: audience-insights/connect-power-query.md
-        - name: Добавление папки Common Data Model в качестве источника данных
-          href: audience-insights/connect-common-data-model.md
-        - name: 'Добавление Data Lake, управляемого Dataverse'
-          href: audience-insights/connect-dataverse-managed-lake.md
-        - name: Добавление Azure Synapse Analytics
-          href: audience-insights/connect-synapse.md
-        - name: Обогащение источников данных
-          href: audience-insights/data-sources-enrichment.md
-        - name: Инкрементное обновление для источников данных
-          href: audience-insights/incremental-refresh-data-sources.md
-        - name: Прием данных в режиме реального времени
-          href: audience-insights/real-time-data-ingestion.md
-    - name: Объединение данных
+        - name: Пример руководства для прогноза CLV
+          href: sample-guide-predict-clv.md
+        - name: Пример руководства по прогнозу оттока подписок
+          href: sample-guide-predict-subscription-churn.md
+        - name: Учебник по прогнозу оттока транзакций
+          href: sample-guide-predict-transactional-churn.md
+        - name: Руководство по прогнозу рекомендаций продуктов
+          href: sample-guide-predict-product-recommendation.md
+        - name: Эксперименты с машинным обучением Azure
+          href: azure-machine-learning-experiments.md
+    - name: Управляйте прогнозами
+      href: manage-predictions.md
+    - name: Создание сегментов на основе прогнозов
+      href: prediction-based-segment.md
+- name: Параметры экспорта
+  items:
+    - name: Экспорты
       items:
-        - name: Обзор унификации данных
-          href: audience-insights/data-unification.md
-        - name: Сопоставление сущностей и атрибутов
-          href: audience-insights/map-entities.md
-        - name: Поиск совпадений сущностей
-          href: audience-insights/match-entities.md
-        - name: Объединение сущностей
-          href: audience-insights/merge-entities.md
-    - name: Обогащение данных
+        - name: Обзор экспортов
+          href: export-destinations.md
+        - name: Активная кампания
+          href: export-active-campaign.md
+        - name: AdRoll
+          href: export-adroll.md
+        - name: Autopilot
+          href: export-autopilot.md
+        - name: Хранилище BLOB-объектов Azure
+          href: export-azure-blob-storage.md
+        - name: Azure Data Lake Storage 2-го поколения
+          href: export-azure-data-lake-storage-gen2.md
+        - name: Azure Synapse Analytics
+          href: export-azure-synapse-analytics.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
+        - name: Braze
+          href: export-braze.md
+        - name: Campaign Monitor
+          href: export-campaign-monitor.md
+        - name: Constant Contact
+          href: export-constant-contact.md
+        - name: DotDigital
+          href: export-dotdigital.md
+        - name: Dynamics 365 Marketing
+          href: export-dynamics365-marketing.md
+        - name: "Dynamics\_365\_Sales"
+          href: export-dynamics365-sales.md
+        - name: Facebook Ads Manager
+          href: export-facebook.md
+        - name: Google Ads
+          href: export-google-ads.md
+        - name: Iterable
+          href: export-iterable.md
+        - name: Klaviyo
+          href: export-klaviyo.md
+        - name: LinkedIn Ads
+          href: export-linkedin-ads.md
+        - name: LiveRamp
+          href: export-liveramp.md
+        - name: Mailchimp
+          href: export-mailchimp.md
+        - name: Marketo
+          href: export-marketo.md
+        - name: Реклама Майкрософт
+          href: export-microsoft-advertising.md
+        - name: Omnisend
+          href: export-omnisend.md
+        - name: RollWorks
+          href: export-rollworks.md
+        - name: Salesforce Marketing Cloud
+          href: export-salesforce.md
+        - name: SendGrid
+          href: export-sendgrid.md
+        - name: SendInBlue
+          href: export-sendinblue.md
+        - name: Snapchat
+          href: export-snapchat.md
+        - name: SFTP
+          href: export-sftp.md
+    - name: Другие виды использования
       items:
-        - name: Обогащение профилей клиентов
-          href: audience-insights/enrichment-hub.md
-        - name: Торговые марки и интересы
-          href: audience-insights/enrichment-microsoft.md
-        - name: Расширенные адреса
-          href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Расширенные данные компании
-          href: audience-insights/enrichment-enhanced-company-data.md
-        - name: Обогащение с помощью Azure Maps
-          href: audience-insights/enrichment-azure-maps.md
-        - name: Обогащение с помощью HERE Technologies
-          href: audience-insights/enrichment-here.md
-        - name: Обогащение с помощью Leadspace
-          href: audience-insights/enrichment-leadspace.md
-        - name: Обогащение с помощью LiveRamp
-          href: audience-insights/enrichment-liveramp.md
-        - name: Обогащение с помощью Experian
-          href: audience-insights/enrichment-experian.md
-        - name: Обогащение данными Office 365
-          href: audience-insights/enrichment-office.md
-        - name: Обогащение с помощью настраиваемого импорта SFTP
-          href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: Единые профили
-      items:
-        - name: Проверка объединенных профилей клиентов
-          href: audience-insights/customer-profiles.md
-        - name: Фильтрация объединенных профилей клиентов
-          href: audience-insights/search-filter-index.md
-        - name: Определение действий клиента
-          href: audience-insights/activities.md
-    - name: Segments
-      items:
-        - name: Обзор сегментов
-          href: audience-insights/segments.md
-        - name: Создать сегменты
-          href: audience-insights/segment-builder.md
-        - name: Предложенные сегменты на основе мер
-          href: audience-insights/suggested-segments.md
-        - name: Предложенные сегменты на основе действий
-          href: audience-insights/suggested-segments-activity.md
-        - name: Получение аналитики по сегментам
-          href: audience-insights/segment-insights.md
-        - name: Найти похожих клиентов
-          href: audience-insights/find-similar-customer-segments.md
-    - name: Меры (Measures)
-      items:
-        - name: Обзор мер
-          href: audience-insights/measures.md
-        - name: Создание новой меры
-          href: audience-insights/measure-builder.md
-        - name: Использовать шаблон меры
-          href: audience-insights/measure-templates.md
-    - name: Прогнозы
-      items:
-        - name: Прогнозируйте данные с помощью ИИ
-          items:
-            - name: Обзор моделей прогнозирования
-              href: audience-insights/predictions-overview.md
-            - name: Прогноз ценности клиента на протяжении жизненного цикла (CLV)
-              href: audience-insights/predict-customer-lifetime-value.md
-            - name: Прогноз рекомендации продуктов
-              href: audience-insights/predict-product-recommendation.md
-            - name: Прогнозировать отток подписки
-              href: audience-insights/predict-subscription-churn.md
-            - name: Прогноз оттока транзакций
-              href: audience-insights/predict-transactional-churn.md
-            - name: Анализ тональности в отзывах клиентов
-              href: audience-insights/sentiment-analysis.md
-            - name: Используйте пользовательские модели из машинного обучения Azure
-              href: audience-insights/custom-models.md
-            - name: Заполнение частично отсутствующих данных
-              href: audience-insights/predictions.md
-        - name: Примеры руководств
-          items:
-            - name: Пример руководства для прогноза CLV
-              href: audience-insights/sample-guide-predict-clv.md
-            - name: Пример руководства по прогнозу оттока подписок
-              href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Учебник по прогнозу оттока транзакций
-              href: audience-insights/sample-guide-predict-transactional-churn.md
-            - name: Руководство по прогнозу рекомендаций продуктов
-              href: audience-insights/sample-guide-predict-product-recommendation.md
-            - name: Эксперименты с машинным обучением Azure
-              href: audience-insights/azure-machine-learning-experiments.md
-        - name: Управляйте прогнозами
-          href: audience-insights/manage-predictions.md
-        - name: Создание сегментов на основе прогнозов
-          href: audience-insights/prediction-based-segment.md
-    - name: Параметры экспорта
-      items:
-        - name: Экспорты
-          items:
-            - name: Обзор экспортов
-              href: audience-insights/export-destinations.md
-            - name: Активная кампания
-              href: audience-insights/export-active-campaign.md
-            - name: AdRoll
-              href: audience-insights/export-adroll.md
-            - name: Autopilot
-              href: audience-insights/export-autopilot.md
-            - name: Хранилище BLOB-объектов Azure
-              href: audience-insights/export-azure-blob-storage.md
-            - name: Azure Data Lake Storage 2-го поколения
-              href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
-              href: audience-insights/export-azure-synapse-analytics.md
-            - name: Adobe Campaign Standard
-              href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
-              href: audience-insights/export-adobe-experience-platform.md
-            - name: Braze
-              href: audience-insights/export-braze.md
-            - name: Campaign Monitor
-              href: audience-insights/export-campaign-monitor.md
-            - name: Constant Contact
-              href: audience-insights/export-constant-contact.md
-            - name: DotDigital
-              href: audience-insights/export-dotdigital.md
-            - name: Dynamics 365 Marketing
-              href: audience-insights/export-dynamics365-marketing.md
-            - name: "Dynamics\_365\_Sales"
-              href: audience-insights/export-dynamics365-sales.md
-            - name: Facebook Ads Manager
-              href: audience-insights/export-facebook.md
-            - name: Google Ads
-              href: audience-insights/export-google-ads.md
-            - name: Iterable
-              href: audience-insights/export-iterable.md
-            - name: Klaviyo
-              href: audience-insights/export-klaviyo.md
-            - name: LinkedIn Ads
-              href: audience-insights/export-linkedin-ads.md
-            - name: LiveRamp
-              href: audience-insights/export-liveramp.md
-            - name: Mailchimp
-              href: audience-insights/export-mailchimp.md
-            - name: Marketo
-              href: audience-insights/export-marketo.md
-            - name: Реклама Майкрософт
-              href: audience-insights/export-microsoft-advertising.md
-            - name: Omnisend
-              href: audience-insights/export-omnisend.md
-            - name: RollWorks
-              href: audience-insights/export-rollworks.md
-            - name: Salesforce Marketing Cloud
-              href: audience-insights/export-salesforce.md
-            - name: SendGrid
-              href: audience-insights/export-sendgrid.md
-            - name: SendInBlue
-              href: audience-insights/export-sendinblue.md
-            - name: Snapchat
-              href: audience-insights/export-snapchat.md
-            - name: SFTP
-              href: audience-insights/export-sftp.md
-        - name: Другие виды использования
-          items:
-            - name: Надстройка карточек клиентов для Dynamics 365
-              href: audience-insights/customer-card-add-in.md
-            - name: Microsoft Teams (бот)
-              href: audience-insights/export-teams-bot.md
-            - name: Power Apps
-              href: audience-insights/export-power-apps.md
-            - name: Power Automate
-              href: audience-insights/export-power-automate.md
-            - name: Power BI
-              href: audience-insights/export-power-bi.md
-    - name: Сущности
-      items:
-        - name: Общие сведения о сущностях
-          href: audience-insights/entities.md
-        - name: Просмотр схем сущностей в Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: Набор данных Customer Insights в Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: Сборка отношения и связанных сущностей
-          href: audience-insights/relationships.md
-        - name: Определение семантических сопоставлений
-          href: audience-insights/semantic-mappings.md
-    - name: Администрирование
-      items:
-        - name: Настройка конфигурации системы
-          href: audience-insights/system.md
-        - name: Назначить разрешения пользователя
-          href: audience-insights/permissions.md
-        - name: Обзор подключений
-          href: audience-insights/connections.md
-        - name: Управление несколькими средами
-          href: audience-insights/manage-environments.md
-        - name: Использовать свое Key Vault
-          href: audience-insights/use-azure-key-vault.md
-        - name: Подключение к учетной записи хранения с помощью субъекта-службы
-          href: audience-insights/connect-service-principal.md
-        - name: Экспорт журналов диагностики
-          href: audience-insights/diagnostics.md
-        - name: Ограничения обслуживания
-          href: service-limits.md
-        - name: Права и запросы DSR
-          href: dsr-rights-requests.md
-    - name: API
-      items:
-        - name: Просмотр схем сущностей в Common Data Model
-          href: audience-insights/entity-schemas.md
-        - name: Набор данных Customer Insights в Dataverse
-          href: audience-insights/customer-insights-dataverse.md
-        - name: Работа с API-интерфейсами
-          href: audience-insights/apis.md
-        - name: Ссылки API
-          href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+        - name: Надстройка карточек клиентов для Dynamics 365
+          href: customer-card-add-in.md
+        - name: Microsoft Teams (бот)
+          href: export-teams-bot.md
+        - name: Power Apps
+          href: export-power-apps.md
+        - name: Power Automate
+          href: export-power-automate.md
+        - name: Power BI
+          href: export-power-bi.md
+- name: Сущности
+  items:
+    - name: Общие сведения о сущностях
+      href: entities.md
+    - name: Просмотр схем сущностей в Common Data Model
+      href: entity-schemas.md
+    - name: Набор данных Customer Insights в Dataverse
+      href: customer-insights-dataverse.md
+    - name: Сборка отношения и связанных сущностей
+      href: relationships.md
+    - name: Определение семантических сопоставлений
+      href: semantic-mappings.md
+- name: Администрирование
+  items:
+    - name: Настройка конфигурации системы
+      href: system.md
+    - name: Настройка параметров безопасности
+      href: security-overview.md
+    - name: Назначить разрешения пользователя
+      href: permissions.md
+    - name: Обзор подключений
+      href: connections.md
+    - name: Управление несколькими средами
+      href: manage-environments.md
+    - name: Использовать свое Key Vault
+      href: use-azure-key-vault.md
+    - name: Подключение к учетной записи хранения с помощью субъекта-службы
+      href: connect-service-principal.md
+    - name: Экспорт журналов диагностики
+      href: diagnostics.md
+    - name: Ограничения обслуживания
+      href: service-limits.md
+    - name: Права и запросы DSR
+      href: dsr-rights-requests.md
+- name: API
+  items:
+    - name: Работа с API-интерфейсами
+      href: apis.md
+    - name: Ссылки API
+      href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
 - name: Управление согласием (предварительная версия)
   items:
     - name: Справочный центр
@@ -306,10 +302,10 @@
           href: consent-management/set-consent-rules.md
     - name: Управление данными согласия
       items:
-        - name: Включение правил согласия в аналитике аудитории
-          href: audience-insights/activate-consent.md
-        - name: Управление правилами согласия в сегментах аналитики аудитории
-          href: audience-insights/change-default-consent-rules.md
+        - name: Включение правил согласия в Customer Insights
+          href: activate-consent.md
+        - name: Управление правилами согласия по умолчанию в сегментах Customer Insights
+          href: change-default-consent-rules.md
     - name: Управление параметрами и пользователями
       items:
         - name: Настройка параметров системы
@@ -320,7 +316,5 @@
       items:
         - name: Создание прогнозов с данными согласия
           href: consent-management/predictions-consent-data.md
-- name: Аналитика взаимодействий (предварительная версия)
-  href: engagement-insights/overview.md
 - name: Получение поддержки
   href: /power-platform/admin/get-help-support
