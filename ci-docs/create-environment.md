@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646625"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712918"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>Создайте среду в Customer Insights
 
@@ -63,8 +63,7 @@ ms.locfileid: "8646625"
 Сохраняя данные в Azure Data Lake Storage, вы соглашаетесь с тем, что данные будут передаваться и храниться в соответствующем географическом местоположении для этой учетной записи хранения Azure. Это место может отличаться от того, в котором хранятся данные в Dynamics 365 Customer Insights. Подробнее можно узнать в [центре управления безопасностью Microsoft](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> В настоящее время Customer Insights поддерживает следующее:
-> - Полученные сущности из потоков данных Power BI, которые хранятся в Data Lake под управлением Microsoft Dataverse.  
+> В настоящее время Customer Insights поддерживает следующее:  
 > - Учетные записи Azure Data Lake Storage из того же региона Azure, который вы выбрали при создании среды.
 > - Учетные записи Azure Data Lake Storage Gen2, у которых включены *иерархические пространства имен*. Учетные записи хранения Azure Data Lake Gen1 не поддерживаются.
 
@@ -80,7 +79,7 @@ ms.locfileid: "8646625"
 
 Предоставьте свою собственную среду Microsoft Dataverse для обмена данными (профилями и аналитиками) с бизнес-приложениями на основе Dataverse, например Dynamics 365 Marketing или приложения на основе модели в Power Apps. Оставьте это поле пустым, если у вас нет своей среды Dataverse, и мы предоставим ее вам.
 
-Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](data-sources.md#add-data-from-on-premises-data-sources). Вы также можете использовать [готовые модели прогноза](predictions-overview.md?tabs=b2c#out-of-box-models) путем подключения к среде Dataverse.
+Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Для обмена данными Customer Insights и Dataverse должны находиться в одном регионе.

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646788"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755466"
 ---
 # <a name="work-with-customer-insights-apis"></a>Работа с API Customer Insights
 
@@ -25,7 +25,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 > [!IMPORTANT]
 > Подробная информация об этих API приведена в разделе [Справочник по API Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Они включают дополнительную информацию об операциях, параметрах и ответах.
 
-В этой статье описывается, как получить доступ к API-интерфейсам Customer Insights, как создать регистрацию приложения Azure и начать работу с доступными библиотеками клиента.
+В этой статье описано, как получить доступ к API-интерфейсам Customer Insights, создать регистрацию приложения Azure и начать работу с клиентскими библиотеками.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Начните работу с API Customer Insights
 
@@ -83,13 +83,13 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 Для получения дополнительной информации о MSAL см. [Обзор библиотеки проверки подлинности Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
-Дополнительные сведения о регистрации приложения в Azure см. в разделе [Регистрация приложения](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+Дополнительные сведения о регистрации приложения в Azure см. в разделе [Регистрация приложения](/graph/auth-register-app-v2).
 
 Для получения информации об использовании API в наших клиентских библиотеках см. [Клиентские библиотеки Customer Insights](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>Разрешения приложения "сервер-сервер"
 
-В [разделе регистрации приложения](#create-a-new-app-registration-in-the-azure-portal) описано, как зарегистрировать приложение, которое требует от пользователя входа в систему для аутентификации. Узнайте, как создать регистрацию приложения, которая не требует взаимодействия с пользователем и может быть запущена на сервере.
+В [разделе регистрации приложения](#create-a-new-app-registration-in-the-azure-portal) описано, как зарегистрировать приложение, которое требует от пользователя входа в систему для аутентификации. Узнайте, как создать регистрацию приложения, которая не требует взаимодействия с пользователем и может выполняться на сервере.
 
 1. При регистрации приложения на портале Azure перейдите в **Разрешения API**.
 
@@ -112,6 +112,10 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
    Откройте Customer Insights, перейдите **Администрирование** > **Разрешения** и выберите **Добавить пользователя**.
 
 1. Найдите имя регистрации вашего приложения, выберите его в результатах поиска и выберите **Сохранить**.
+
+## <a name="sample-queries"></a>Примеры запросов
+
+Мы составили краткий список примеров запросов OData для работы с API-интерфейсами: [примеры запросов OData](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>Клиентские библиотеки Customer Insights
 
@@ -137,7 +141,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. Используйте [библиотеку проверки подлинности Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), чтобы получить `AccessToken`, используя вашу существующую [регистрацию приложения Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. После успешной аутентификации и получения токена создайте новый или используйте существующий `HttpClient` с дополнительным параметром **DefaultRequestHeaders "Авторизация"**, установленным на **Носитель "маркер доступа"**, и **Ocp-Apim-Subscription-Key**, установленным на [**ключ подписки** из вашей среды Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. После успешной аутентификации и получения токена создайте новый или используйте существующий клиент `HttpClient` с параметром **DefaultRequestHeaders "Авторизация"**, для которого установлено значение **Носитель "маркер доступа"**, и параметром **Ocp-Apim-Subscription-Key**, для которого установлено значение [**ключ подписки** из вашей среды Customer Insights](#get-started-trying-the-customer-insights-apis).   
  
    Сбросьте заголовок **Авторизация**, когда это необходимо. Например, когда срок действия токена истек.
 
@@ -147,7 +151,7 @@ Dynamics 365 Customer Insights предоставляет API-интерфейс
 
 1. Совершайте вызовы с клиентом в "методы расширения", например, `GetAllInstancesAsync`. Если доступ к базовому `Microsoft.Rest.HttpOperationResponse` является предпочтительным, используйте "методы сообщений http", например `GetAllInstancesWithHttpMessagesAsync`.
 
-1. Ответ, скорее всего, будет `object`, потому что метод может возвращать несколько типов (например, `IList<InstanceInfo>` и `ApiErrorResult`). Чтобы проверить тип возвращаемого значения, вы можете безопасно преобразовать объекты в типы ответов, указанные на [странице сведений API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) для этой операции.    
+1. Ответ, скорее всего, будет `object`, потому что метод может возвращать несколько типов (например, `IList<InstanceInfo>` и `ApiErrorResult`). Чтобы проверить тип возврата, используйте объекты в типах ответов, указанных на [странице сведений об API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) для этой операции.    
    
    Если требуется дополнительная информация по запросу, используйте **методы сообщений http** для доступа к необработанному объекту ответа.
 

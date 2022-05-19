@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 1dd99edc327bd41b0442b390f2e4f8664269f553
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646877"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739178"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Подключение к учетной записи Azure Data Lake Storage с использованием субъекта-службы Azure
 
@@ -40,7 +40,7 @@ ms.locfileid: "8646877"
 
 3. В **Управление** выберите **Корпоративные приложения**.
 
-4. Найдите идентификатор приложения Microsoft `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` с именем `Dynamics 365 AI for Customer Insights`.
+4. Добавьте фильтр для параметра **Идентификатор приложения начинается с** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` или выполните поиск по названию `Dynamics 365 AI for Customer Insights`.
 
 5. Если вы найдете соответствующую запись, это означает, что субъект-служба уже существует. 
    

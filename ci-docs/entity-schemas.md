@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646895"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757448"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схемы сущностей в Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8646895"
 
 Эта модель общих данных позволяет приложениям и интеграторам данных легче взаимодействовать, предоставляя унифицированное определение данных. Common Data Model включает в себя богатую систему метаданных со стандартными сущностями, отношениями, иерархиями, характеристиками и многим другим. Она возникла из приложений Dynamics 365 и имеет открытый исходный код на GitHub с более чем 260 стандартными сущностями. Большая система внутренних и внешних партнеров вносит отраслевые концепции в общую модель данных Common Data Model.
 
-Сегодня несколько систем и платформ реализуют общую модель данных Common Data Model, в том числе потоки данных Power BI и службы данных Azure. Это уже поддерживается в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI и предстоящих службах данных Azure, напрямую увеличивая ценность [инициативы открытых данных](https://www.microsoft.com/open-data-initiative).
+Сегодня несколько систем и платформ реализуют общую модель данных Common Data Model, в том числе потоки данных Power BI и службы данных Azure. Это уже поддерживается в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI и предстоящих службах данных Azure, напрямую увеличивая ценность [инициативы открытых данных](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## <a name="customer-insights-entity-schemas"></a>Схемы сущностей Customer Insights
 

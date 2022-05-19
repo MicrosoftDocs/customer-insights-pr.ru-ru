@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647122"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740735"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Дополнение частичных данных прогнозами (устарело)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8647122"
 
 1. В вашей организации есть экземпляр, который [настроен в Microsoft Dataverse](/ai-builder/build-model#prerequisites) и находится в той же организации, что и Customer Insights.
 
-2. Ваша среда аналитики аудитория прикреплена к вашему экземпляру Dataverse.
+2. Ваша среда Customer Insights прикреплена к вашему экземпляру Dataverse.
 
 Дополнительные сведения см. в разделе [Создание новой среды](create-environment.md).
 

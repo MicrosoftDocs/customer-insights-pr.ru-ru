@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646680"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741519"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Экспорт данных в Azure Synapse Analytics (предварительная версия)
 
@@ -34,7 +34,7 @@ Azure Synapse — это служба аналитики, которая уск
 
 - Активная подписка Azure.
 
-- Если использовать новую учетную запись Azure Data Lake Storage Gen2, *субъекту-службе* для Customer Insights нужны разрешения **участника данных больших двоичных объектов хранилища**. Узнайте больше о [подключении к учетной записи Azure Data Lake Storage 2-го поколения с субъектом службы Azure для аналитики аудитории](connect-service-principal.md). В Data Lake Storage 2-го поколения **должно быть** включено [иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
+- Если использовать новую учетную запись Azure Data Lake Storage Gen2, *субъекту-службе* для Customer Insights нужны разрешения **участника данных больших двоичных объектов хранилища**. Дополнительные сведения о [подключении к учетной записи Azure Data Lake Storage 2-го поколения с субъектом-службой Azure для Customer Insights](connect-service-principal.md). В Data Lake Storage 2-го поколения **должно быть** включено [иерархическое пространство имен](/azure/storage/blobs/data-lake-storage-namespace).
 
 - В группе ресурсов, в которой находится Azure Synapse workspace, *субъект-служба* и *пользователь Azure AD с разрешениями администратора в Customer Insights* должны иметь разрешения не менее **Читатель**. Дополнительные сведения см. в разделе [Назначение ролей Azure с помощью портала Azure](/azure/role-based-access-control/role-assignments-portal).
 

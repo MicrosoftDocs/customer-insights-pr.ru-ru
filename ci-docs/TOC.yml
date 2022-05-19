@@ -66,12 +66,18 @@
   items:
     - name: Обзор унификации данных
       href: data-unification.md
-    - name: Сопоставление сущностей и атрибутов
+    - name: Выбор исходных таблиц
       href: map-entities.md
-    - name: Поиск совпадений сущностей
+    - name: Удаление повторяющихся записей
+      href: remove-duplicates.md
+    - name: Условия сопоставления
       href: match-entities.md
-    - name: Объединение сущностей
+    - name: Объединение полей клиентов
       href: merge-entities.md
+    - name: Просмотр объединения данных
+      href: review-unification.md
+    - name: Обновление параметров объединения
+      href: data-unification-update.md
 - name: Обогащение данных
   items:
     - name: Обогащение профилей клиентов
@@ -282,6 +288,8 @@
       href: apis.md
     - name: Ссылки API
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: Примеры запросов OData
+      href: odata-examples.md
 - name: Управление согласием (предварительная версия)
   items:
     - name: Справочный центр

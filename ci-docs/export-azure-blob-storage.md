@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646950"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757402"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Экспорт списка сегментов и других данных в хранилище BLOB-объектов Azure (предварительная версия)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8646950"
 Вы можете настроить этот экспорт, если у вас есть доступ к подключению этого типа. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> Если вы включили параметр мягкого удаления для учетной записи хранилища BLOB-объектов Azure, экспорт завершится ошибкой. Отключите мягкое удаление, чтобы экспортировать данные в BLOB-объекты. Дополнительные сведения см. в разделе [Включение мягкого удаления BLOB-объектов](/azure/storage/blobs/soft-delete-blob-enable.md)
+> Если вы включили параметр мягкого удаления для учетной записи хранилища BLOB-объектов Azure, экспорт завершится ошибкой. Отключите мягкое удаление, чтобы экспортировать данные в BLOB-объекты. Дополнительные сведения см. в разделе [Включение мягкого удаления BLOB-объектов](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. Перейдите в раздел **Данные** > **Экспорты**.
 
