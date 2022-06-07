@@ -4,14 +4,14 @@ metadata:
   author: m-hartmann
   description: Найдите соответствующие статьи, чтобы начать со справочной информации.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 05/18/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
-  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+  ms.openlocfilehash: e8134fa66ce47cdf8aeab144b8405104fb257f6c
+  ms.sourcegitcommit: 6108152b3d28a2ec140eae32a61dbf4317baa37b
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "8641672"
+  ms.lasthandoff: 05/19/2022
+  ms.locfileid: "8781380"
 title: Документация по Dynamics 365 Customer Insights
 summary: Найдите полезные ресурсы, чтобы начать работу и узнать о функциях и возможностях Customer Insights.
 landingContent:
@@ -43,16 +43,30 @@ landingContent:
     links:
     - text: Начать
       url: /learn/modules/get-started-customer-data-platform/
-- title: Объединение данных
+- title: Прием данных
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Обзор источников данных
       url: data-sources.md
+    - text: Подключить с помощью Power Query
+      url: connect-power-query.md
+    - text: Подключиться к Microsoft Dataverse
+      url: connect-dataverse-managed-lake.md
+  - linkListType: learn
+    links:
+    - text: Прием данных в Customer Insights
+      url: /learn/modules/ingest-data-customer-insights/
+- title: Объединение данных
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: Обзор объединения
       url: data-unification.md
     - text: Общие сведения о сущностях
       url: entities.md
+    - text: Проверка унифицированных профилей
+      url: customer-profiles.md
   - linkListType: learn
     links:
     - text: Создайте единый профиль
@@ -99,20 +113,6 @@ landingContent:
     links:
     - text: Управляйте внешними подключениями
       url: /learn/modules/configure-third-party-connections/
-- title: Администрирование приложения
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Настройка системы
-      url: system.md
-    - text: Определение разрешений пользователя
-      url: permissions.md
-    - text: Управление несколькими средами
-      url: manage-environments.md
-  - linkListType: learn
-    links:
-    - text: Администрирование Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
 - title: Администрирование Customer Insights
   linkLists:
   - linkListType: how-to-guide

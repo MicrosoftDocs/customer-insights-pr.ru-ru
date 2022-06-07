@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: Каталог обучения
   items:
-    - name: Начать
+    - name: Получение сертификата Microsoft Customer Data Platform Specialist
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Начало работы с Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: Прием данных
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: Начните с платной лицензии
       href: paid-license.md
-    - name: Создать новую среду
-      href: create-environment.md
     - name: Изучение Customer Insights
       href: home.md
     - name: Работа с тегами и столбцами
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: Просмотр схем сущностей в Common Data Model
       href: entity-schemas.md
-    - name: Набор данных Customer Insights в Dataverse
-      href: customer-insights-dataverse.md
     - name: Сборка отношения и связанных сущностей
       href: relationships.md
     - name: Определение семантических сопоставлений
       href: semantic-mappings.md
+- name: Cреды
+  items:
+    - name: Создать новую среду
+      href: create-environment.md
+    - name: Подключиться к Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: Использование собственного хранилища Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Управление параметрами среды
+      href: manage-environments.md
+    - name: Подключение к учетной записи хранения с помощью субъекта-службы
+      href: connect-service-principal.md
 - name: Администрирование
   items:
     - name: Настройка конфигурации системы
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: Назначить разрешения пользователя
       href: permissions.md
-    - name: Обзор подключений
-      href: connections.md
-    - name: Управление несколькими средами
-      href: manage-environments.md
     - name: Использовать свое Key Vault
       href: use-azure-key-vault.md
-    - name: Подключение к учетной записи хранения с помощью субъекта-службы
-      href: connect-service-principal.md
     - name: Экспорт журналов диагностики
       href: diagnostics.md
-    - name: Ограничения обслуживания
-      href: service-limits.md
-    - name: Права и запросы DSR
-      href: dsr-rights-requests.md
+    - name: Обзор подключений
+      href: connections.md
 - name: API
   items:
     - name: Работа с API-интерфейсами
@@ -324,5 +328,9 @@
       items:
         - name: Создание прогнозов с данными согласия
           href: consent-management/predictions-consent-data.md
+- name: Ограничения обслуживания
+  href: service-limits.md
+- name: Права и запросы DSR
+  href: dsr-rights-requests.md
 - name: Получение поддержки
   href: /power-platform/admin/get-help-support

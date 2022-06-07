@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653751"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833324"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Работа с едиными профилями клиентов в Dynamics 365 Marketing
 
@@ -23,7 +23,6 @@ ms.locfileid: "8653751"
 - Базовый динамический контент (например, персонализированные токены) в электронных письмах, SMS и push-уведомлениях по таким показателям, как статус лояльности, дата продления подписки, головная организация или любой другой показатель, который вы захватили в едином профиле Customer Insights.
 - Загрузка данных из Marketing в Customer Insights и объединение их с данными клиентов из других источников.
 - Применение средств очистки, обогащения и нечеткого соответствия данных Customer Insights.
-
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>Использование богатых профилей клиентов в маркетинге в режиме реального времени
 
@@ -41,4 +40,4 @@ Customer Insights позволяет уточнять данные из мног
 
 Вы не ограничены облачным хранилищем, если хотите использовать данные Customer Insights с Marketing. Если у вас уже есть собственная настройка Azure Data Lake Storage, вы можете подключиться к Customer Insights, а затем поделиться данными с приложением Marketing так же, как и с облачной настройкой.
 
-Подробнее: [Включение совместного использования данных с Dataverse из собственных данных Azure Data Lake Storage](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+Подробнее: [Включение совместного использования данных с Dataverse из собственных данных Azure Data Lake Storage](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755325"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800388"
 ---
 # <a name="connections-preview-overview"></a>Обзор подключений (предварительная версия)
 
@@ -69,7 +69,7 @@ ms.locfileid: "8755325"
 
 1. Перейдите на вкладку **Подключения**.
 
-1. Выберите многоточие по вертикали для подключения, которое вы хотите изменить.
+1. Выберите вертикальное многоточие (&vellip;) для подключения, которое требуется изменить.
 
 1. Выберите **Изменить**.
 
@@ -85,7 +85,7 @@ ms.locfileid: "8755325"
 
 1. Перейдите на вкладку **Подключения**.
 
-1. Выберите многоточие по вертикали для подключения, которое вы хотите удалить.
+1. Выберите вертикальное многоточие (&vellip;) для подключения, которое требуется удалить.
 
 1. В раскрывающемся меню выберите **Удалить**. Открывается диалог запроса подтверждения.
 

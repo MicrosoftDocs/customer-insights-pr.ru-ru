@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641532"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808577"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Запросы субъектов данных (DSR) в соответствии с GDPR
 
@@ -41,7 +41,7 @@ Customer Insights содержит следующие встроенные в п
 1. Выполните вход в Dynamics 365 Customer Insights.
 2. Перейдите в раздел **Данные** > **Источники данных**
 3. Для каждого источника данных в списке, который содержит удаленные данные клиента:
-   1. Выберите (...), затем выберите **обновить**.
+   1. Выберите вертикальное многоточие (&vellip;), а затем — **Обновить**.
    2. Проверьте состояние источника данных в разделе **Состояние**. Галочка означает, что обновление прошло успешно. Предупреждающий треугольник означает, что что-то пошло не так. Если отображается предупреждающий треугольник, свяжитесь с D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ Customer Insights содержит следующие встроенные в п
 Администратор Customer Insights может выполнить следующие действия для удаления данных пользователя Customer Insights:
 
 1. Выполните вход в Dynamics 365 Customer Insights.
-2. Перейдите в **Администратор** > **Разрешения**.
+2. Перейти в раздел **Администрирование** > **Безопасность** > **Разрешения**.
 3. Установите флажок для пользователя, которого необходимо удалить.
 4. Выберите **Удалить**.
 
