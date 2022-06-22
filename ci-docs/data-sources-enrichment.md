@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800297"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011489"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Обогащение источников данных (предварительная версия)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800297"
 
 1. Щелкните вертикальный многоточие (&vellip;) рядом с источником данных, который вы хотите обогатить, и выберите **Обогатить**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница обогащения источников данных.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="Страница источников данных с выделенным пунктом «Обогатить»":::
 
    На **Обнаружить** отображаются [поддерживаемые параметры расширения источников данных](#supported-data-source-enrichments).
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Страница обогащения источников данных.":::
 
 1. Выберите **Обогатить мои данные** для настройки обогащения источника данных. Имя выходной сущности заполняется автоматически.
 

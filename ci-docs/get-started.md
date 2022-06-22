@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833591"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011995"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Начало работы с Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ Customer Insights может помочь вам лучше понять сво�
 
 Унифицированные профили — это основа для получения аналитической информации и выполнения действий с данными. Переносите данные из различных источников и запускайте процесс объединения данных для объединения единых профилей. Укажите связь между принимаемыми сущностями и используйте функции обогащения для добавления информации в профили.
 
-1. Принимайте данные путем создания источников данных из нескольких вариантов. Выберите между [соединители Power Query](connect-power-query.md), [Папка Common Data Model](connect-common-data-model.md) или [Microsoft Dataverse](connect-dataverse-managed-lake.md).
+1. Принимайте данные путем создания источников данных из нескольких вариантов. Выберите между [Azure Data Lake Storage, включая Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md) или [соединителями Power Query](connect-power-query.md).
 
 1. Запустите [процесс объединения данных](data-unification.md) путем определения [исходных полей](map-entities.md), удаления [повторяющихся данных](remove-duplicates.md), [условий сопоставления](match-entities.md) и [объединяющих полей](merge-entities.md).
 

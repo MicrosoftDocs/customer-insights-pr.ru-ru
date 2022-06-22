@@ -3,17 +3,17 @@ title: Используйте собственную учетную запись
 author: mukeshpo
 description: Узнайте о требованиях, предъявляемых к использованию собственной учетной записи Azure Data Lake Storage, для хранения данных Customer Insights.
 ms.author: mukeshpo
-ms.date: 05/30/2022
+ms.date: 06/08/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 9fcd7645e34bf310ac3a1b98a0dd9a60598b19dc
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833930"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011949"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>Используйте собственную учетную запись Azure Data Lake Storage второго поколения
 
@@ -37,6 +37,7 @@ Dynamics 365 Customer Insights позволяет хранить все ваши
 1. Выберите, как требуется **Подключить хранилище**. Можно выбрать один из двух вариантов: проверка подлинности на основе ресурсов и проверка подлинности на основе подписки. Для получения дополнительной информации см. раздел [Подключение к учетной записи Azure Data Lake Storage с помощью субъекта-службы Azure](connect-service-principal.md).
    - Для параметра **Подписка Azure** выберите **Подписку**, **Группу ресурсов** и **Учетную запись хранения**, содержащую контейнер `customerinsights`.
    - Для параметра **Ключ учетной записи** укажите **Имя учетной записи** и **Ключ учетной записи** для учетной записи Data Lake Storage. Использование этого способа проверки подлинности подразумевает, что вы будете проинформированы, если ваша организация изменит ключи. При смене ключа вам будет необходимо [обновить конфигурацию среды](manage-environments.md#edit-an-existing-environment), используя новый ключ.
+1. Выберите, хотите ли вы использовать приватный канал Azure для подключения к учетной записи хранения, и [создайте подключение к приватному каналу](security-overview.md#private-links-tab) с двухэтапным процессом.
 
 Когда системные процессы, такие как прием данных, завершены, система создает соответствующие папки в учетной записи хранения. Файлы данных и файлы *model.json* создаются и добавляются в папки на основе имени процесса.
 

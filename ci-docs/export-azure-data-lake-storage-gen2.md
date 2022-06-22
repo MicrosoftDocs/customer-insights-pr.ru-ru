@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646770"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947246"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Экспорт списка сегментов и других данных в Azure Data Lake Storage Gen2 (предварительная версия)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8646770"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-1. Для Azure Data Lake Storage Gen2 вы можете выбирать между [уровнем производительности Стандарт и Премиум](/azure/storage/blobs/create-data-lake-storage-account) при создании учетной записи хранения для своего озера данных. Если вы выбрали уровень производительности Премиум, выберите блочный BLOB-объект Премиум как тип организации. 
+1. Для Azure Data Lake Storage Gen2 вы можете выбирать между [уровнем производительности Стандарт и Премиум](/azure/storage/blobs/create-data-lake-storage-account) при создании учетной записи хранения для своего озера данных. Если вы выбрали уровень производительности Премиум, выберите блочный BLOB-объект Премиум как тип организации.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Настройте подключение к Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Настройте подключение к Azure Data Lake Storage Gen2
 
 1. Перейти в раздел **Администрирование** > **Подключения**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8646770"
     - Чтобы узнать, как создать учетную запись хранения для использования с Azure Data Lake Storage Gen2, см. [Создать учетную запись хранения](/azure/storage/blobs/create-data-lake-storage-account). 
     - Чтобы узнать больше о том, как найти имя учетной записи хранения Azure Data Lake 2-го поколения и ключ учетной записи, см. раздел [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
 
-1. Выберите **Сохранить**, чтобы завершить подключение. 
+1. Выберите **Сохранить**, чтобы завершить подключение.
 
 ## <a name="configure-an-export"></a>Настройка экспорта
 
@@ -57,8 +55,12 @@ ms.locfileid: "8646770"
 
 Сохранение экспорта не запускает экспорт сразу.
 
-Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab). Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand). 
+Экспорт выполняется с каждым [запланированным обновлением](system.md#schedule-tab).
+Вы также можете [экспортировать данные по запросу](export-destinations.md#run-exports-on-demand).
 
-Экспортированные данные хранятся в настроенном вами контейнере хранилища Azure Data Lake 2-го поколения. 
+Экспортированные данные хранятся в настроенном вами контейнере хранилища Azure Data Lake 2-го поколения.
+
+> [!TIP]
+> Экспорт сущностей, содержащих большой объем данных, может привести к созданию нескольких файлов CSV в одной папке для каждого экспорта. Разделение экспорта происходит по соображениям производительности, чтобы минимизировать время, необходимое для завершения экспорта.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

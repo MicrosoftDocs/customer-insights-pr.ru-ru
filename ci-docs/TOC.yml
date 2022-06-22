@@ -48,14 +48,14 @@
   items:
     - name: Обзор источников данных
       href: data-sources.md
+    - name: Подключение к данным в Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: Подключение к Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: 'Подключение к данным в озере данных, управляемом Microsoft Dataverse'
+      href: connect-dataverse-managed-lake.md
     - name: Добавьте источники данных через соединители Power Query
       href: connect-power-query.md
-    - name: Добавление папки Common Data Model в качестве источника данных
-      href: connect-common-data-model.md
-    - name: 'Добавление Data Lake, управляемого Dataverse'
-      href: connect-dataverse-managed-lake.md
-    - name: Добавление Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Обогащение источников данных
       href: data-sources-enrichment.md
     - name: Инкрементное обновление для источников данных
@@ -82,27 +82,27 @@
   items:
     - name: Обогащение профилей клиентов
       href: enrichment-hub.md
+    - name: Учетные данные из данных Office 365
+      href: enrichment-office.md
     - name: Торговые марки и интересы
       href: enrichment-microsoft.md
+    - name: Данные компании из Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Данные компании от Leadspace
+      href: enrichment-leadspace.md
+    - name: Демографические данные от Experian
+      href: enrichment-experian.md
     - name: Расширенные адреса
       href: enrichment-enhanced-addresses.md
     - name: Расширенные данные компании
       href: enrichment-enhanced-company-data.md
-    - name: Обогащение с помощью Azure Maps
-      href: enrichment-azure-maps.md
-    - name: Обогащение с использованием Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Обогащение с помощью HERE Technologies
-      href: enrichment-here.md
-    - name: Обогащение с помощью Leadspace
-      href: enrichment-leadspace.md
-    - name: Обогащение с помощью LiveRamp
+    - name: Идентификация с LiveRamp
       href: enrichment-liveramp.md
-    - name: Обогащение с помощью Experian
-      href: enrichment-experian.md
-    - name: Обогащение данными Office 365
-      href: enrichment-office.md
-    - name: Обогащение с помощью настраиваемого импорта SFTP
+    - name: Расположение от Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Расположение от HERE Technologies
+      href: enrichment-here.md
+    - name: Пользовательский импорт по протоколу SFTP
       href: enrichment-SFTP-custom-import.md
 - name: Единые профили
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Определение действий клиента
       href: activities.md
+    - name: Управление согласием для Customer Insights
+      href: consent-management.md
 - name: Segments
   items:
     - name: Обзор сегментов
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: Примеры запросов OData
       href: odata-examples.md
-- name: Управление согласием (предварительная версия)
-  items:
-    - name: Справочный центр
-      href: consent-management/index.yml
-    - name: Обзор возможностей
-      href: consent-management/overview.md
-    - name: Начать
-      items:
-        - name: Начать
-          href: consent-management/get-started.md
-        - name: Основные понятия и терминология
-          href: consent-management/glossary.md
-    - name: Импорт данных согласия
-      items:
-        - name: Импорт данных согласия
-          href: consent-management/import-consent-data.md
-        - name: Установка данных согласия и применение предпочтений согласия
-          href: consent-management/set-consent-rules.md
-    - name: Управление данными согласия
-      items:
-        - name: Включение правил согласия в Customer Insights
-          href: activate-consent.md
-        - name: Управление правилами согласия по умолчанию в сегментах Customer Insights
-          href: change-default-consent-rules.md
-    - name: Управление параметрами и пользователями
-      items:
-        - name: Настройка параметров системы
-          href: consent-management/system-settings.md
-        - name: Управление пользователями или разрешениями
-          href: consent-management/manage-users.md
-    - name: Использование данных согласия
-      items:
-        - name: Создание прогнозов с данными согласия
-          href: consent-management/predictions-consent-data.md
 - name: Ограничения обслуживания
   href: service-limits.md
 - name: Права и запросы DSR

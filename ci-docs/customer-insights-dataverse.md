@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833692"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011564"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
 Customer Insights предоставляет возможность сделать выходные сущности доступными в виде [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Эта интеграция обеспечивает простой обмен данными и индивидуальную разработку с помощью подхода с минимальным кодом или без кода. [Выходные сущности](#output-entities) доступны в виде таблиц в среде Dataverse. Вы можете использовать данные для любого другого приложения на основе таблиц Dataverse. Эти таблицы позволяют реализовать такие сценарии, как автоматизированные рабочие процессы посредством Power Automate или создание приложений в Power Apps.
 
-Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](data-sources.md#add-data-from-on-premises-data-sources).
+Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -57,7 +57,7 @@ Customer Insights предоставляет возможность сделат
 Есть два ограничения при использовании Dataverse с собственной учетной записью Azure Data Lake Storage:
 
 - Между организацией Dataverse и учетной записью Azure Data Lake Storage существует взаимно-однозначное сопоставление. Когда организация Dataverse подключена к учетной записи хранения, она не может подключиться к другой учетной записи хранения. За счет этого ограничения Dataverse не заполняет разные учетные записи хранения.
-- Обмен данными не будет работать, если для доступа к вашей учетной записи хранения Azure Data Lake требуется настройка приватного канала Azure, так как он находится за межсетевым экраном. Dataverse в настоящее время не поддерживает подключение к частным конечным точкам через приватный канал.
+- Обмен данными не будет работать, если для доступа к вашей учетной записи Azure Data Lake Storage требуется настройка приватного канала Azure, так как он находится за межсетевым экраном. Dataverse в настоящее время не поддерживает подключение к частным конечным точкам через приватный канал.
 
 ### <a name="set-up-powershell"></a>Настройка PowerShell
 

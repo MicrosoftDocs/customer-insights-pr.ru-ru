@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833784"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011903"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Вопросы и ответы по пробной версии Dynamics 365 Customer Insights
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833784"
 
 После первого входа в платный экземпляр Customer Insights вас попросят создать новую среду. В этом процессе вы можете скопировать конфигурацию из существующей среды и перенести большую часть настроек. Если у вас есть разрешения, упомянутые выше, пробная среда будет отображаться в этом списке. Дополнительные сведения см. в разделе [Копирование конфигурации среды](create-environment.md#copy-the-environment-configuration).
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>Каковы пределы пробной версии и квоты?
+### <a name="what-are-the-trial-limits-and-quotas"></a>Какие ограничения и квоты установлены для пробной версии?
 
-- Вы не можете использовать собственную учетную запись хранения Azure Data Lake для хранения выходных данных в пробной версии Customer Insights. Однако вы можете принимать данные из учетной записи Data Lake Storage.
+- Вы не можете использовать собственную учетную запись Azure Data Lake Storage для хранения выходных данных в пробной версии Customer Insights. Однако вы можете принимать данные из учетной записи Data Lake Storage.
 - Вы можете хранить до 3 ГБ данных в среде Dataverse, которая подготавливается автоматически при запуске пробной версии Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>Вопросы, касающиеся Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833784"
 
 Следующие функции **недоступны**:
 
-- Вы не можете создавать новые среды, использующие вашу собственную учетную запись хранения Azure Data Lake.
+- Вы не можете создавать новые среды, использующие вашу собственную учетную запись Azure Data Lake Storage.
 - Удалить пробную среду нельзя.
 
 ### <a name="how-long-does-the-trial-last"></a>Сколько длится пробная версия?

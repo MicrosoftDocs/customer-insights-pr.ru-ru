@@ -1,23 +1,23 @@
 ---
-title: Ограничения служб в Dynamics 365 Customer Insights
-description: Понимание ограничений обслуживания.
-ms.date: 09/03/2021
+title: Ограничения служб в Customer Insights
+description: Узнайте, какие пределы и ограничения существуют в службе SaaS Customer Insights.
+ms.date: 05/28/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e2e7fc3033c25646693831d4c4c800d84ae6d6da
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6d1b761a5c9f67bfdc7c5b152132c618db3ea36a
+ms.sourcegitcommit: 78ef22cd39a1ebd7525f96829cd79d95f34438b9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641778"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "8940684"
 ---
 # <a name="service-limits-in-customer-insights"></a>Ограничения служб в Customer Insights
 
-В этой статье описываются встроенные ограничения службы Customer Insights, назначение которых — обеспечить стабильность и надежность службы. Запросить изменение этих ограничений можно на [форуме идей](https://go.microsoft.com/fwlink/?linkid=2074172). 
+В этой статье описываются встроенные ограничения службы Customer Insights, назначение которых — обеспечить стабильность и надежность службы. Запросить изменение этих ограничений можно на [форуме идей](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## <a name="customer-insights"></a>Customer Insights
 
@@ -26,5 +26,8 @@ ms.locfileid: "8641778"
 | Сегменты, меры и прогнозы | 300  | Общее количество [сегментов](segments.md), [мер](measures.md) и [прогнозов](predictions.md) вместе не может превышать 300.  |
 | Связи | 20 уровней глубины отношений в путях сущностей. | При создании [сегментов](segments.md) или [мер](measures.md) с помощью интерфейса построителя пути к сущностям могут иметь до 20 переходов отношений между начальной и конечной сущностями.  |
 
+## <a name="fair-scheduling-of-jobs"></a>Справедливое планирование заданий
+
+Customer Insights — это служба SaaS, использующая общие ресурсы Azure. Клиенты, как правило, имеют рабочие нагрузки переменной интенсивности и по разным графикам. Чтобы обеспечить справедливый доступ к базовым ресурсам, мы следим за тем, чтобы системные процессы выполнялись в справедливом порядке. Примерами системных процессов являются задания, связанные с объединением данных, обновлением сегментов или расчетом показателей. Справедливое планирование защищает вас от очередей за ресурсами, если возникает всплеск запрошенных заданий. В то же время Customer Insights не гарантирует, что все задания, которые вы ставите в очередь, обрабатываются параллельно.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
