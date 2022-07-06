@@ -1,5 +1,5 @@
 ---
-title: Обогащение профилей клиентов данными о брендах и интересах от Microsoft
+title: Обогащение профилей клиентов данными о брендах и интересах от Microsoft (предварительная версия)
 description: Используйте собственные данные Microsoft, чтобы пополнить данные о клиентах с помощью общностей и долей голоса.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953781"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081507"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>Обогащение профилей клиентов общностями и долей голоса (предварительная версия)
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>Обогащение профилей клиентов данными о брендах и интересах от Microsoft (предварительная версия)
 
 Используйте собственные данные Microsoft, чтобы обогатить данные о клиентах с помощью общностей, общностей интересов и долей голоса (SoV). Эти общности и SoV основаны на данных людей, демография которых похожа на ваших клиентов. Эта информация поможет вам лучше понять и сегментировать своих клиентов на основе их общности или SoV для конкретных торговых марок и интересов.
 
@@ -104,7 +104,7 @@ ms.locfileid: "8953781"
 
    Во время обогащения профилей мы обогащаем все профили клиентов, для которых мы получаем данные по выбранным торговым маркам и интересам, включая профили, не относящиеся к выбранной стране или региону. Например, если вы выбрали Германию, мы обогатим профили, расположенные в США, если у нас есть данные для выбранных брендов и интересов в США.
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

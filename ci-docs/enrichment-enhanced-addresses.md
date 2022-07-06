@@ -1,5 +1,5 @@
 ---
-title: Обогащение и расширение адресов (содержит видео)
+title: Обогащение профилей клиентов улучшенными адресами (содержит видео)
 description: Обогащайте и нормализируйте адресную информацию в профилях клиентов с помощью моделей Microsoft.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953827"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081231"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Пополнение профилей клиентов расширенными адресами
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>Обогащение профилей клиентов улучшенными адресами
 
 Адреса в ваших данных могут быть неструктурированными, неполными или неправильными. Используйте модели Microsoft для нормализации и обогащения ваших адресов в [формате Common Data Model](/common-data-model/schema/core/applicationcommon/address) для большей точности и понимания.
 
@@ -101,7 +101,7 @@ ms.locfileid: "8953827"
 
 1. Выберите **Сохранить обогащение** после просмотра вашего выбора.
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

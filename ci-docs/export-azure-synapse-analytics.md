@@ -1,19 +1,19 @@
 ---
-title: Экспорт данных Customer Insights в Azure Synapse Analytics
+title: Экспорт данных в Azure Synapse Analytics (предварительная версия)
 description: Узнайте, как настроить подключение к Azure Synapse Analytics.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741519"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081587"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Экспорт данных в Azure Synapse Analytics (предварительная версия)
 
@@ -72,13 +72,13 @@ Azure Synapse — это служба аналитики, которая уск
 
 1. В поле **Подключение для экспорта** выберите подключение из раздела **Azure Synapse Analytics**. Если вы не видите название этого раздела, вам не доступны [подключения](connections.md) этого типа.
 
-1. Укажите узнаваемое **Отображаемое имя** для вашего экспорта и **Имя базы данных**.
+1. Укажите узнаваемое **Отображаемое имя** для вашего экспорта и **Имя базы данных**. Экспорт создаст новую [базу данных озера Azure Synapse](/azure/synapse-analytics/database-designer/concepts-lake-database) в рабочей области, определенной в подключении.
 
 1. Выберите объекты, в которые вы хотите экспортировать Azure Synapse Analytics.
    > [!NOTE]
    > Источники данных на основе [папки Common Data Model](connect-common-data-model.md) не поддерживаются.
 
-2. Нажмите кнопку **Сохранить**.
+1. Нажмите кнопку **Сохранить**.
 
 Сохранение экспорта не запускает экспорт сразу.
 

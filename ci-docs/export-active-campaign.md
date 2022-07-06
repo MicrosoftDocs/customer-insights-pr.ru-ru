@@ -1,5 +1,5 @@
 ---
-title: Экспорт данных Customer Insights в ActiveCampaign
+title: Экспорт сегментов в ActiveCampaign
 description: Узнайте, как настроить подключение и экспорт в ActiveCampaign.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646932"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054724"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Экспорт сегментов в ActiveCampaign (предварительная версия)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646932"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
--   У вас есть [учетная запись ActiveCampaign](https://www.activecampaign.com/) и соответствующие учетные данные администратора.
--   У вас должны быть [настроенные сегменты](segments.md) в Customer Insights.
--   Единые профили клиентов в экспортированных сегментах содержат поле с адресом электронной почты.
+- У вас есть [учетная запись ActiveCampaign](https://www.activecampaign.com/) и соответствующие учетные данные администратора.
+- У вас должны быть [настроенные сегменты](segments.md) в Customer Insights.
+- Единые профили клиентов в экспортированных сегментах содержат поле с адресом электронной почты.
 
 ## <a name="known-limitations"></a>Известные ограничения
 

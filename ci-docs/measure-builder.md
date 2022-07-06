@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: f3ec86806074a12c1107648303ed2d65e97ebc69
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800342"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081650"
 ---
-# <a name="use-measure-builder-to-create-measures-from-scratch"></a>Используйте построитель мер для создания мер с нуля
+# <a name="create-new-measures-with-the-measure-builder"></a>Создание новых мер с помощью построителя мер
 
 В этой статье объясняется, как создать новый [меру](measures.md) с нуля. Построитель мер позволяет определять расчеты с использованием математических операторов, статистических функций и фильтров. Вы можете создать меру с атрибутами из сущностей, связанных с единой сущностью *Клиента*.
 

@@ -1,5 +1,5 @@
 ---
-title: Экспорт данных Customer Insights в AdRoll
+title: Экспорт сегментов в AdRoll (предварительная версия)
 description: Узнайте, как настроить подключение и экспорт в AdRoll.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646698"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081567"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Экспорт сегментов в AdRoll (предварительная версия)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646698"
 
 ## <a name="prerequisites-for-a-connection"></a>Предварительные требования для подключения
 
--   У вас есть [учетная запись AdRoll](https://www.adroll.com/) и соответствующие учетные данные администратора.
--   У вас должны быть [настроенные сегменты](segments.md) в Customer Insights.
--   Унифицированные профили клиентов в экспортированных сегментах содержат поле, представляющее адрес электронной почты.
+- У вас есть [учетная запись AdRoll](https://www.adroll.com/) и соответствующие учетные данные администратора.
+- У вас должны быть [настроенные сегменты](segments.md) в Customer Insights.
+- Унифицированные профили клиентов в экспортированных сегментах содержат поле, представляющее адрес электронной почты.
 
 ## <a name="known-limitations"></a>Известные ограничения
 

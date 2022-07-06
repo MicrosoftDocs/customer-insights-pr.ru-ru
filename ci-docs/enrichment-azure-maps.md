@@ -1,5 +1,5 @@
 ---
-title: Обогащение профилей клиентов данными расположения из Azure Maps
+title: Обогащение профилей клиентов данными о местоположении из Azure Maps (предварительная версия)
 description: Общие сведения о первичном обогащении Azure Maps.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953644"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052623"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Обогащение профилей клиентов с помощью Azure Maps (предварительная версия)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Обогащение профилей клиентов данными о местоположении из Azure Maps (предварительная версия)
 
 Azure Maps предоставляют данные и службы, ориентированные на местоположение, для предоставления возможностей на основе геопространственных данных со встроенной аналитикой местоположения. Службы обогащения данных Azure Maps повышают точность информации о местоположении ваших клиентов. Они предоставляют такие возможности, как нормализация адресов и извлечение широты и долготы в Dynamics 365 Customer Insights.
 
@@ -82,7 +82,7 @@ Azure Maps предоставляют данные и службы, ориент
 
 1. Выберите **Выполнить**, чтобы начать процесс обогащения, или закройте, чтобы вернуться на страницу **Обогащения**.
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Улучшение данных компании
+title: Обогащение профилей компаний с улучшенными данными о компаниях
 description: Обогащайте и нормализируйте данные компании с помощью моделей Microsoft.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953965"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054264"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Обогащение профилей компании с улучшенными данными компании
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>Обогащение профилей компаний с улучшенными данными о компаниях
 
 Используйте модели Microsoft и скомпилированные данные компании для исправления, дополнения и стандартизации ваших профилей компаний. Мы будем использовать [формат Common Data Model](/common-data-model/schema/core/applicationcommon/account) для большей точности и аналитики.
 
@@ -84,7 +84,7 @@ Microsft
 
 1. Выберите **Выполнить**, чтобы начать процесс обогащения, или закройте, чтобы вернуться на страницу **Обогащения**.
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

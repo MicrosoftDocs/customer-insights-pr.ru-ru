@@ -1,5 +1,5 @@
 ---
-title: Соединитель Power BI
+title: Соединитель Power BI (предварительная версия)
 description: Узнайте, как пользоваться соединитель Dynamics 365 Customer Insights в Power BI.
 ms.date: 07/23/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e901114703a43b4b4e751e0a93eb4876d7636c00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72daf6d4ef3b6afb8049c622b57e7ec44762fb21
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647161"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051285"
 ---
-# <a name="connector-for-power-bi-preview"></a>Соединитель для Power BI (предварительная версия)
+# <a name="power-bi-connector-preview"></a>Соединитель Power BI (предварительная версия)
 
-Создавайте визуализации для ваших данных с помощью Power BI Desktop. Создавайте дополнительные аналитические данные и создавайте отчеты с вашими унифицированными данными клиентов.
+Создавайте визуализации для ваших данных с помощью Microsoft Power BI Desktop. Создавайте дополнительные аналитические данные и создавайте отчеты с вашими унифицированными данными клиентов.
 
 ## <a name="prerequisites"></a>Предварительные условия
 

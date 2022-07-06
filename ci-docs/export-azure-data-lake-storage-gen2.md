@@ -1,5 +1,5 @@
 ---
-title: Экспорт данных Customer Insights в Azure Data Lake Storage Gen2
+title: Экспорт данных в Azure Data Lake Storage 2-го поколения (предварительная версия)
 description: Узнайте, как настроить подключение к Azure Data Lake Storage Gen2.
 ms.date: 10/06/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947246"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081487"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Экспорт списка сегментов и других данных в Azure Data Lake Storage Gen2 (предварительная версия)
+# <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Экспорт данных в Azure Data Lake Storage 2-го поколения (предварительная версия)
 
 Сохраняйте данные Customer Insights в учетной записи Azure Data Lake Storage 2-го поколения или используйте эту службу для передачи данных в другие приложения.
 

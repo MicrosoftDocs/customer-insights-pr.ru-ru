@@ -1,5 +1,5 @@
 ---
-title: Обогащение профилей клиентов данными из Microsoft Office 365
+title: Обогащение профилей клиентов данными из Microsoft Office 365 (предварительная версия)
 description: Используйте проприетарные данные из Microsoft Office, чтобы обогащать профили ваших клиентов данными о взаимодействии.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954149"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055690"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Обогащение профилей клиентов данными о взаимодействии (предварительная версия)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>Обогащение профилей клиентов данными из Microsoft Office 365 (предварительная версия)
 
 Используйте данные из Microsoft Office 365 для обогащения профилей своих клиентов информацией о взаимодействии через приложения Office 365. Данные о взаимодействии состоят из активности, связанной с электронной почтой и встречами, которая агрегируется на уровне организации. Например, это может быть количество сообщений электронной почты от организации или количество встреч с организацией. Данные об отдельных пользователях не предоставляются.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954149"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] Это сущность *Офис*. Сущность *Office_UserEntity* содержит идентификаторы Active Directory IDs для адресов электронной почты, выбранных при настройке обогащения.
 

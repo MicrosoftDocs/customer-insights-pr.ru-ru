@@ -1,5 +1,5 @@
 ---
-title: Схемы сущностей Customer Insights в Common Data Model
+title: Схемы сущностей в Common Data Model
 description: Работа с сущностями в Common Data Model.
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757448"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054770"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схемы сущностей в Common Data Model
-
-
 
 [Common Data Model](/common-data-model/) — это декларативная спецификация и определение стандартных сущностей с открытым исходным кодом, представляющих концепции и действия, часто используемые в различных организациях и приложениях повышения производительности. Эта модель распространяется и на данные наблюдений и анализа. Common Data Model предоставляет четко определенные, модульные и расширяемые бизнес-сущности, такие как учетная запись, подразделение, обращение, контакт, интерес, возможная сделка и продукт, а также взаимодействия и связи с поставщиками, работниками и клиентами, например действия и соглашения об уровне обслуживания. Любой может создавать определения на основе Common Data Model и расширять такие определения для учета дополнительных специфичных для бизнеса идей.
 

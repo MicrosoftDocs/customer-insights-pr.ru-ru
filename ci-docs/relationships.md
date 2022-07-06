@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647322"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081447"
 ---
-# <a name="relationships-between-entities"></a>Отношения между сущностями
+# <a name="relationships-between-entities-and-entity-paths"></a>Отношения между сущностями и путями сущностей
 
 Отношения соединяют сущности и определяют график ваших данных, когда сущности имеют общий идентификатор, внешний ключ. На этот внешний ключ можно ссылаться от одной сущности к другой. Связанные сущности позволяют определять сегменты и меры на основе нескольких источников данных.
 

@@ -1,5 +1,5 @@
 ---
-title: Обогащение профилей компаний сторонним обогащением Leadspace
+title: Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 description: Общие сведения о стороннем обогащении Leadspace.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954195"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081357"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Обогащение профилей компаний с помощью Leadspace (предварительная версия)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 
 Leadspace — это компания, занимающаяся обработкой и анализом данных, которая предоставляет платформу данных о клиентах B-to-B. Позволяет создавать среды с едиными профилями клиентов на основе учетных записей для обогащения их данных. Обогатите *Профили клиентов* такими атрибутами, как размер компании, местоположение или отрасль. Обогатите *Профили контактов* такими атрибутами, как должность, личность или подтверждение адреса электронной почты.
 
@@ -82,7 +82,7 @@ Leadspace — это компания, занимающаяся обработк
 
 1. Выберите **Выполнить**, чтобы начать процесс обогащения, или закройте, чтобы вернуться на страницу **Обогащения**.
 
-## <a name="enrichment-results"></a>Результаты обогащения
+## <a name="view-enrichment-results"></a>Просмотр результатов обогащения
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

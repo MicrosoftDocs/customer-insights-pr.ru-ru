@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646661"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051700"
 ---
-# <a name="use-a-template-to-build-a-measure"></a>Использование шаблона для построения меры
+# <a name="create-measures-from-templates"></a>Создание мер из шаблонов
 
 Вы можете использовать предопределенные шаблоны часто используемых [мер](measures.md) для их создания. Подробные описания шаблонов и пошаговый процесс помогут вам в эффективном создании мер. Шаблоны основаны на сопоставленных данных из сущности *Единое действие*. Поэтому убедитесь, что вы настроили [действия клиентов](activities.md) перед созданием меры на основе шаблона.
 

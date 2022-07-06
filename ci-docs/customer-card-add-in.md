@@ -1,5 +1,5 @@
 ---
-title: Надстройка карточек клиентов для приложений Dynamics 365 (содержит видео)
+title: Надстройка карточек клиентов для приложений Dynamics 365 (предварительная версия) (содержит видео)
 description: Покажите данные профиля клиента из Customer Insights в приложениях Dynamics 365 с помощью этой надстройки.
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755652"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081250"
 ---
-# <a name="customer-card-add-in-preview"></a>Надстройка карточек клиентов (предварительная версия)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Надстройка карточек клиентов для приложений Dynamics 365 (предварительная версия)
 
 Получите полный обзор своих клиентов прямо в приложениях Dynamics 365. Установив надстройку «Карточка клиента» в поддерживаемом приложении Dynamics 365, вы можете выбрать отображение полей профиля клиента, аналитических данных и временной шкалы действий. Надстройка будет извлекать данные из Customer Insights, не влияя на данные в подключенном приложении Dynamics 365.
 

@@ -6,14 +6,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 99ec463299a24ea81cfe26bb785e36bdefdcd080
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833324"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054448"
 ---
-# <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Работа с едиными профилями клиентов в Dynamics 365 Marketing
+# <a name="use-unified-customer-profiles-in-dynamics-365-marketing"></a>Использование единых профилей клиентов Unified customer profile в Dynamics 365 Marketing
 
 [Dynamics 365 Marketing](/dynamics365/marketing/overview) повышает качество обслуживания клиентов, позволяя организовывать персонализированные циклы взаимодействия по всем точкам соприкосновения, чтобы укрепить отношения и заработать лояльность. Приложение Dynamics 365 Marketing легко работает с Dynamics 365 Sales Dynamics 365 Customer Insights, Microsoft Teams и другими продуктами и позволяет принимать более быстрые и качественные решения, используя возможности данных и искусственного интеллекта.
 

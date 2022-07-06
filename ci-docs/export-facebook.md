@@ -1,5 +1,5 @@
 ---
-title: Экспорт данных Customer Insights в Facebook Ads Manager (содержит видео)
+title: Экспорт сегментов в Facebook Ads Manager (предварительная версия) (содержит видео)
 description: Узнайте, как настроить подключение и экспорт в Facebook Ads Manager.
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f610ab1af83bfd512ec1861e7dc76ebb2eecfcbb
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 782abd7d69166b9c81ac25c4d7e191bdeb03a887
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647302"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081630"
 ---
-# <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Экспорт списка сегментов в Facebook Ads Manager (предварительная версия)
+# <a name="export-segments-to-facebook-ads-manager-preview"></a>Экспорт сегментов в Facebook Ads Manager (предварительная версия)
 
 Экспортируйте сегменты унифицированных профилей клиентов в Facebook Ads Manager для создания кампаний в Facebook и Instagram.
 
