@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082002"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121578"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Примеры запросов OData для API Customer Insights
 
@@ -23,7 +23,7 @@ Open Data Protocol (OData) — это протокол доступа к дан�
 
 Необходимо изменить примеры запросов, чтобы они работали в целевых средах: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}`, где {instanceId} — это идентификатор GUID среды Customer Insights, которую вы хотите запросить. [Операция ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) дает возможность найти {InstanceId}, к которому у вас есть доступ.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data`, где {instanceId} — это идентификатор GUID среды Customer Insights, которую вы хотите запросить. [Операция ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) дает возможность найти {InstanceId}, к которому у вас есть доступ.
 - {CID}: идентификатор GUID единой записи клиента. Пример: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: идентификатор первичного ключа записи клиента в источнике данных. Пример: `CNTID_1002`
 - {DSname}: строка с именем сущности источника данных, которая передается в Customer Insights. Пример: `Website_contacts`.
@@ -39,9 +39,10 @@ Open Data Protocol (OData) — это протокол доступа к дан�
 |Альтернативный ключ    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Альтернативные ключи сохраняются в единой сущности клиента.       |
 |Выберите   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |Входит в    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Альтернативный ключ + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Альтернативный ключ + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Поиск (Search)  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Возвращает первые 10 результатов для строки поиска      |
 |Членство в сегменте  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Возвращает заданное количество строк из объекта сущности.      |
+|Членство в сегменте для клиента | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Возвращает профиль клиента, если он является членом данного сегмента     |
 
 ## <a name="unified-activity"></a>Объединенное действие
 

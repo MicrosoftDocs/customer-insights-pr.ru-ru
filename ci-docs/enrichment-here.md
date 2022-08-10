@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052067"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196272"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Обогащение профилей клиентов с помощью HERE Technologies (предварительная версия)
 
@@ -54,7 +54,7 @@ HERE Technologies — компания, занимающаяся платфор�
 
 1. Просмотрите обзор и выберите **Далее**.
 
-1. Выберите подключение. Свяжитесь с администратором, если оно недоступно.
+1. Выберите подключение. Свяжитесь с администратором, если подключение недоступно.
 
 1. Выберите **Далее**.
 

@@ -1,7 +1,7 @@
 ---
 title: Подключение к папке Common Data Model с помощью учетной записи Azure Data Lake
 description: Работа с данными Common Data Model с помощью Azure Data Lake Storage.
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081304"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207015"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Подключение к данным в Azure Data Lake Storage
 
@@ -82,7 +82,7 @@ ms.locfileid: "9081304"
    :::image type="content" source="media/ADLS_required.png" alt-text="Диалоговое окно, показывающее, что требуется для первичного ключа":::
 
    > [!TIP]
-   > Чтобы изменить сущности в интерфейсе редактирования JSON, выберите **Показать еще** > **Изменить файл схемы**. Внесите изменения и выберите **Сохранить**.
+   > Чтобы изменить сущность в интерфейсе редактирования JSON, выберите сущность и затем **Изменить файл схемы**. Внесите изменения и выберите **Сохранить**.
 
 1. Для выбранных сущностей, требующих инкрементного приема, **Обязательно** отображается в поле **Инкрементное обновление**. Для каждой из этих сущностей см. раздел [Настройка инкрементного обновления для источников данных Azure Data Lake](incremental-refresh-data-sources.md).
 
@@ -101,6 +101,10 @@ ms.locfileid: "9081304"
    1. Нажмите кнопку **Готово**.
 
 1. Выберите **Сохранить**. Открывается страница **Источники данных** с новым источником данных в статусе **Обновление**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Загрузка данных может занять время. После успешного обновления принятые данные можно проверить на странице [**Сущности**](entities.md).
 
 ### <a name="create-a-new-schema-file"></a>Создание новой схемы
 
@@ -148,6 +152,9 @@ ms.locfileid: "9081304"
 
 1. Выберите **Сохранить**. Открывается страница **Источники данных** с новым источником данных в статусе **Обновление**.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Загрузка данных может занять время. После успешного обновления принятые данные можно проверить на странице [**Сущности**](entities.md).
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>Редактирование источника данных Azure Data Lake Storage
 
@@ -179,8 +186,16 @@ ms.locfileid: "9081304"
       > [!IMPORTANT]
       > Если существуют зависимости от существующего файла model.json или manifest.json и набора сущностей, вы увидите сообщение об ошибке и не сможете выбрать другой файл model.json или manifest.json. Удалите эти зависимости перед изменением файла model.json или manifest.json или создайте новый источник данных с файлом model.json или manifest.json, который вы хотите использовать, чтобы избежать удаления зависимостей.
    - Чтобы изменить расположение файла данных или первичный ключ, выберите **Изменить**.
-   - Чтобы изменить данные инкрементного приема, см. раздел [Настройка инкрементного обновления для источников данных Azure Data Lake](incremental-refresh-data-sources.md)
+   - Чтобы изменить данные добавочного приема, см. раздел [Настройка добавочного обновления для источников данных Azure Data Lake](incremental-refresh-data-sources.md).
+   - Измените только имя сущности, чтобы оно соответствовало имени сущности в файле .json.
+
+     > [!NOTE]
+     > Всегда сохраняйте имя сущности в Customer Insights таким же, как имя сущности в файле model.json или manifest.json после приема. Customer Insights проверяет все имена сущностей с помощью model.json или manifest.json при каждом обновлении системы. Если имя сущности изменено либо внутри Customer Insights, либо вне его, возникает ошибка, поскольку Customer Insights не может найти новое имя сущности в JSON-файле. Если имя добавленной сущности было случайно изменено, отредактируйте имя сущности в Customer Insights, чтобы оно соответствовало имени в файле .json.
 
 1. Выберите **Атрибуты** для добавления или изменения атрибутов или для включения профилирования данных. Затем выберите **Готово**.
 
 1. Нажмите **Сохранить**, чтобы применить изменения и вернуться на страницу **Источники данных**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

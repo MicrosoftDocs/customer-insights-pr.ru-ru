@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081627"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139673"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>Унификация полей клиентов для объединения данных
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 На этом шаге процесса объединения выберите и исключите атрибуты для объединения в едином объекте профиля. Например, если у трех сущностей есть данные электронной почты, можно сохранить все три отдельных поля электронной почты или объединить их в одно поле электронной почты для единого профиля. Некоторые атрибуты автоматически объединяются системой. Можно создавать стабильные и уникальные идентификаторы клиентов и группировать связанные профили в кластер.
 

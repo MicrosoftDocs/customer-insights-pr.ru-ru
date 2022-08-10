@@ -1,31 +1,31 @@
 ---
 title: Экспорт сегментов Customer Insights в Adobe Campaign Standard (предварительная версия)
 description: Узнайте, как использовать сегменты Customer Insights в Adobe Campaign Standard.
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 834880cac9c5023157983081ff2513d9b051491f
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081340"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195536"
 ---
 # <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Экспорт сегментов Customer Insights в Adobe Campaign Standard (предварительная версия)
 
-Как пользователь Dynamics 365 Customer Insights, возможно, вы создали сегменты, чтобы сделать свои маркетинговые кампании более эффективными за счет таргетинга на релевантную аудиторию. Чтобы использовать сегмент из Customer Insights в Adobe Experience Platform и таких приложениях, как Adobe Campaign Standard, вам необходимо выполнить несколько шагов, описанных в этой статье.
+Экспортируйте сегменты, ориентированные на релевантную аудиторию, в Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Схема процесса изложена в этой статье.":::
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-- Лицензия Dynamics 365 Customer Insights
-- Лицензия Adobe Campaign Standard
-- Учетная запись хранилища BLOB-объектов Azure
+- Лицензия Adobe Campaign Standard.
+- Имя и ключ учетной записи [Учетная запись хранилища BLOB-объектов Azure](/azure/storage/blobs/create-data-lake-storage-account). Чтобы найти имя и ключ, см. раздел [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
+- [Контейнер хранилища BLOB-объектов Azure](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 ## <a name="campaign-overview"></a>Обзор кампании
 
@@ -37,7 +37,7 @@ ms.locfileid: "9081340"
 
 ## <a name="identify-your-target-audience"></a>Определите свою целевую аудиторию
 
-В нашем сценарии мы предполагаем, что адреса электронной почты клиентов доступны и их рекламные предпочтения были проанализированы для определения членов сегмента.
+В нашем сценарии мы предполагаем, что адреса электронной почты клиентов доступны в Customer Insights и их рекламные предпочтения были проанализированы для определения членов сегмента.
 
 [Сегмент, который вы определили в Customer Insights](segments.md), называется **ChurnProneCustomers**, и вы планируете отправить этим клиентам рекламную рассылку по электронной почте.
 
@@ -47,39 +47,37 @@ ms.locfileid: "9081340"
 
 ## <a name="export-your-target-audience"></a>Экспортируйте свою целевую аудиторию
 
-### <a name="configure-a-connection"></a>Настройка подключения
+### <a name="set-up-connection-to-adobe-campaign"></a>Настройка подключения к Adobe Campaign
 
-Определив нашу целевую аудиторию, мы можем настроить экспорт в учетную запись хранилища BLOB-объектов Azure.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. В Customer Insights перейдите в **Администратор** > **Подключения**.
+1. Перейти в раздел **Администрирование** > **Подключения**.
 
-1. Выберите **Добавить подключение** и выберите **Adobe Campaign** для настройки подключения или выберите **Настройка** на плитке **Adobe Campaign**.
-
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Плитка конфигурации для Adobe Campaign Standard.":::
+1. Выберите **Добавить подключение** и выберите **Adobe Campaign**.
 
 1. Дайте вашему подключению узнаваемое имя в поле **Отображаемое имя**. Имя и тип подключения описывают это подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель подключения.
 
-1. Укажите, кто может использовать это подключение. Если вы не предпримете никаких действий, по умолчанию это будут администраторы. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
+1. Укажите, кто может использовать это подключение. По умолчанию это только администраторы. Дополнительные сведения см. в разделе [Разрешение участникам использовать подключение для экспорта](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Введите **Имя учетной записи**, **Ключ учетной записи** и **Контейнер** вашей учетной записи хранилища BLOB-объектов Azure, в которую вы хотите экспортировать сегмент.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимок экрана конфигурации учетной записи хранилища. "::: 
+1. Введите **Имя учетной записи**, **Ключ учетной записи** и **Контейнер** для вашей учетной записи хранилища BLOB-объектов.  
 
-   - Подробнее о том, как найти имя учетной записи хранилища BLOB-объектов Azure и ключ учетной записи, см. в разделе [Управление настройками учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимок экрана конфигурации учетной записи хранилища. ":::
 
-   - Чтобы узнать, как создать контейнер, см. раздел [Создание контейнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
 
 1. Выберите **Сохранить**, чтобы завершить подключение.
 
 ### <a name="configure-an-export"></a>Настройка экспорта
 
-Вы можете настроить этот экспорт, если у вас есть доступ к подключению этого типа. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Перейдите в раздел **Данные** > **Экспорты**.
 
-1. Чтобы создать новый экспорт, выберите **Добавить экспорт**.
+1. Выберите **Добавить экспорт**.
 
-1. В поле **Подключение для экспорта** выберите подключение в разделе Adobe Campaign. Если вы не видите название этого раздела, значит, вам недоступны соединения этого типа.
+1. В поле **Подключение для экспорта** выберите подключение в разделе Adobe Campaign. Свяжитесь с администратором, если подключение недоступно.
+
+1. Введите имя экспорта.
 
 1. Выберите сегмент, которые вы хотите экспортировать. В этом примере это **ChurnProneCustomers**.
 
@@ -87,7 +85,7 @@ ms.locfileid: "9081340"
 
 1. Выберите **Далее**.
 
-1. Теперь мы сопоставляем поля **Источник** из сегмента Customer Insights с именами полей **Цель** в схеме профилей Adobe Campaign Standard.
+1. Сопоставьте поля **Источник** из сегмента Customer Insights с именами полей **Цель** в схеме профилей Adobe Campaign Standard.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="Сопоставление полей для соединителя Adobe Campaign Standard.":::
 
@@ -98,34 +96,28 @@ ms.locfileid: "9081340"
 
 1. Выберите **Сохранить**.
 
-После сохранения места назначения экспорта вы найдете его в разделе **Данные** > **Экспорты**.
-
-Вы можете сейчас [экспортировать сегмент по запросу](export-destinations.md#run-exports-on-demand). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > Убедитесь, что количество записей в экспортируемом сегменте находится в пределах допустимого лимита вашей лицензии Adobe Campaign Standard.
 
-Экспортированные данные хранятся в контейнере хранилища BLOB-объектов Azure, который вы настроили выше. В вашем контейнере автоматически создан следующий путь к папке:
-
-*%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp% .csv*
+Экспортированные данные хранятся в контейнере хранилища BLOB-объектов Azure, который вы настроили выше. В вашем контейнере автоматически создается следующий путь к папке: *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
 Пример: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo_ChurnProneCustomers_1613059542.csv
 
 ## <a name="configure-adobe-campaign-standard"></a>Настройка Adobe Campaign Standard
 
-Экспортированные сегменты содержат столбцы, выбранные вами при определении места назначения экспорта на предыдущем шаге. Эти данные могут быть использованы для [создания профилей в Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
+Экспортированные сегменты содержат столбцы, выбранные вами при настройке экспорта. Эти данные могут быть использованы для [создания профилей в Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-Чтобы использовать сегмент в Adobe Campaign Standard, нам нужно расширить схему профиля в Adobe Campaign Standard, чтобы включить два дополнительных поля. Узнайте, как [расширить ресурс профиля](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) с новыми полями в Adobe Campaign Standard.
+Чтобы использовать сегмент в Adobe Campaign Standard, [расширьте схему профиля](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) в Adobe Campaign Standard, чтобы включить два дополнительных поля.
 
-В нашем примере этими полями являются *название сегмента и дата сегмента (необязательно)*.
+В нашем примере этими полями являются название сегмента и дата сегмента. Мы будем использовать эти поля для идентификации профилей в Adobe Campaign Standard, на которые мы хотим нацелить эту кампанию.
 
-Мы будем использовать эти поля для идентификации профилей в Adobe Campaign Standard, на которые мы хотим нацелить эту кампанию.
-
-Если в Adobe Campaign Standard нет других записей, кроме тех, что вы собираетесь импортировать, вы можете пропустить этот шаг.
+Если в Adobe Campaign Standard нет других записей, кроме тех, что вы собираетесь импортировать, пропустите этот шаг.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>Импорт данных в Adobe Campaign Standard
 
-Теперь, когда все готово, нам нужно импортировать подготовленные данные аудитории из Customer Insights в Adobe Campaign Standard для создания профилей. Узнайте, [как импортировать профили в Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences), используя рабочий процесс.
+Импортируйте подготовленные данные аудитории из Customer Insights в Adobe Campaign Standard для [создания профилей](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences).
 
 Рабочий процесс импорта на изображении ниже настроен на запуск каждые восемь часов и ищет экспортированные сегменты Customer Insights (CSV-файл в хранилище BLOB-объектов Azure). Бизнес-процесс извлекает содержимое CSV-файла в указанном порядке столбцов. Этот рабочий процесс был построен для выполнения базовой обработки ошибок и обеспечения того, чтобы каждая запись имела адрес электронной почты, прежде чем переносить данные в Adobe Campaign Standard. Рабочий процесс также извлекает имя сегмента из имени файла перед загрузкой в данные профиля Adobe Campaign Standard.
 
@@ -133,10 +125,12 @@ ms.locfileid: "9081340"
 
 ## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Извлечение аудитории в Adobe Campaign Standard
 
-Как только данные будут импортированы в Adobe Campaign Standard, вы [может создать рабочий процесс](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) и [запрашивать](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) клиентов на основе *названия сегмента* и *даты сегмента* для выбора профилей, которые были определены для нашей демонстрационной кампании.
+Как только данные будут импортированы в Adobe Campaign Standard, [создайте рабочий процесс](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) и [запросите](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) клиентов на основе имени и даты сегмента для выбора профилей, которые были определены для нашей демонстрационной кампании.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Создание и отправка сообщения электронной почты с помощью Adobe Campaign Standard
 
 Создайте текст сообщения электронной почты, а затем [протестируйте и отправьте](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) ваше сообщение.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="Образец сообщения электронной почты с предложением продления из Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

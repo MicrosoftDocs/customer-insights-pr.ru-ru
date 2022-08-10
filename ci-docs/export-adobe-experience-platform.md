@@ -1,32 +1,32 @@
 ---
 title: Экспорт сегментов в Adobe Experience Platform (предварительная версия)
 description: Узнайте, как использовать сегменты Customer Insights в Adobe Experience Platform.
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: fcb43e0956c6d1f0ef36b222dd2b718906364244
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052527"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195306"
 ---
 # <a name="export-segments-to-adobe-experience-platform-preview"></a>Экспорт сегментов в Adobe Experience Platform (предварительная версия)
 
-Как пользователь Dynamics 365 Customer Insights, возможно, вы создали сегменты, чтобы сделать свои маркетинговые кампании более эффективными за счет таргетинга на релевантную аудиторию. Чтобы использовать сегмент из Customer Insights в Adobe Experience Platform и таких приложениях, как Adobe Campaign Standard, вам необходимо выполнить несколько шагов, описанных в этой статье.
+Экспортируйте сегменты, ориентированные на релевантную аудиторию, в Adobe Experience Platform.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема процесса изложена в этой статье.":::
 
 ## <a name="prerequisites"></a>Предварительные условия
 
--   Лицензия Dynamics 365 Customer Insights
--   Лицензия Adobe Experience Platform
--   Лицензия Adobe Campaign Standard
--   Учетная запись хранилища BLOB-объектов Azure
+- Лицензия Adobe Experience Platform.
+- Лицензия Adobe Campaign Standard.
+- Имя и ключ учетной записи [Учетная запись хранилища BLOB-объектов Azure](/azure/storage/blobs/create-data-lake-storage-account). Чтобы найти имя и ключ, см. раздел [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
+- [Контейнер хранилища BLOB-объектов Azure](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 ## <a name="campaign-overview"></a>Обзор кампании
 
@@ -48,61 +48,62 @@ ms.locfileid: "9052527"
 
 ## <a name="export-your-target-audience"></a>Экспортируйте свою целевую аудиторию
 
-Определив нашу целевую аудиторию, мы можем настроить экспорт из Customer Insights в учетную запись хранилища BLOB-объектов Azure.
+Мы настроим экспорт из Customer Insights в учетную запись хранилища BLOB-объектов Azure.
 
-### <a name="configure-a-connection"></a>Настройка подключения
+### <a name="set-up-connection-to-azure-blob-storage"></a>Настройка подключения к хранилищу BLOB-объектов Azure
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Перейти в раздел **Администрирование** > **Подключения**.
 
-1. Выберите **Добавить подключение** и выберите **Хранилище BLOB-объектов Azure** для настройки подключения или выберите **Настройка** на плитке **Хранилище BLOB-объектов Azure**.
-
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Плитка конфигурации для хранилища BLOB-объектов Azure."::: 
+1. Выбирать **Добавить подключение** и выбрать **Хранилище BLOB-объектов Azure**.
 
 1. Дайте вашему подключению узнаваемое имя в поле **Отображаемое имя**. Имя и тип подключения описывают это подключение. Мы рекомендуем выбрать имя, которое объясняет назначение и цель подключения.
 
-1. Укажите, кто может использовать это подключение. Если вы не предпримете никаких действий, по умолчанию это будут администраторы. Дополнительные сведения см. в разделе [Разрешение участникам использовать подключение для экспорта](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Укажите, кто может использовать это подключение. По умолчанию это только администраторы. Дополнительные сведения см. в разделе [Разрешение участникам использовать подключение для экспорта](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Введите **Имя учетной записи**, **Ключ учетной записи** и **Контейнер** для вашей учетной записи хранилища BLOB-объектов, в которую вы хотите экспортировать сегмент.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимок экрана конфигурации учетной записи хранилища. "::: 
-   
-    - Чтобы узнать больше о том, как найти имя учетной записи хранилища BLOB-объектов и ключ учетной записи, см. раздел [Управление параметрами учетной записи хранения на портале Azure](/azure/storage/common/storage-account-manage).
-    - Чтобы узнать, как создать контейнер, см. раздел [Создание контейнера](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Выберите **Сохранить**, чтобы завершить подключение. 
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="Снимок экрана конфигурации учетной записи хранилища. ":::
+
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
+
+1. Выберите **Сохранить**, чтобы завершить подключение.
 
 ### <a name="configure-an-export"></a>Настройка экспорта
 
-Вы можете настроить этот экспорт, если у вас есть доступ к подключению этого типа. Дополнительные сведения см. в разделе [Разрешения, необходимые для настройки экспорта](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Перейдите в раздел **Данные** > **Экспорты**.
 
-1. Чтобы создать новый экспорт, выберите **Добавить экспорт**.
+1. Выберите **Добавить экспорт**.
 
-1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Если вы не видите название этого раздела, значит, вам недоступны соединения этого типа.
+1. В поле **Подключение для экспорта** выберите подключение из раздела "Хранилище BLOB-объектов Azure". Свяжитесь с администратором, если подключение недоступно.
+
+1. Введите имя экспорта.
 
 1. Выберите сегмент, которые вы хотите экспортировать. В этом примере это **ChurnProneCustomers**.
 
    :::image type="content" source="media/select-segment-churnpronecustomers.png" alt-text="Снимок экрана пользовательского интерфейса выбора сегмента с выбранным сегментом ChurnProneCustomers.":::
 
-1. Нажмите кнопку **Сохранить**.
+1. Выберите **Сохранить**.
 
-После сохранения места назначения экспорта вы найдете его в разделе **Данные** > **Экспорты**.
-
-Вы можете сейчас [экспортировать сегмент по запросу](export-destinations.md#run-exports-on-demand). Экспорт также будет выполняться с каждым [запланированным обновлением](system.md).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > Убедитесь, что количество записей в экспортируемом сегменте находится в пределах допустимого лимита вашей лицензии Adobe Campaign Standard.
 
-Экспортированные данные хранятся в контейнере хранилища BLOB-объектов Azure, который вы настроили выше. В вашем контейнере автоматически создан следующий путь к папке:
+Экспортированные данные хранятся в настроенном вами контейнере хранилища BLOB-объектов Azure. Следующие пути к папкам автоматически создаются в вашем контейнере:
 
-*%ContainerName%/ CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
+- Для исходных сущностей и сущностей, созданных системой:  
 
-Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
+  *%ContainerName%/ CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
-Файл *model.json* для экспортируемых сущностей находится на уровне *%ExportDestinationName%*.
+  Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/ChurnSegmentDemo/2021/02/16/1433/ChurnProneCustomers_1.csv
 
-Пример: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
+- Файл *model.json* для экспортируемых сущностей находится на уровне *%ExportDestinationName%*.
+
+  Пример: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Определение модели данных опыта (XDM) в Adobe Experience Platform
 
@@ -112,21 +113,24 @@ Example: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24
 
 ## <a name="import-data-into-adobe-experience-platform"></a>Импорт данных в Adobe Experience Platform
 
-Теперь, когда все готово, нам нужно импортировать подготовленные данные аудитории из Customer Insights в Adobe Experience Platform.
+Импортируйте подготовленные данные аудитории из Customer Insights в Adobe Experience Platform.
 
-Сначала, [создайте подключение к источнику хранилища BLOB-объектов Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
+1. [Создайте подключение к источнику хранилища BLOB-объектов Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).
 
-После определения исходного соединения [настройте поток данных](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) для пакетного подключения к облачному хранилищу, чтобы импортировать выходные данные сегмента из Customer Insights в Adobe Experience Platform.
+1. [Настройте поток данных](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) для пакетного подключения к облачному хранилищу, чтобы импортировать выходные данные сегмента из Customer Insights в Adobe Experience Platform.
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Создание аудитории в Adobe Campaign Standard
 
-Чтобы отправить электронное письмо для этой кампании, мы будем использовать Adobe Campaign Standard. После импорта данных в Adobe Experience Platform нам нужно [создать аудиторию](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard с использованием данных в Adobe Experience Platform.
+Чтобы отправить электронное письмо для этой кампании, мы будем использовать Adobe Campaign Standard.
 
+1. [Создайте аудиторию](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard с использованием данных в Adobe Experience Platform.
 
-Узнайте, как [использовать конструктор сегментов](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard для определения аудитории на основе данных в Adobe Experience Platform.
+1. [Используйте конструктор сегментов](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard для определения аудитории на основе данных в Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Создание и отправка сообщения электронной почты с помощью Adobe Campaign Standard
 
 Создайте текст сообщения электронной почты, а затем [протестируйте и отправьте](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) ваше сообщение.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="Образец сообщения электронной почты с предложением продления из Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
