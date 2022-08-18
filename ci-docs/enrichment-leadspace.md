@@ -1,19 +1,19 @@
 ---
 title: Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 description: Общие сведения о стороннем обогащении Leadspace.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: f45fabc036775e11fc439f69513678d0607729d0
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196226"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237966"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Обогащение профилей компаний с помощью Leadspace (предварительная версия)
 
@@ -35,14 +35,9 @@ Leadspace — это компания, занимающаяся обработк
 
 1. Введите имя для подключения и действительный токен Leadspace.
 
-1. Проверьте и дайте свое согласие для [Конфиденциальность и соответствие данных](#data-privacy-and-compliance), выбрав **Принимаю**.
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
 
 1. Выберите **Проверить** для проверки конфигурации, затем выберите **Сохранить**.
-
-### <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
-
-Когда вы включаете Dynamics 365 Customer Insights для передачи данных в Leadspace, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft передаст такие данные по вашему указанию, но вы несете ответственность за соблюдение компанией Leadspace любых обязательств в отношении конфиденциальности или безопасности, которые могут у вас возникнуть. Дополнительные сведения см. в разделе [Заявление о конфиденциальности корпорации Майкрософт](https://go.microsoft.com/fwlink/?linkid=396732).
-Ваш администратор Dynamics 365 Customer Insights может удалить это обогащение в любое время, чтобы прекратить использование этой функции.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения
 

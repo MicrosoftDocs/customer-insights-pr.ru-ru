@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139673"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213598"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>Унификация полей клиентов для объединения данных
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139673"
 
 1. Укажите, как объединить или слить поля, выбрав один из трех вариантов:
     - **Важность**: определяет значение победителя на основе ранга важности, указанного для участвующих полей. Это параметр объединения по умолчанию. Выберите **Вверх/вниз**, чтобы установить рейтинг важности.
+
+      > [!NOTE]
+      > Customer Insights использует первое значение, отличное от NULL. Например, для сущностей A, B и C, ранжированных в указанном порядке, если A.Name и B.Name — NULL, используется значение из C.Name.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Параметр важности в диалоговом окне слияния полей.":::
 

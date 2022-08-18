@@ -1,19 +1,19 @@
 ---
 title: Обогатите профили клиентов демографическими данными из Experian (предварительная версия)
 description: Общие сведения о стороннем обогащении Experian.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195952"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238012"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Обогатите профили клиентов демографическими данными из Experian (предварительная версия)
 
@@ -41,13 +41,9 @@ Experian является мировым лидером в области пот
 
 1. Введите имя для подключения и действительный идентификатор пользователя, идентификатор субъекта и номер модели для вашей учетной записи Experian Secure Transport.
 
-1. Проверьте и дайте свое согласие для [Конфиденциальность и соответствие данных](#data-privacy-and-compliance), выбрав **Принимаю**.
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
 
 1. Выберите **Проверить** для проверки конфигурации, затем выберите **Сохранить**.
-
-### <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
-
-Когда вы разрешаете для Dynamics 365 Customer Insights передавать данные в Experian, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft передаст такие данные по вашему указанию, но вы несете ответственность за обеспечение того, чтобы Experian отвечает всем вашим обязательствам по обеспечению конфиденциальности и безопасности. Дополнительные сведения см. в разделе [Заявление о конфиденциальности корпорации Майкрософт](https://go.microsoft.com/fwlink/?linkid=396732). Ваш администратор Dynamics 365 Customer Insights может удалить это обогащение в любое время, чтобы прекратить использование этой функции.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения
 

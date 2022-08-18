@@ -1,19 +1,19 @@
 ---
 title: Обогащение профилей клиентов данными о местоположении из Azure Maps (предварительная версия)
 description: Общие сведения о первичном обогащении Azure Maps.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052623"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238058"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Обогащение профилей клиентов данными о местоположении из Azure Maps (предварительная версия)
 
@@ -35,14 +35,9 @@ Azure Maps предоставляют данные и службы, ориент
 
 1. Введите имя для подключения и действительный ключ API Azure Maps.
 
-1. Проверьте и дайте свое согласие для [Конфиденциальность и соответствие данных](#data-privacy-and-compliance), выбрав **Принимаю**.
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
 
 1. Выберите **Проверить** для проверки конфигурации, затем выберите **Сохранить**.
-
-### <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
-
-Когда вы разрешаете для Dynamics 365 Customer Insights передавать данные в Azure Maps, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft будет передавать такие данные по вашему указанию, но вы несете ответственность за обеспечение того, чтобы служба Azure Maps выполняла любые обязательства по конфиденциальности или безопасности, которые у вас могут быть. Дополнительные сведения см. в разделе [Заявление о конфиденциальности Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ваш администратор Dynamics 365 Customer Insights может удалить это обогащение в любое время, чтобы прекратить использование этой функции.
 
 ## <a name="configure-the-enrichment"></a>Настройка обогащения
 

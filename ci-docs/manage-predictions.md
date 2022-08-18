@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081570"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245481"
 ---
 # <a name="manage-predictions"></a>Управляйте прогнозами
 
@@ -58,7 +58,7 @@ ms.locfileid: "9081570"
 
 ## <a name="refresh-a-prediction"></a>Обновить прогноз
 
-Прогнозы будут автоматически обновляться по тому же [графику обновления данных](system.md#schedule-tab), как настроено в параметрах. Вы также можете обновить их вручную.
+Прогнозы будут автоматически обновляться по тому же [графику обновления данных](schedule-refresh.md), как настроено в параметрах. Вы также можете обновить их вручную.
 
 1. Перейдите **Аналитика** > **Прогнозы** и выберите вкладку **Мои прогнозы**.
 

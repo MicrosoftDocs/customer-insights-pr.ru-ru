@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196410"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259860"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Экспорт данных в Azure Synapse Analytics (предварительная версия)
 
@@ -24,7 +24,7 @@ Azure Synapse — это служба аналитики, которая уск
 > [!NOTE]
 > Обязательно установите все **назначения ролей**, как описано.
 
-- Ваша учетная запись пользователя Azure Active Directory (AD) должна иметь [роль администратора](permissions.md#assign-roles-and-permissions) в Customer Insights.
+- Ваша учетная запись пользователя Azure Active Directory (AD) должна иметь [роль администратора](permissions.md#add-users) в Customer Insights.
 
 В Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse — это служба аналитики, которая уск
 - Для *[управляемого удостоверения рабочей области Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* имеются разрешения **Участника данных хранилища BLOB-объектов** в учетной записи Azure Data Lake Storage 2-го поколения, в которой данные расположены и связаны с Azure Synapse workspace. Узнайте больше об [использовании портала Azure для назначения роли Azure для доступа к данным BLOB-объектов и очередей](/azure/storage/common/storage-auth-aad-rbac-portal) и о [разрешениях участника данных больших двоичных объектов хранилища](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - В Azure Synapse workspace *субъекту-службе для Customer Insights* должна быть [назначена роль](/azure/synapse-analytics/security/how-to-set-up-access-control) **администратора Synapse**.
+
+- Если ваша среда Customer Insights хранит данные в [собственном Azure Data Lake Storage](own-data-lake-storage.md), пользователь, устанавливающий соединение с Azure Synapse Analytics, должен иметь хотя бы встроенную роль **Читатель** в учетной записи Data Lake Storage. Дополнительные сведения см. в разделе [Назначение ролей Azure с помощью портала Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Настройка подключения к Azure Synapse
 

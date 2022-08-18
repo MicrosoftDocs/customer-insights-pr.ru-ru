@@ -1,19 +1,19 @@
 ---
 title: Обогащение профилей клиентов с помощью настраиваемого импорта SFTP (предварительная версия)
 description: Общие сведения об обогащении настраиваемого импорта SFTP.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 831d1d3d3045379bbc5bcdcd4b05b8a147221f31
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195812"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237782"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Обогащение профилей клиентов с помощью настраиваемого импорта SFTP (предварительная версия)
 
@@ -85,14 +85,9 @@ ms.locfileid: "9195812"
 
 1. Введите действительное имя пользователя, пароль и URL-адрес узла для SFTP-сервера, на котором находятся импортируемые данные.
 
-1. Проверьте и дайте свое согласие для [Конфиденциальность и соответствие данных](#data-privacy-and-compliance), выбрав **Принимаю**.
+1. Ознакомьтесь с положениями [Соответствие и конфиденциальность данных](connections.md#data-privacy-and-compliance) и выберите **Принимаю**.
 
 1. Выберите **Проверить** для проверки конфигурации, затем выберите **Сохранить**.
-
-### <a name="data-privacy-and-compliance"></a>Соответствие и конфиденциальность данных
-
-Когда вы включаете Dynamics 365 Customer Insights для передачи данных с помощью пользовательского импорта, вы разрешаете передачу данных за пределы обеспечения соответствия для Dynamics 365 Customer Insights, включая потенциально конфиденциальные данные, такие как личные данные. Microsoft будет передавать такие данные по вашему указанию, но вы несете ответственность за обеспечение того, чтобы данные удовлетворяли любым обязательствам по конфиденциальности или безопасности, которые у вас могут быть. Дополнительные сведения см. в разделе [Заявление о конфиденциальности корпорации Майкрософт](https://go.microsoft.com/fwlink/?linkid=396732).
-Ваш администратор Dynamics 365 Customer Insights может удалить это обогащение в любое время, чтобы прекратить использование этой функции.
 
 ## <a name="configure-the-import"></a>Настройка импорта
 
