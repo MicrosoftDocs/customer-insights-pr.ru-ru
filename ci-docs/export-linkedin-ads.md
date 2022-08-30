@@ -1,19 +1,19 @@
 ---
 title: Экспорт сегментов в LinkedIn Ads (предварительная версия)
 description: Узнайте, как настроить подключение и экспорт в LinkedIn Ads.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196824"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304719"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Экспорт сегментов в LinkedIn Ads (предварительная версия)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196824"
 - [Учетная запись LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) и соответствующие учетные данные администратора.
 - [Идентификатор учетной записи LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
 - [Настроенные сегменты](segments.md) в Customer Insights.
-- Унифицированные профили клиентов в экспортированных сегментах содержат поле, представляющее адрес электронной почты.
+- В экспортируемых сегментах должно быть хотя бы одно конкретное поле, в зависимости от того, выберете ли вы [таргетинг контактов](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) или [таргетинг компании](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) на LinkedIn. Возможные поля перечислены на шаге **Сопоставление данных** при [настройке экспорта](#configure-an-export).
 
 ## <a name="known-limitations"></a>Известные ограничения
 

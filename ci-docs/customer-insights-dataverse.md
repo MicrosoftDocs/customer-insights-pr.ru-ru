@@ -1,7 +1,7 @@
 ---
 title: Работайте с данными Customer Insights в Microsoft Dataverse
 description: Узнайте, как связать Customer Insights с Microsoft Dataverse и ознакомьтесь с выходными сущностями, экспортируемыми в Dataverse.
-ms.date: 07/15/2022
+ms.date: 08/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,25 +11,25 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
-ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
+ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9153420"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303845"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
-Customer Insights предоставляет возможность сделать выходные сущности доступными в виде [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Эта интеграция обеспечивает простой обмен данными и индивидуальную разработку с помощью подхода с минимальным кодом или без кода. [Выходные сущности](#output-entities) доступны в виде таблиц в среде Dataverse. Вы можете использовать данные для любого другого приложения на основе таблиц Dataverse. Эти таблицы позволяют реализовать такие сценарии, как автоматизированные рабочие процессы посредством Power Automate или создание приложений в Power Apps.
+Customer Insights предоставляет возможность сделать выходные сущности доступными в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Эта интеграция обеспечивает простой обмен данными и индивидуальную разработку с помощью подхода с минимальным кодом или без кода. [Выходные сущности](#output-entities) доступны в виде таблиц в среде Dataverse. Вы можете использовать данные для любого другого приложения на основе таблиц Dataverse. Эти таблицы позволяют реализовать такие сценарии, как автоматизированные рабочие процессы посредством Power Automate или создание приложений в Power Apps.
 
 Подключение к вашему среде Dataverse также позволяет [принимать данные из локальных источников данных, используя Power Platform потоки данных и шлюзы](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Предварительные условия
 
 - Customer Insights и среды Dataverse должны размещаться в одном регионе.
-- У вас должна быть глобальная роль администратора в среде Dataverse. Проверьте, [связана ли среда Dataverse](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) с определенными группами безопасности, и убедитесь, что вы добавлены в эти группы безопасности.
+- Настроена роль глобального администратора в среде Dataverse. Проверьте, [связана ли среда Dataverse](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) с определенными группами безопасности, и убедитесь, что вы добавлены в эти группы безопасности.
 - Никакая другая среда Customer Insights еще не связана со средой Dataverse, к которой требуется подключиться. Узнайте, как [удалить существующее подключение к среде Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
-- Среду Microsoft Dataverse можно подключить только к одной учетной записи хранения. Это применимо только в том случае, если вы настроите среду на [использование Azure Data Lake Storage](own-data-lake-storage.md).
+- Среда Microsoft Dataverse, подключенная к одной учетной записи хранения, если вы настроили среду на [использование своего Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## <a name="dataverse-storage-capacity-entitlement"></a>Объем обслуживания емкости хранилища Dataverse
 
@@ -37,7 +37,7 @@ Customer Insights предоставляет возможность сделат
 
 **Пример:**
 
-Предположим, вы получаете 15 ГБ для хранения базы данных и 20 ГБ для хранения файлов на 100 000 профилей клиентов. Если ваша подписка включает 300 000 профилей клиентов, общая емкость хранилища составит 45 ГБ (3 x 15 ГБ) для хранения базы данных и 60 ГБ для хранения файлов (3 x 20 ГБ). Точно так же, если у вас есть подписка B2B с 30 000 учетных записей, общая емкость хранилища составит 45 ГБ (3 x 15 ГБ) для хранения базы данных и 60 ГБ для хранения файлов (3 x 20 ГБ).
+Предположим, вы получаете 15 ГБ для хранения базы данных и 20 ГБ для хранения файлов на 100 000 профилей клиентов. Если ваша подписка включает 300 000 профилей клиентов, общая емкость хранилища составляет 45 ГБ (3 x 15 ГБ) для хранения базы данных и 60 ГБ для хранения файлов (3 x 20 ГБ). Точно так же, если у вас есть подписка "бизнес-бизнес" с 30 000 учетных записей, общая емкость хранилища составляет 45 ГБ (3 x 15 ГБ) для хранения базы данных и 60 ГБ для хранения файлов (3 x 20 ГБ).
 
 Емкость журнала не является добавочной и фиксирована для вашей организации.
 
@@ -49,68 +49,78 @@ Customer Insights предоставляет возможность сделат
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="обмен данными с Microsoft Dataverse автоматически включен для новых сред.":::
 
-Администраторы могут настроить Customer Insights, чтобы выполнить подключение к существующей среде Dataverse. Путем предоставления URL-адреса для среды Dataverse, осуществляется подключение к их новой среде Customer Insights. После установления связи между Customer Insights и Dataverse не меняйте название организации для среды Dataverse. Название организации используется в URL-адресе Dataverse и измененное имя разрывает подключение с Customer Insights.
+1. Укажите URL-адрес вашей среды Dataverse или оставьте поле пустым, чтобы оно было создано для вас.
 
-Если вы не хотите использовать существующую среду Dataverse, система создает новую среду для данных Customer Insights в вашем клиенте. [Администраторы Power Platform могут управлять тем, кто может создавать среды](/power-platform/admin/control-environment-creation). Если вы настраиваете новую среду Customer Insights, а администратор отключил возможность создания среды Dataverse для всех пользователей, кроме администраторов, возможно, вам не удастся создать новую среду.
+   > [!NOTE]
+   > После установления связи между Customer Insights и Dataverse не меняйте название организации для среды Dataverse. Название организации используется в URL-адресе Dataverse и измененное имя разрывает подключение с Customer Insights.
 
-**Включите обмен данными** с Dataverse, установив флажок функции обмена данными.
+   [Администраторы Power Platform могут управлять тем, кто может создавать новые среды Dataverse](/power-platform/admin/control-environment-creation). Если вы пытаетесь настроить новую среду Customer Insights и не можете, возможно, что администратор отключил возможность создания сред Dataverse для всех пользователей, кроме администраторов.
 
-Если вы используете собственную учетную запись Data Lake Storage, вам также потребуется **Идентификатор разрешений**. Дополнительные сведения о том, как получить идентификатор разрешений, см. в следующем разделе.
+1. Если вы используете собственную учетную запись Data Lake Storage:
+   1. Выберите **Включить обмен данными** с Dataverse.
+   1. Введите **Идентификатор разрешений**. Чтобы получить идентификатор разрешений, [включите обмен данными с Dataverse из вашего собственного Azure Data Lake Storage](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Включить обмен данными с Dataverse из собственного Azure Data Lake Storage (предварительная версия)
 
-Чтобы включить обмен данными с Microsoft Dataverse, когда ваша среда [использует вашу собственную учетную запись Azure Data Lake Storage](own-data-lake-storage.md), может потребоваться выполнить дополнительную настройку. У пользователя, настраивающего среду Customer Insights, должны быть как минимум разрешения **Модуль чтения данных BLOB-объектов хранилища** в контейнере *CustomerInsights* в учетной записи Azure Data Lake Storage.
-
-1. Создайте две группы безопасности в своей подписке Azure — одну группу безопасности **Читатель** и одну группу безопасности **Участник** и задайте службу Microsoft Dataverse в качестве владельца обеих групп безопасности.
-2. Управляйте списком управления доступом (ACL) в контейнере CustomerInsights в своей учетной записи хранения с помощью этих групп безопасности. Добавьте службу Microsoft Dataverse и любые бизнес-приложения на основе Dataverse, такие как Dynamics 365 Marketing, в группу безопасности **Читатель** с разрешениями **только для чтения**. Добавьте *только* приложение Customers Insights для группы безопасности **Участник** для предоставления разрешений на **чтение и запись**, чтобы записывать профили и аналитику.
+В [вашей собственной учетной записи Azure Data Lake Storage](own-data-lake-storage.md) проверьте, что у пользователя, настраивающего среду Customer Insights, имеются как минимум разрешения **Модуль чтения данных BLOB-объектов хранилища** в контейнере `customerinsights` в учетной записи хранилища.
 
 ### <a name="limitations"></a>Ограничения
 
-Есть два ограничения при использовании Dataverse с собственной учетной записью Azure Data Lake Storage:
-
-- Между организацией Dataverse и учетной записью Azure Data Lake Storage существует взаимно-однозначное сопоставление. Когда организация Dataverse подключена к учетной записи хранения, она не может подключиться к другой учетной записи хранения. За счет этого ограничения Dataverse не заполняет разные учетные записи хранения.
+- Только взаимно-однозначное сопоставление между организацией Dataverse и учетной записью Azure Data Lake Storage. Когда организация Dataverse подключена к учетной записи хранения, она не может подключиться к другой учетной записи хранения. За счет этого ограничения Dataverse не заполняет разные учетные записи хранения.
 - Обмен данными не будет работать, если для доступа к вашей учетной записи Azure Data Lake Storage требуется настройка приватного канала Azure, так как он находится за межсетевым экраном. Dataverse в настоящее время не поддерживает подключение к частным конечным точкам через приватный канал.
+
+### <a name="set-up-security-groups-on-your-own-azure-data-lake-storage"></a>Настройка групп безопасности вашего собственного Azure Data Lake Storage
+
+1. Создайте две группы безопасности в своей подписке Azure — одну группу безопасности **Читатель** и одну группу безопасности **Участник** и задайте службу Microsoft Dataverse в качестве владельца обеих групп безопасности.
+
+1. Управляйте списком управления доступом (ACL) в контейнере `customerinsights` в своей учетной записи хранения с помощью этих групп безопасности.
+   1. Добавьте службу Microsoft Dataverse и любые бизнес-приложения на основе Dataverse, такие как Dynamics 365 Marketing, в группу безопасности **Читатель** с разрешениями **только для чтения**.
+   1. Добавьте *только* приложение Customers Insights для группы безопасности **Участник** для предоставления разрешений на **чтение и запись**, чтобы записывать профили и аналитику.
 
 ### <a name="set-up-powershell"></a>Настройка PowerShell
 
-Для выполнения сценариев PowerShell сначала необходимо соответствующим образом настроить PowerShell.
+Настройте PowerShell для выполнения сценариев PowerShell.
 
 1. Установите последнюю версию [Azure Active Directory PowerShell для Graph](/powershell/azure/active-directory/install-adv2).
    1. На ПК нажмите клавишу Windows на клавиатуре и выполните поиск **Windows PowerShell**, затем выберите **Запуск от имени администратора**.
    1. В открывшемся окне PowerShell введите `Install-Module AzureAD`.
-2. Импортируйте три модуля.
-    1. В окне Powershell введите `Install-Module -Name Az.Accounts` и выполните следующее.
-    1. Повторите для `Install-Module -Name Az.Resources` и `Install-Module -Name Az.Storage`.
 
-### <a name="configuration-steps"></a>Шаги настройки
+1. Импортируйте три модуля.
+   1. В окне Powershell введите `Install-Module -Name Az.Accounts` и выполните следующее.
+   1. Повторите для `Install-Module -Name Az.Resources` и `Install-Module -Name Az.Storage`.
+
+### <a name="execute-powershell-scripts-and-obtain-the-permission-identifier"></a>Выполнение сценариев PowerShell и получение идентификатора разрешения
 
 1. Загрузите два сценария PowerShell, которые вам нужно запустить, из [репозитория GitHub](https://github.com/trin-msft/byol) нашего специалиста.
-    1. `CreateSecurityGroups.ps1`
-       - Чтобы выполнит этот сценарий PowerShell, требуются разрешения *администратора клиента*.
-       - Этот сценарий PowerShell создает две группы безопасности в вашей подписке Azure. Один для группы Читатель, а другой для группы Участник и делает службу Microsoft Dataverse владельцем обеих этих групп безопасности.
-       - Выполните этот сценарий PowerShell в Windows PowerShell, указав идентификатор подписки Azure, содержащий ваш Azure Data Lake Storage. Откройте сценарий PowerShell в редакторе, чтобы просмотреть дополнительную информацию и реализованную логику.
-       - Сохраните оба значения ID группы безопасности, сгенерированные этим сценарием, потому что мы будем использовать их в сценарии `ByolSetup.ps1`.
+   - `CreateSecurityGroups.ps1`: требует разрешений администратора клиента.
+   - `ByolSetup.ps1`: требуются разрешения владельца данных BLOB-объектов хранилища на уровне учетной записи хранения или контейнера. Этот скрипт создаст разрешение для вас. Ваше назначение роли может быть удалено вручную после успешного запуска сценария.
 
-        > [!NOTE]
-        > Создание группы безопасности можно отключить в вашем клиенте. В этом случае потребуется ручная настройка, и ваш администратор Azure AD должен был [включить создание групп безопасности](/azure/active-directory/enterprise-users/groups-self-service-management).
+1. Выполните `CreateSecurityGroups.ps1` в Windows PowerShell, указав идентификатор подписки Azure, содержащий ваш Azure Data Lake Storage. Откройте сценарий PowerShell в редакторе, чтобы просмотреть дополнительную информацию и реализованную логику.
 
-    2. `ByolSetup.ps1`
-        - Вам нужны разрешения *Владелец данных BLOB-объектов хранилища* на уровне учетной записи хранения/контейнера для запуска этого сценария или этот сценарий создаст его для вас. Ваше назначение роли может быть удалено вручную после успешного запуска сценария.
-        - Этот сценарий PowerShell добавляет необходимое управление доступом на основе ролей для службы Microsoft Dataverse и любых бизнес-приложений на основе Dataverse. Это также обновляет список управления доступом (ACL) в контейнере CustomerInsights для групп безопасности, созданных с помощью сценария `CreateSecurityGroups.ps1`. Группа Участник будет иметь разрешение *rwx*, а группа Читатели будут иметь только разрешение *r-x*.
-        - Выполните этот сценарий PowerShell в Windows PowerShell, указав идентификатор подписки Azure, содержащий ваш Azure Data Lake Storage, имя учетной записи хранения, имя группы ресурсов и значения идентификаторов группы безопасности "Читатель" и "Участник". Откройте сценарий PowerShell в редакторе, чтобы просмотреть дополнительную информацию и реализованную логику.
-        - Скопируйте выходную строку после успешного запуска сценария. Выходная строка выглядит следующим образом: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+   Этот скрипт создает две группы безопасности в вашей подписке Azure: одну для группы "Читатель" и другую для группы "Участник". Служба Microsoft Dataverse является владельцем обеих этих групп безопасности.
 
-2. Введите выходную строку, скопированную вверху, в поле **Идентификатор разрешений** на шаге настройки среды для Microsoft Dataverse.
+1. Сохраните оба значения ID группы безопасности, сгенерированные этим сценарием, чтобы использовать их в сценарии `ByolSetup.ps1`.
 
-:::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Параметры конфигурации, позволяющие включить обмен данными с вашими собственными Azure Data Lake Storage с Microsoft Dataverse.":::
+   > [!NOTE]
+   > Создание группы безопасности можно отключить в вашем клиенте. В этом случае потребуется ручная настройка, и ваш администратор Azure AD должен был [включить создание групп безопасности](/azure/active-directory/enterprise-users/groups-self-service-management).
 
-### <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>Удаление существующего подключения к среде Dataverse
+1. Выполните сценарий `ByolSetup.ps1` в Windows PowerShell, указав идентификатор подписки Azure, содержащий ваш Azure Data Lake Storage, имя учетной записи хранения, имя группы ресурсов и значения идентификаторов группы безопасности "Читатель" и "Участник". Откройте сценарий PowerShell в редакторе, чтобы просмотреть дополнительную информацию и реализованную логику.
+
+   Этот сценарий добавляет необходимое управление доступом на основе ролей для службы Microsoft Dataverse и любых бизнес-приложений на основе Dataverse. Это также обновляет список управления доступом (ACL) в контейнере `customerinsights` для групп безопасности, созданных с помощью сценария `CreateSecurityGroups.ps1`. Группа "Участник" получает разрешение *rwx*, а группа "Читатели" получает только разрешение *r-x*.
+
+1. Скопируйте выходную строку, которая выглядит следующим образом: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+
+1. Введите скопированную выходную строку в поле **Идентификатор разрешений** на шаге настройки среды для Microsoft Dataverse.
+
+   :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Параметры конфигурации, позволяющие включить обмен данными с вашими собственными Azure Data Lake Storage с Microsoft Dataverse.":::
+
+## <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>Удаление существующего подключения к среде Dataverse
 
 При подключении к среде Dataverse сообщение об ошибке **Эта организация CDS уже подключена к другому экземпляру Customer Insights** означает, что среда Dataverse уже используется в среде Customer Insights. Вы можете удалить существующее соединение как глобальный администратор в среде Dataverse. Внесение изменений может занять несколько часов.
 
 1. Перейдите к [Power Apps](https://make.powerapps.com).
 1. Выберите среду из средства выбора сред.
-1. Перейдите в **Решения**
+1. Перейдите в **Решения**.
 1. Удалите решение с именем **Надстройка карточек клиентов Dynamics 365 Customer Insights (предварительная версия)**.
 
 ИЛИ
@@ -155,7 +165,7 @@ Customer Insights предоставляет возможность сделат
 
 Эта таблица содержит действия пользователей, доступные в Customer Insights.
 
-| Column            | Тип        | Description                                                                              |
+| Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
 | CustomerId        | String      | Идентификатор профиля клиента                                                                      |
 | ActivityId        | String      | Внутренний идентификатор действия клиента (первичный ключ)                                       |
@@ -199,7 +209,7 @@ Customer Insights предоставляет возможность сделат
 
 Эта таблица содержит результаты прогнозов модели.
 
-| Column               | Тип        | Description                                          |
+| Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
 | CustomerId           | String      | Идентификатор профиля клиента                                  |
 | ModelProvider        | String      | Имя поставщика модели                                      |
@@ -221,33 +231,5 @@ Customer Insights предоставляет возможность сделат
 | msdynci_identifier  | String   | Уникальный идентификатор записи члена сегмента. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | GUID      | Детерминированный GUID, созданный из `msdynci_identifier`          |
 
-<!--
-## FAQ: Update existing environments to use Microsoft Dataverse
 
-Between mid-May 2022 and June 13, 2022, administrators can update the environment settings with a Dataverse environment that Customer Insights can use. On June 13, 2022, your environment will be updated automatically and we'll create a Dataverse environment on your tenant for you.
-
-1. My environment uses my own Azure Data Lake Storage account. Do I still need to update?
-
-   If there's already a Dataverse environment configured in your environment, the update isn't required. If no Dataverse is environment configured, the **Update now** button will create a Dataverse environment and update from the Customer Insights database to a Dataverse database.
-
-1. Will we get extra Dataverse capacity, or will the update use my existing Dataverse capacity?
-
-   - If there's already a Dataverse environment configured in your Customer Insights environment, or connected with other Dynamics 365 or Power Apps applications, the capacity remains unchanged.
-   - If the Dataverse environment is new, it will add new storage and database capacity. The capacity added varies per environment and entitlements. You'll get 3 GB for trial and sandbox environment. Production environments get 15 GB.
-
-1. I proceeded with the update and it seems like nothing happened. Is the update complete?
-
-   If the notification in Customer Insights doesn't show anymore, the update is complete. You can check the status of the update by reviewing your environment settings.
-
-1. Why do I still see the banner after completing the update steps?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-
-1. I received a "Failed to provision Dataverse environment" error after starting the update. What happened?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-   Common causes:
-    - Insufficient capacity. There's no more capacity to create more environments. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
-    - Region mismatch between tenant region and Customer Insights environment region in the Australia and India regions.
-    - Insufficient privileges to provision Dataverse. The users starting the update needs a Dynamics 365 admin role.
-    - -->
+[!INCLUDE [footer-include](includes/footer-banner.md)]
