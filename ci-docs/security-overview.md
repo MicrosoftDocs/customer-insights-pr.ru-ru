@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d20d57e9b7724e9921f9341eeaa39141b4555ff1
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246078"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387265"
 ---
 # <a name="configure-security-settings"></a>Настройка параметров безопасности
 
@@ -23,7 +23,7 @@ ms.locfileid: "9246078"
 
 Просмотр и управление ключами для использования [API Customer Insights](apis.md) с данными в вашей среде.
 
-1. Перейдите в раздел **Система** > **Безопасность** и выберите вкладку **APIs**.
+1. Перейдите в раздел **Администрирование** > **Безопасность** и выберите вкладку **API-интерфейсы**.
 
 1. Если API-доступ к среде не настроен, выберите **Включить**. Либо, чтобы заблокировать доступ API к среде, выберите **Отключить** и подтвердите свой выбор.
 

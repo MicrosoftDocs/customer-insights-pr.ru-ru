@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245941"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352817"
 ---
 # <a name="export-diagnostic-logs-preview"></a>Экспорт журналов диагностики (предварительная версия)
 
@@ -36,8 +36,8 @@ Customer Insights отправляет следующие журналы соб�
 
 - Активная [подписка Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - Разрешения [администратора](permissions.md#admin) в Customer Insights.
+- Действительный ресурс в Azure, соответствующий [требованиям к месту назначения](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) для службы хранилища Azure, концентратора событий Azure или Azure Log Analytics.
 - Роль [Участник и Администратор доступа пользователей](/azure/role-based-access-control/role-assignments-portal) в отношении ресурса-пункта назначения в Azure. Этот ресурс может представлять собой учетную запись Azure Data Lake Storage, Центр событий Azure или рабочую область Azure Log Analytics. Это разрешение необходимо при настройке параметров диагностики в Customer Insights, но его можно изменить после успешной настройки.
-- Выполняются [требования к пункту назначения](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) для службы хранилища Azure, Центра событий Azure или Azure Log Analytics.
 - Хотя бы роль **Читатель** в отношении группы ресурсов, к которой принадлежит ресурс.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Настройка диагностики с помощью Azure Monitor
