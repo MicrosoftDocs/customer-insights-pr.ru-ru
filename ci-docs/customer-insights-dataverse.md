@@ -1,7 +1,7 @@
 ---
 title: Работайте с данными Customer Insights в Microsoft Dataverse
 description: Узнайте, как связать Customer Insights с Microsoft Dataverse и ознакомьтесь с выходными сущностями, экспортируемыми в Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303845"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424325"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
@@ -136,6 +136,7 @@ Customer Insights предоставляет возможность сделат
 Некоторые выходные сущности из Customer Insights доступны в виде таблиц в Dataverse. В следующих разделах описывается ожидаемая схема этих таблиц.
 
 - [CustomerProfile](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ Customer Insights предоставляет возможность сделат
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-Эта таблица содержит единый профиль клиента из Customer Insights. Схема единого профиля клиента зависит от сущностей и атрибутов, используемых в процессе объединения данных. Схема профиля клиента обычно содержит подмножество атрибутов из [Определение Common Data Model для CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+Эта таблица содержит единый профиль клиента из Customer Insights. Схема единого профиля клиента зависит от сущностей и атрибутов, используемых в процессе объединения данных. Схема профиля клиента обычно содержит подмножество атрибутов из [Определение Common Data Model для CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). В B2B-сценарии профиль клиента содержит объединенные организации, а схема обычно содержит подмножество атрибутов из [определения организации в Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+
+### <a name="contactprofile"></a>ContactProfile
+
+ContactProfile содержит объединенную информацию о контакте. Контакты — это [физические лица, сопоставляемые с организацией](data-unification-contacts.md) в B2B-сценарии.
+
+| Column                       | Type                | Description     |
+| ---------------------------- | ------------------- | --------------- |
+|  Дата рождения            | Дата/время       |  Дата рождения контакта               |
+|  City                 | Текст |  Город в адресе контакта               |
+|  ContactId            | Текст |  ИД профиля контакта               |
+|  ContactProfileId     | Уникальный идентификатор   |  GUID для контакта               |
+|  CountryOrRegion      | Текст |  Страна/регион в адресе контакта               |
+|  CustomerId           | Текст |  ИД организации, с которой сопоставлен контакт               |
+|  EntityName           | Текст |  Сущность, из которой берутся данные                |
+|  FirstName            | Текст |  Имя контакта               |
+|  Пол               | Текст |  Пол контакта               |
+|  ИД                   | Текст |  Детерминированный GUID на основе`Identifier`               |
+|  Идентификатор           | Текст |  Внутренний ИД профиля контакта: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | Текст |  Должность контакта               |
+|  LastName             | Текст |  Фамилия контакта               |
+|  PostalCode           | Текст |  Почтовый индекс в адресе контакта               |
+|  PrimaryEmail         | Текст |  Адрес электронной почты контакта               |
+|  PrimaryPhone         | Текст |  Номер телефона контакта               |
+|  Область, республика, край, округ      | Текст |  Область, штат, провинция и т. п. в адресе контакта               |
+|  StreetAddress        | Текст |  Улица в адресе контакта               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 Таблица AlternateKey содержит ключи сущностей, участвовавших в процессе унификации.
 
-|Column  |Тип  |Description  |
+|Column  |Type  |Description  |
 |---------|---------|---------|
-|DataSourceName    |String         | Назовите источник данных. Например: `datasource5`        |
-|EntityName        | String        | Имя сущности в Customer Insights. Например: `contact1`        |
-|AlternateValue    |String         |Альтернативный идентификатор, сопоставленный с идентификатором клиента. Пример: `cntid_1078`         |
-|KeyRing           | Многострочный текст        | Значение JSON  </br> Пример: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|CustomerId         | String        | ID единого профиля клиента.         |
-|AlternateKeyId     | GUID         |  Детерминированный GUID AlternateKey на основе msdynci_identifier       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Пример: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |Текст         | Назовите источник данных. Например: `datasource5`        |
+|EntityName        | Текст        | Имя сущности в Customer Insights. Например: `contact1`        |
+|AlternateValue    |Текст         |Альтернативный идентификатор, сопоставленный с идентификатором клиента. Пример: `cntid_1078`         |
+|KeyRing           | Текст        | Значение JSON  </br> Пример: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|CustomerId         | Текст        | ID единого профиля клиента.         |
+|AlternateKeyId     | Уникальный идентификатор        |  Детерминированный GUID AlternateKey на основе `Identifier`      |
+|Идентификатор |   Текст      |   `DataSourceName|EntityName|AlternateValue`  </br> Пример: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ Customer Insights предоставляет возможность сделат
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | Идентификатор профиля клиента                                                                      |
-| ActivityId        | String      | Внутренний идентификатор действия клиента (первичный ключ)                                       |
-| SourceEntityName  | String      | Имя исходной сущности                                                                |
-| SourceActivityId  | String      | Первичный ключ из исходной сущности                                                       |
-| ActivityType      | String      | Семантический тип действия или название настраиваемого действия                                        |
-| ActivityTimeStamp | ДАТА И ВРЕМЯ    | Временная метка действия                                                                      |
-| Title             | String      | Заголовок или имя действия                                                               |
-| Description       | String      | Описание действия                                                                     |
-| URL               | String      | Ссылка на внешний URL-адрес, относящийся к действию                                         |
-| SemanticData      | Строка JSON | Включает список пар ключ-значение для полей семантического сопоставления, относящихся к типу действия |
-| RangeIndex        | String      | Метка времени Unix, используемая для сортировки временной шкалы действия и запросов эффективного диапазона |
-| mydynci_unifiedactivityid   | GUID | Внутренний идентификатор действия клиента (ActivityId) |
+| CustomerId        | Текст      | Идентификатор профиля клиента                                                                      |
+| ActivityId        | Текст      | Внутренний идентификатор действия клиента (первичный ключ)                                       |
+| SourceEntityName  | Текст      | Имя исходной сущности                                                                |
+| SourceActivityId  | Текст      | Первичный ключ из исходной сущности                                                       |
+| ActivityType      | Текст      | Семантический тип действия или название настраиваемого действия                                        |
+| ActivityTimeStamp | Дата/время    | Временная метка действия                                                                      |
+| Title             | Текст      | Заголовок или имя действия                                                               |
+| Description       | Текст      | Описание действия                                                                     |
+| URL               | Текст      | Ссылка на внешний URL-адрес, относящийся к действию                                         |
+| SemanticData      | Текст | Включает список пар ключ-значение для полей семантического сопоставления, относящихся к типу действия |
+| RangeIndex        | Текст      | Метка времени Unix, используемая для сортировки временной шкалы действия и запросов эффективного диапазона |
+| UnifiedActivityId   | Уникальный идентификатор | Внутренний идентификатор действия клиента (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 Эта таблица содержит выходные данные мер на основе атрибутов клиента.
 
-| Column             | Тип             | Description                 |
+| Column             | Type             | Description                 |
 |--------------------|------------------|-----------------------------|
-| CustomerId         | String           | Идентификатор профиля клиента        |
-| Мер           | Строка JSON      | Включает список пар "ключ-значение" для имени меры и значений для данного клиента | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | Идентификатор профиля клиента |
+| CustomerId         | Текст           | Идентификатор профиля клиента        |
+| Меры (Measures)           | Текст      | Включает список пар "ключ-значение" для имени меры и значений для данного клиента |
+| Идентификатор | Текст           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | Уникальный идентификатор     | Идентификатор профиля клиента |
 
-
-### <a name="enrichment"></a>Обогащение
+### <a name="enrichment"></a>Обогащение (Enrichment)
 
 Эта таблица содержит результаты процесса обогащения.
 
-| Column               | Тип             |  Description                                          |
+| Column               | Type             |  Description                                          |
 |----------------------|------------------|------------------------------------------------------|
-| CustomerId           | String           | Идентификатор профиля клиента                                 |
-| EnrichmentProvider   | String           | Имя поставщика для обогащения                                  |
-| EnrichmentType       | String           | Тип обогащения                                      |
-| Значения               | Строка JSON      | Список атрибутов, созданных в процессе обогащения |
-| msdynci_enrichmentid | GUID             | Детерминированный GUID, созданный из msdynci_identifier |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| CustomerId           | Текст           | Идентификатор профиля клиента                                 |
+| EnrichmentProvider   | Текст           | Имя поставщика для обогащения                                  |
+| EnrichmentType       | Текст           | Тип обогащения                                      |
+| Values               | Текст      | Список атрибутов, созданных в процессе обогащения |
+| EnrichmentId | Уникальный идентификатор            | Детерминированный GUID, созданный из `Identifier` |
+| Идентификатор   | Текст           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>Прогноз
 
@@ -211,12 +236,12 @@ Customer Insights предоставляет возможность сделат
 
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | Идентификатор профиля клиента                                  |
-| ModelProvider        | String      | Имя поставщика модели                                      |
-| Модель                | String      | Имя модели                                                |
-| Значения               | Строка JSON | Список атрибутов, созданных моделью |
-| msdynci_predictionid | GUID        | Детерминированный GUID, созданный из msdynci_identifier | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| CustomerId           | Текст      | Идентификатор профиля клиента                                  |
+| ModelProvider        | Текст      | Имя поставщика модели                                      |
+| Модель                | Текст      | Имя модели                                                |
+| Values               | Текст | Список атрибутов, созданных моделью |
+| PredictionId | Уникальный идентификатор       | Детерминированный GUID, созданный из `Identifier` |
+| Идентификатор   | Текст      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>Членство в сегменте
 
@@ -224,12 +249,11 @@ Customer Insights предоставляет возможность сделат
 
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
-| CustomerId        | String       | Идентификатор профиля клиента        |
-| SegmentProvider      | String       | Приложение, которое публикует сегменты.      |
-| SegmentMembershipType | String       | Тип клиента для этой записи о членстве в сегменте. Поддерживает несколько типов, таких как Клиент, Контакт или Организация. По умолчанию: клиент  |
-| Сегменты       | Строка JSON  | Список уникальных сегментов, участником которых является профиль клиента      |
-| msdynci_identifier  | String   | Уникальный идентификатор записи члена сегмента. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | Детерминированный GUID, созданный из `msdynci_identifier`          |
-
+| CustomerId        | Текст       | Идентификатор профиля клиента        |
+| SegmentProvider      | Текст       | Приложение, которое публикует сегменты.      |
+| SegmentMembershipType | Текст       | Тип клиента для этой записи о членстве в сегменте. Поддерживает несколько типов, таких как Клиент, Контакт или Организация. По умолчанию: клиент  |
+| Segments       | Текст  | Список уникальных сегментов, участником которых является профиль клиента      |
+| Идентификатор  | Текст   | Уникальный идентификатор записи члена сегмента. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | Уникальный идентификатор      | Детерминированный GUID, созданный из `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

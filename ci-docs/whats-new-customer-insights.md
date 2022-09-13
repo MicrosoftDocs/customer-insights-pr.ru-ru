@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387310"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409373"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Новые возможности Dynamics 365 Customer Insights
 
@@ -41,6 +41,14 @@ ms.locfileid: "9387310"
 Благодаря новой унификации контактов вы можете создавать сегменты контактов, используя критерии из контактов, организаций или и того, и другого. Эти сегменты можно экспортировать для активации в других сервисах.
 
 Дополнительные сведения см. в разделе [Обзор экспорта](export-destinations.md).
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>Регионы развертывания, соответствующие Microsoft Dataverse
+
+При создании новой среды Customer Insights вы можете выбрать регион, в котором хотите развернуть и разместить службу. Мы обновили варианты регионов, чтобы они соответствовали Microsoft Dataverse и Power Platform.
+
+Теперь вы можете легко выбрать тот же регион, что и у вашей существующей среде Microsoft Dataverse или у вашей учетной записи хранения Azure Data Lake Storage (если вы выберете этот вариант), при условии доступности Customer Insights в этом регионе.
+
+Для получения дополнительной информации см. статьи [Создание новой среды](create-environment.md) и [Доступность продукта по географическому региону](https://dynamics.microsoft.com/availability-reports/).
 
 ## <a name="july-2022-updates"></a>Обновления от июля 2022 года
 
