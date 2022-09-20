@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207061"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463281"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Подключение к источникам данных Power Query
 
@@ -63,7 +63,9 @@ Power Query содержит широкий набор соединителей 
 Загрузка данных может занять время. После успешного обновления принятые данные можно проверить на странице [**Сущности**](entities.md).
 
 > [!CAUTION]
-> Источник данных на основе Power Query [создает поток данных в Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Не меняйте имя потока данных в Центр администрирования Power Platform, который используется в Customer Insights. Переименование потока данных вызывает проблемы со ссылками между источником данных Customer Insights и потоком данных Dataverse.
+>
+> - Источник данных на основе Power Query [создает поток данных в Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Не меняйте имя потока данных в Центр администрирования Power Platform, который используется в Customer Insights. Переименование потока данных вызывает проблемы со ссылками между источником данных Customer Insights и потоком данных Dataverse.
+> - Параллельные оценки для источников данных Power Query в Customer Insights имеют одинаковые [ограничения обновления, такие как потоки данных в PowerBI.com](/power-query/power-query-online-limits#refresh-limits). Если обновление данных завершается со сбоем из-за достижения предела оценки, мы рекомендуем настроить расписание обновления для каждого потока данных, чтобы источники данных не обрабатывались одновременно.
 
 ### <a name="available-power-query-data-sources"></a>Доступные источники данных Power Query
 
@@ -77,7 +79,7 @@ Power Query содержит широкий набор соединителей 
 
 Для источников данных, созданных после связывания среды Dataverse с Customer Insights, [потоки данных Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) используются по умолчанию. Потоки данных поддерживают локальное подключение с использованием шлюза данных. Вы можете удалить и заново создать источники данных, которые существовали до того, как среда Dataverse была связана с Customer Insights, [с помощью локальных шлюзов данных](/data-integration/gateway/service-gateway-app).
 
-Шлюзы данных из существующей среды Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights. На странице источников данных показаны ссылки для перехода к среде Microsoft Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
+Шлюзы данных из существующих сред Power BI или Power Apps будут видны, и вы сможете повторно использовать их в Customer Insights, если шлюз данных и среда Customer Insights находятся в одном и том же регионе Azure. На странице источников данных показаны ссылки для перехода к среде Microsoft Power Platform, в которой можно просматривать и настраивать локальные шлюзы данных.
 
 > [!IMPORTANT]
 > Убедитесь, что ваши шлюзы обновлены до последней версии. Вы можете установить обновление и перенастроить шлюз непосредственно из подсказки, отображаемой на экране шлюза, или [скачать последнюю версию](https://powerapps.microsoft.com/downloads/). Если вы не используете последнюю версию шлюза, обновление потока данных завершается с ошибкой, например **Ключевое слово не поддерживается: свойства конфигурации. Имя параметра: ключевое слово**.

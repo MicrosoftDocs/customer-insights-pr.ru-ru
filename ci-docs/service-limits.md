@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411756"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463235"
 ---
 # <a name="service-limits-in-customer-insights"></a>Ограничения служб в Customer Insights
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411756"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Сегменты, меры и прогнозы | 300  | Общее количество [сегментов](segments.md), [мер](measures.md) и [прогнозов](predictions-overview.md) вместе не может превышать 300.  |
 | Связи | 20 уровней глубины отношений в путях сущностей. | При создании [сегментов](segments.md) или [мер](measures.md) с помощью интерфейса построителя пути к сущностям могут иметь до 20 переходов отношений между начальной и конечной сущностями.  |
+|Прием данных| Параллельные оценки для источников данных Power Query ограничены. | Customer Insights имеет те же самые [ограничения обновления, как и потоки данных в PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## <a name="fair-scheduling-of-jobs"></a>Справедливое планирование заданий
 
