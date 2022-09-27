@@ -7,21 +7,21 @@
 - name: Каталог обучения
   items:
     - name: Получение сертификата Microsoft Customer Data Platform Specialist
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Начало работы с Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Прием данных
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Создание объединенного профиля клиента
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Работа с Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Обогащайте данные и делайте прогнозы
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Управляйте внешними подключениями
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Администрирование Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Бесплатная пробная версия
   items:
     - name: Регистрация на бесплатную пробную версию
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: Используйте веб-данные для персонализации
       href: unknown-to-known.md
+    - name: Управление профилями неизвестных клиентов
+      href: manage-unknown-profiles.md
 - name: Segments
   items:
     - name: Обзор сегментов
