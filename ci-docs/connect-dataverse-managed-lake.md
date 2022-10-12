@@ -1,7 +1,7 @@
 ---
 title: Подключение к данным в озере данных, управляемом Microsoft Dataverse
 description: Импортируйте данные из управляемого озера данных Microsoft Dataverse.
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206969"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609812"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Подключение к данным в озере данных, управляемом Microsoft Dataverse
 
@@ -70,5 +70,93 @@ ms.locfileid: "9206969"
 1. Нажмите **Сохранить**, чтобы применить изменения и вернуться на страницу **Источники данных**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>Распространенные причины ошибок приема или повреждения данных
+
+Следующие проверки выполняются с принятыми данными, чтобы выявить поврежденные записи:
+
+- Значение поля не соответствует типу данных его столбца.
+- Поля содержат символы, из-за которых столбцы не соответствуют ожидаемой схеме. Например: неправильно отформатированные кавычки, неэкранированные кавычки или символы новой строки.
+- Если есть столбцы datetime/date/datetimeoffset, их формат необходимо указать в модели, если он не соответствует стандартному формату ISO.
+
+### <a name="schema-or-data-type-mismatch"></a>Несоответствие схемы или типа данных
+
+Если данные не соответствуют схеме, записи классифицируются как поврежденные. Исправьте либо исходные данные, либо схему, и повторите прием данных.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Поля даты и времени в неправильном формате
+
+Поля даты и времени в сущности не в форматах ISO или en-US. Формат даты и времени по умолчанию в Customer Insights — формат en-US. Все поля даты и времени в сущности должны быть в одном и том же формате. Customer Insights поддерживает другие форматы при условии, что аннотации или характеристики создаются на уровне источника или сущности в файле model или manifest.json. Например: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  В файле manifest.json формат даты и времени можно указать на уровне сущности или на уровне атрибута. На уровне сущности используйте «exhibitsTraits» в сущности в *.manifest.cdm.json, чтобы определить формат даты и времени. На уровне атрибута используйте «appliedTraits» в атрибуте в entityname.cdm.json.
+
+**Manifest.json на уровне сущности**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json на уровне атрибута**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

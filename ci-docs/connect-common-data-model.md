@@ -1,7 +1,7 @@
 ---
 title: Подключение к папке Common Data Model с помощью учетной записи Azure Data Lake
 description: Работа с данными Common Data Model с помощью Azure Data Lake Storage.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396107"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609964"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Подключение к данным в Azure Data Lake Storage
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396107"
 - Пользователю, который настраивает подключение к источнику данных, требуются как минимум разрешения "Участник данных хранилища BLOB-объектов" в отношении учетной записи хранения.
 
 - Данные в Data Lake Storage должны соответствовать стандарту Common Data Model для хранения ваших данных и иметь манифест Common Data Model для представления схемы файлов данных (*.csv или *.parquet). Манифест должен предоставлять сведения о сущностях, такие как столбцы и типы данных сущности, а также расположение и тип файла данных. Дополнительные сведения см. в разделе [Манифест Common Data Model](/common-data-model/sdk/manifest). Если манифест отсутствует, пользователи-администраторы с правами доступа «Владелец данных BLOB-объекта хранилища» или «Участник данных BLOB-объектов хранилища» могут определить схему при приеме данных.
+
+## <a name="recommendations"></a>Рекомендации
+
+Для оптимальной производительности Customer Insights рекомендует размер раздела не более 1 ГБ, а количество файлов раздела в папке не должно превышать 1000.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>Подключение к Azure Data Lake Storage
 
@@ -199,5 +203,101 @@ ms.locfileid: "9396107"
 1. Нажмите **Сохранить**, чтобы применить изменения и вернуться на страницу **Источники данных**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>Распространенные причины ошибок приема или повреждения данных
+
+Во время приема данных некоторые из наиболее распространенных причин, по которым запись может считаться поврежденной, включают:
+
+- Типы данных и значения полей не совпадают между исходным файлом и схемой
+- Количество столбцов в исходном файле не соответствует схеме
+- Поля содержат символы, из-за которых столбцы перекашиваются по сравнению с ожидаемой схемой. Например: неправильно отформатированные кавычки, неэкранированные кавычки, символы новой строки или символы табуляции.
+- Файлы разделов отсутствуют
+- Если есть столбцы datetime/date/datetimeoffset, их формат необходимо указать в схеме, если он не соответствует стандартному формату.
+
+### <a name="schema-or-data-type-mismatch"></a>Несоответствие схемы или типа данных
+
+Если данные не соответствуют схеме, процесс приема завершается с ошибками. Исправьте либо исходные данные, либо схему, и повторите прием данных.
+
+### <a name="partition-files-are-missing"></a>Файлы разделов отсутствуют
+
+- Если прием прошел успешно без каких-либо поврежденных записей, но вы не видите никаких данных, отредактируйте файл model.json или manifest.json, чтобы убедиться, что указаны разделы. Затем [обновите источник данных](data-sources.md#refresh-data-sources).
+
+- Если прием данных происходит одновременно с обновлением источников данных во время автоматического обновления по расписанию, файлы разделов могут быть пустыми или недоступными для обработки Customer Insights. Чтобы согласовать с расписанием обновления восходящего потока, измените [расписание обновления системы](schedule-refresh.md) или расписание обновления для источника данных. Выровняйте время так, чтобы обновления не происходили все одновременно и предоставляли самые последние данные для обработки в Customer Insights.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Поля даты и времени в неправильном формате
+
+Поля даты и времени в сущности не в форматах ISO 8601 или en-US. Формат даты и времени по умолчанию в Customer Insights — формат en-US. Все поля даты и времени в сущности должны быть в одном и том же формате. Customer Insights поддерживает другие форматы при условии, что аннотации или характеристики создаются на уровне источника или сущности в файле model или manifest.json. Например: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  В файле manifest.json формат даты и времени можно указать на уровне сущности или на уровне атрибута. На уровне сущности используйте «exhibitsTraits» в сущности в *.manifest.cdm.json, чтобы определить формат даты и времени. На уровне атрибута используйте «appliedTraits» в атрибуте в entityname.cdm.json.
+
+**Manifest.json на уровне сущности**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json на уровне атрибута**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
