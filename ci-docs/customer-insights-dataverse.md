@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424325"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671267"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Работайте с данными Customer Insights в Microsoft Dataverse
 
@@ -63,6 +63,9 @@ Customer Insights предоставляет возможность сделат
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Включить обмен данными с Dataverse из собственного Azure Data Lake Storage (предварительная версия)
 
 В [вашей собственной учетной записи Azure Data Lake Storage](own-data-lake-storage.md) проверьте, что у пользователя, настраивающего среду Customer Insights, имеются как минимум разрешения **Модуль чтения данных BLOB-объектов хранилища** в контейнере `customerinsights` в учетной записи хранилища.
+
+> [!NOTE]
+> Совместное использование данных применимо только в том случае, если вы используете свои собственную учетную запись Azure Data Lake Storage. Этот параметр недоступен, если в среде Customer Insights используется хранилище Dataverse по умолчанию.
 
 ### <a name="limitations"></a>Ограничения
 
