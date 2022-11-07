@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196180"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725186"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Экспорт сегментов в Omnisend (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196180"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 1 миллиона профилей клиентов за один экспорт в Omnisend, что может занять до 4 часов. Количество профилей клиентов, которые вы можете экспортировать в Omnisend, зависит от вашего контракта с Omnisend.
 - Только сегменты.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 81adad4caf2d4c6f792bf920b29fc7c67eef42b0
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195766"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724728"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Экспорт сегментов в AdRoll (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195766"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 250 000 профилей клиентов на экспорт в AdRoll, что может занять до 10 минут. Количество профилей клиентов, которые вы можете экспортировать в AdRoll, зависит от вашего контракта с AdRoll.
 - Только сегменты. Сегмент должен содержать не менее 100 профилей клиентов.
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 54aec10e24b6356e2e4317cf33e740a1a086a2dd
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d74672768afec94e899ff0aec8c118c2afcde368
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196870"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725048"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Экспорт сегментов в Mailchimp (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196870"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 1 миллиона профилей клиентов за один экспорт в Mailchimp, что может занять до 3 часов. Количество профилей клиентов, которые вы можете экспортировать в Mailchimp, зависит от вашего контракта с Mailchimp.
 - Только сегменты.
 

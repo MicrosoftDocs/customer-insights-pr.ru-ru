@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9197008"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724864"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Экспорт сегментов в SendGrid (предварительная версия)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9197008"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 100 000 профилей клиентов в SendGrid, что может занять до нескольких часов. Количество профилей клиентов, которые вы можете экспортировать в SendGrid, зависит от вашего контракта с SendGrid.
 - Только сегменты.
 

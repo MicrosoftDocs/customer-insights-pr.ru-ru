@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e13aeca4ee5309f85e7de2986cd1a2ba5d2992fb
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d857bf5d11de86521c4a9d4fc665c020496d89d2
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195628"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725141"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>Экспорт сегментов в RollWorks (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195628"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 250 000 профилей клиентов на экспорт в RollWorks, что может занять до 10 минут. Количество профилей клиентов, которые вы можете экспортировать в RollWorks, зависит от вашего контракта с RollWorks.
 - Только сегменты.
 

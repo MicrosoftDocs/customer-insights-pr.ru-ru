@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e45ca5827afa29d97a746bd1a474c2346cc32d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 075e6758f2c6992a1185756f9beecf852fdd0a96
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196778"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724649"
 ---
 # <a name="export-segments-to-klaviyo-preview"></a>Экспорт сегментов в Klaviyo (предварительная версия)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196778"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 1 млн профилей клиентов на экспорт в Klaviyo, что может занять до 20 минут. Количество профилей клиентов, которые вы можете экспортировать в Klaviyo, зависит от вашего контракта с Klaviyo.
 - Только сегменты.
 

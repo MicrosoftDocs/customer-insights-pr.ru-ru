@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 449d2c5e32697e4a5d2c9dff4a5a1cbdb26aeb4d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: b4b14ba9de2c7e20175fac664a705f2212a411fd
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195076"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724818"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Экспорт сегментов в Autopilot (предварительная версия)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195076"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 100 000 профилей клиентов на экспорт в Autopilot, что может занять до нескольких часов. Количество профилей клиентов, которые вы можете экспортировать в Autopilot, зависит от вашего контракта с Autopilot.
 - Только сегменты.
 

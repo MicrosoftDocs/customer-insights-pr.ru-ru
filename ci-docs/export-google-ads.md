@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: a46623e609665f8031f223593a6644147e5209d8
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196594"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725094"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Экспорт сегментов в Google Рекламу (предварительная версия)
 
@@ -30,6 +30,7 @@ ms.locfileid: "9196594"
 
 ## <a name="known-limitations"></a>Известные ограничения
 
+- Приватный канал в сочетании с использованием собственного хранилища (BYOS) не поддерживается.
 - До 1 миллиона профилей клиентов на экспорт в Google Ads, что может занять до 30 минут из-за ограничений на стороне провайдера.
 - Только сегменты.
 - Сопоставление в Google Ads может занять до 48 часов.
